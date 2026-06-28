@@ -1,0 +1,151 @@
+/**
+ * Mediva Care Hospital — Final Production Layer
+ * Browser hardening, rendering containment, print behavior, and last-mile
+ * responsive safeguards. Loaded after all component and page styles.
+ */
+
+html {
+  overflow-x: clip;
+  scrollbar-gutter: stable;
+}
+
+body {
+  min-width: 20rem;
+  overflow-wrap: break-word;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+main > section[data-content-visibility='auto'] {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 48rem;
+}
+
+.site-footer[data-content-visibility='auto'] {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 42rem;
+}
+
+:where(.card, .doctor-card, .department-card, .package-card, .pricing-card, .testimonial-card) {
+  contain: layout paint;
+}
+
+:where(.button, .nav-icon-button, .filter-chip, .pagination__link) {
+  user-select: none;
+}
+
+:where(p, li, address, .site-search-result__description) {
+  overflow-wrap: anywhere;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@supports not (overflow: clip) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 22rem) {
+  .container {
+    width: min(100% - 1.25rem, var(--container-max));
+  }
+
+  .brand__logo {
+    max-width: 10.75rem;
+  }
+}
+
+@media (prefers-reduced-data: reduce) {
+  [data-parallax],
+  [data-tilt],
+  [data-magnetic] {
+    transform: none !important;
+  }
+
+  .motion-float,
+  .motion-pulse,
+  .motion-orbit {
+    animation: none !important;
+  }
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  html,
+  body {
+    color: #111827 !important;
+    background: #ffffff !important;
+  }
+
+  .site-header,
+  .site-footer,
+  .page-loader,
+  .scroll-progress,
+  .back-to-top,
+  .button,
+  .filter-bar,
+  .newsletter,
+  dialog,
+  iframe {
+    display: none !important;
+  }
+
+  main > section[data-content-visibility='auto'] {
+    content-visibility: visible;
+    contain-intrinsic-size: auto;
+  }
+
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+
+  article,
+  section,
+  table,
+  figure {
+    break-inside: avoid;
+  }
+}
+
+.design-system-heading-one {
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  text-wrap: balance;
+}

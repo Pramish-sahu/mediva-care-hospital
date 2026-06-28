@@ -12,6 +12,7 @@
   const body = document.body;
   let prefersReducedMotion = reducedMotionQuery.matches;
   let ticking = false;
+  let interfaceTicking = false;
 
   const clamp = (value, minimum, maximum) => Math.min(Math.max(value, minimum), maximum);
 
@@ -380,7 +381,9 @@
   const initialize = () => {
     html.classList.add('motion-ready');
     const interfaceElements = createMotionInterface();
-    const loader = createPageLoader();
+    const loader = window.MEDIVA_CONFIG?.performance?.enableInitialLoader
+      ? createPageLoader()
+      : null;
 
     initAos();
     initCounters();
@@ -407,8 +410,17 @@
       window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
     });
 
-    window.addEventListener('scroll', () => window.requestAnimationFrame(updateScrollInterface), { passive: true });
-    window.addEventListener('resize', () => window.requestAnimationFrame(updateScrollInterface), { passive: true });
+    const requestInterfaceUpdate = () => {
+      if (interfaceTicking) return;
+      interfaceTicking = true;
+      window.requestAnimationFrame(() => {
+        updateScrollInterface();
+        interfaceTicking = false;
+      });
+    };
+
+    window.addEventListener('scroll', requestInterfaceUpdate, { passive: true });
+    window.addEventListener('resize', requestInterfaceUpdate, { passive: true });
     updateScrollInterface();
 
     if (document.readyState === 'complete') finishPageLoader(loader);

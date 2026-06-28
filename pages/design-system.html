@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -9,7 +9,7 @@
 <meta content="#0f4c81" name="theme-color"/>
 <title>Design System | Mediva Care Hospital</title>
 <link href="../assets/favicon/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect"/><link crossorigin="" href="https://unpkg.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
 <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" referrerpolicy="no-referrer" rel="stylesheet"/>
@@ -20,7 +20,7 @@
 <link href="../assets/css/utilities.css" rel="stylesheet"/>
 <link href="../assets/css/animations.css" rel="stylesheet"/>
 <link href="../assets/css/pages.css" rel="stylesheet"/>
-<link href="../assets/css/responsive.css" rel="stylesheet"/>
+<link href="../assets/css/responsive.css" rel="stylesheet"/><link href="../assets/css/production.css" rel="stylesheet"/>
 </head>
 <body data-nav-section="more">
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -56,8 +56,8 @@
 <div class="navbar">
 <div class="container navbar__inner">
 <a aria-label="Mediva Care Hospital home" class="brand" href="../index.html">
-<img alt="Mediva Care Hospital" class="brand__logo brand__logo--default" height="56" src="../assets/logos/logo.svg" width="220"/>
-<img alt="" aria-hidden="true" class="brand__logo brand__logo--inverse" height="56" src="../assets/logos/logo-white.svg" width="220"/>
+<img alt="Mediva Care Hospital" class="brand__logo brand__logo--default" decoding="async" fetchpriority="high" height="56" src="../assets/logos/logo.svg" width="220"/>
+<img alt="" aria-hidden="true" class="brand__logo brand__logo--inverse" decoding="async" height="56" src="../assets/logos/logo-white.svg" width="220"/>
 </a>
 <nav aria-label="Primary navigation" class="primary-nav" data-primary-nav="" id="primary-navigation">
 <div class="primary-nav__mobile-header">
@@ -161,7 +161,7 @@
 <li><a class="nav-submenu__link" data-nav-link="" href="../pages/gallery.html"><i aria-hidden="true" class="fa-regular fa-images"></i>Gallery</a></li>
 <li><a class="nav-submenu__link" data-nav-link="" href="../pages/privacy-policy.html"><i aria-hidden="true" class="fa-solid fa-user-shield"></i>Privacy Policy</a></li>
 <li><a class="nav-submenu__link" data-nav-link="" href="../pages/terms.html"><i aria-hidden="true" class="fa-regular fa-file-lines"></i>Terms of Use</a></li>
-<li><a class="nav-submenu__link" data-nav-link="" href="../pages/components.html"><i aria-hidden="true" class="fa-solid fa-layer-group"></i>Components</a></li></ul>
+</ul>
 </li>
 <li class="nav-item">
 <a class="nav-link" data-nav-key="contact" data-nav-link="" href="../pages/contact.html">Contact</a>
@@ -279,7 +279,7 @@
 </div>
 <div class="card">
 <div class="card__body stack stack--6">
-<h1>Heading One — Advanced Care</h1>
+<p class="design-system-heading-one">Heading One — Advanced Care</p>
 <h2>Heading Two — Clinical Excellence</h2>
 <h3>Heading Three — Patient-First Medicine</h3>
 <h4>Heading Four — Trusted Specialists</h4>
@@ -501,7 +501,7 @@
 </div>
 </section>
 </main>
-<footer class="site-footer">
+<footer class="site-footer" data-content-visibility="auto">
 <div class="container">
 <p>© <span data-current-year=""></span> Mediva Care Hospital Design System.</p>
 </div>

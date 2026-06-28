@@ -132,20 +132,6 @@
       keywords: 'gallery photos facility rooms technology',
     },
     {
-      title: 'UI Components',
-      path: 'pages/components.html',
-      icon: 'fa-layer-group',
-      description: 'Reusable Mediva buttons, cards, forms, modals, accordions, and interface patterns.',
-      keywords: 'components design system ui buttons cards forms modal accordion',
-    },
-    {
-      title: 'Motion System',
-      path: 'pages/animations.html',
-      icon: 'fa-wand-magic-sparkles',
-      description: 'AOS reveals, counters, parallax, sticky behavior, and accessible micro-interactions.',
-      keywords: 'animation motion aos counter parallax hover loading sticky scroll',
-    },
-    {
       title: 'Contact & Appointments',
       path: 'pages/contact.html',
       icon: 'fa-calendar-check',

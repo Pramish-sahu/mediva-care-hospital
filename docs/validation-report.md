@@ -1,105 +1,79 @@
-# Mediva Care Hospital Validation Report
+# Mediva Care Hospital — Final Validation Report
 
 Validated on June 28, 2026.
 
-## Coverage
+## Final inventory
 
-- 19 HTML documents parsed successfully.
-- 6 required service pages completed.
-- Every service page contains overview, symptoms, treatments, doctors, facilities, FAQ, and appointment/follow-up sections.
-- Every service page contains 6 symptom cards, 6 treatment or pathway cards, 2 doctor cards, 6 facility cards, and 5 FAQs.
+- 21 HTML documents
+- 13 stylesheets
+- 9 JavaScript controllers
+- 41 SVG assets
+- 128 total project files
+- Approximately 1.1 MB uncompressed source size
 
-## Integrity
+## Structural validation
 
-- All local HTML, CSS, JavaScript, image, logo, favicon, and document references resolve.
-- No duplicate HTML IDs were found.
-- Every image includes alternative text.
-- No inline CSS or inline JavaScript was added.
-- All JavaScript files pass `node --check` syntax validation.
-- All SVG assets parse as valid XML.
-- CSS delimiter-balance checks pass.
+Passed:
 
-## Accessibility and interaction
+- HTML5 doctype and language checks
+- Exactly one `<h1>` per page
+- Page title and meta description checks
+- Duplicate ID detection
+- Local HTML, CSS, JavaScript, image, favicon, and document reference checks
+- Cross-page and same-page fragment checks
+- `aria-controls` target checks
+- Form-label checks
+- Image alternative-text checks
+- Explicit image width and height checks
+- Lazy-loaded iframe and iframe-title checks
+- Blocking-script checks
+- Inline CSS, inline JavaScript, and inline event-handler checks
+- JavaScript syntax validation through `node --check`
+- CSS delimiter-balance checks
+- SVG and sitemap XML parsing
+- Robots sitemap declaration check
+- Production stylesheet inclusion on every page
 
-- FAQ controls expose `aria-expanded`, `aria-controls`, and matching panel IDs.
-- Collapsed FAQ panels expose `aria-hidden` and are updated by JavaScript.
-- Appointment forms use explicit labels, required states, consent controls, and live status regions.
-- In-page navigation uses active-location feedback.
-- Reduced-motion preferences disable nonessential service-page motion.
+## Asset and link audit
 
-## Production reminder
+Passed:
 
-The hospital name, doctors, credentials, schedules, facilities, contact details, and clinical service descriptions are demonstration content. They require client, clinical, legal, and jurisdictional review before a real launch.
+- Zero missing local references
+- Zero missing anchor fragments
+- Zero orphaned runtime assets
+- Zero empty anchors
+- Zero buttons missing an explicit `type`
+- Zero below-the-fold main images loading eagerly
+- Zero first meaningful page images incorrectly marked lazy
 
+One broken direction link discovered during the final audit was corrected from `#location` to the existing `#hospital-map` section.
 
-# Prompt 7 Component Validation
+## Production optimizations verified
 
-Validated on June 28, 2026.
+- Explicit dimensions are present for all images, including dynamically populated lightbox media.
+- Images use async decoding.
+- The first meaningful page image receives high fetch priority.
+- Below-the-fold imagery, footer branding, and maps are lazy loaded.
+- Third-party scripts use deferred loading.
+- The initial decorative loader is disabled by default.
+- Scroll-interface updates are animation-frame throttled.
+- Below-the-fold sections use safe content-visibility hints.
+- Reduced-motion and reduced-data fallbacks remain enabled.
+- Print behavior and narrow-screen overflow protection are included.
+- Internal design-system, component, and animation pages are not exposed in public navigation or the sitemap.
 
-## Coverage
+## Automated command
 
-- 20 HTML documents parsed successfully.
-- The shared component library is loaded on every HTML page.
-- The visual reference page demonstrates all required Prompt 7 components.
-- Component JavaScript is declarative and uses reusable `data-*` hooks.
+Run the same structural audit locally:
 
-## Component inventory
+```bash
+python3 scripts/validate-project.py
+```
 
-- Buttons and semantic badges
-- Generic, doctor, pricing, and testimonial cards
-- Inputs, selections, validation, checkboxes, radios, and switches
-- Accessible accordion and keyboard-operable tabs
-- Patient journey timeline
-- Responsive gallery and native-dialog lightbox
-- Breadcrumbs and pagination
-- Native-dialog modal
-- Dismissible alerts and toast notifications
-- Responsive newsletter form
-- Loading-button and skeleton states
+## Runtime and Lighthouse note
 
-## Integrity
+The final source has been optimized for modern static hosting, but Lighthouse values and true cross-browser behavior depend on the deployed host, CDN response times, network conditions, device performance, browser version, and final production content. Run Lighthouse and real-device browser checks against the deployed URL before making numerical performance claims to a client.
 
-- All local HTML, CSS, JavaScript, image, logo, favicon, and documentation references resolve.
-- No duplicate HTML IDs were found.
-- No inline CSS or inline JavaScript event handlers were added.
-- JavaScript syntax validation passes for the component and navigation controllers.
-- CSS delimiter-balance checks pass across all stylesheets.
-- The component API avoids collisions with the existing About-page timeline.
+## Commercial-launch reminder
 
-## Accessibility
-
-- Modal behavior uses native `<dialog>` semantics and restores focus to its opener.
-- Accordion controls use matching `aria-controls`, `aria-expanded`, and `aria-hidden` states.
-- Tabs support Left Arrow, Right Arrow, Home, and End keyboard navigation.
-- Toast, newsletter, and pagination feedback use live regions.
-- Dismiss buttons include explicit accessible labels.
-- Reduced-motion preferences remove nonessential component animation.
-
-
-# Prompt 8 Animation Validation
-
-Validated on June 28, 2026.
-
-## Coverage
-
-- 21 HTML documents parse successfully.
-- 12 stylesheets pass delimiter-balance validation.
-- 9 JavaScript controllers pass `node --check`.
-- The AOS stylesheet, AOS controller, and shared motion controller load on every HTML page.
-- The visual motion reference demonstrates reveals, counters, hover states, parallax, sticky panels, loading feedback, and accessibility fallbacks.
-
-## Integrity
-
-- All local HTML, CSS, JavaScript, image, logo, favicon, and documentation references resolve.
-- No duplicate IDs were found.
-- Every image contains an `alt` attribute.
-- No inline CSS, inline JavaScript, or inline event handlers were added.
-- Global counter and ripple behavior is centralized to avoid duplicate listeners.
-
-## Performance and accessibility
-
-- Parallax work is batched with `requestAnimationFrame`, clamped, and skipped off screen.
-- Counters and native reveals initialize through `IntersectionObserver`.
-- Tilt and magnetic interactions run only on fine pointers with hover support.
-- The branded page loader runs once per browser session and can be replayed from the reference page.
-- `prefers-reduced-motion` disables loaders, parallax, tilt, magnetic movement, continuous motion, and smooth scrolling while leaving all content visible.
+This remains a frontend demonstration. Hospital identity, doctors, credentials, schedules, testimonials, package pricing, address, legal text, medical descriptions, and emergency information require client, clinical, and legal approval before real use.

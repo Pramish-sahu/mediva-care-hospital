@@ -1,6 +1,16 @@
 # Mediva Care Hospital
 
-A premium, responsive healthcare website developed as a portfolio project for **Pramish Web Studio**.
+A production-quality static healthcare website created as a portfolio demonstration for **Pramish Web Studio**.
+
+## Final release status
+
+The complete frontend build is finished through Prompt 10.
+
+- Prompts 1–8: completed
+- Prompt 9: intentionally skipped for this demo
+- Prompt 10: completed
+
+Basic page metadata, semantic HTML, robots, sitemap, favicons, image alternative text, accessible navigation, and form labels remain included. Full production SEO, structured data, and organization-specific search optimization should be completed when a real client and final domain are available.
 
 ## Technology
 
@@ -11,128 +21,145 @@ A premium, responsive healthcare website developed as a portfolio project for **
 - Google Fonts
 - AOS
 - Swiper.js
-- EmailJS
+- EmailJS-ready forms
 
-No framework, backend, Bootstrap, Tailwind, or React is used.
+No React, Bootstrap, Tailwind, frontend framework, or backend is used.
+
+## Website coverage
+
+### Main experience
+
+- Premium responsive homepage
+- Sticky top bar and navigation
+- Desktop mega menu and mobile drawer
+- Accessible search dialog
+- Light and dark themes
+- Appointment and emergency conversion paths
+- Full footer and newsletter presentation
+
+### Internal pages
+
+- About
+- Departments
+- Doctors
+- Doctor details
+- Health packages
+- Testimonials
+- Gallery
+- Contact
+- Privacy policy
+- Terms of use
+- Custom 404 page
+
+### Medical service pages
+
+- Cardiology
+- Neurology
+- Orthopedics
+- Pediatrics
+- Dental care
+- Emergency care
+
+### Portfolio reference pages
+
+The following pages remain available for design and development review but are intentionally hidden from patient-facing navigation:
+
+- `pages/design-system.html`
+- `pages/components.html`
+- `pages/animations.html`
 
 ## Local preview
 
-Run a local static server from the project root:
-
 ```bash
-python3 -m http.server 8000
+./scripts/serve.sh
 ```
 
-Open `http://localhost:8000` in a browser.
-
-## Project phases
-
-1. Project setup
-2. Design system
-3. Navigation
-4. Homepage
-5. Internal pages
-6. Service pages
-7. Reusable components
-8. Animation and interaction
-9. SEO and accessibility
-10. Final optimization and polish
-
-## Deployment
-
-The project is structured for GitHub Pages. Before using a custom production domain, update all canonical sitemap URLs and the sitemap URL in `robots.txt`.
-
-## EmailJS
-
-Add production EmailJS values only in `assets/js/config.js`. Never commit private service credentials.
-
-## Asset rules
-
-- Prefer AVIF or WebP for content images.
-- Include meaningful `alt` text for informative images.
-- Use lowercase, hyphen-separated filenames.
-- Compress images before committing.
-- Add explicit image `width` and `height` in HTML to reduce layout shift.
-
-## Design system
-
-Prompt 2 adds a complete reusable CSS design system:
-
-- Brand, neutral, and feedback color tokens
-- Fluid typography scale using Poppins and Inter
-- Consistent spacing, radius, border, shadow, motion, and z-index tokens
-- Responsive containers and a 12-column grid
-- Reusable buttons, cards, badges, icons, forms, alerts, and section headings
-- Utility classes and reduced-motion-safe animation helpers
-- Mobile-first breakpoints at 576px, 768px, 1024px, and 1200px
-
-Open the visual reference page at:
+Open:
 
 ```text
-http://localhost:8000/pages/design-system.html
+http://localhost:8000
 ```
 
-## Navigation system
+A custom port can be supplied:
 
-Prompt 3 adds the complete shared hospital navigation experience:
+```bash
+./scripts/serve.sh 8080
+```
 
-- Premium 24/7 information top bar
-- Sticky desktop and mobile header
-- Accessible medical-department mega menu
-- Responsive off-canvas mobile navigation
-- Emergency and appointment calls to action
-- Search dialog with keyboard shortcut and live page filtering
-- Persistent light/dark theme control
-- Automatic active-page highlighting
-- Escape-key, outside-click, focus-return, and reduced-motion behavior
+## Validation
 
-Keyboard shortcuts:
+Run the dependency-free project audit:
 
-- `/` opens site search when focus is not inside a form control.
-- `Ctrl + K` or `Command + K` opens site search.
-- `Escape` closes search, mobile navigation, or an open dropdown.
+```bash
+python3 scripts/validate-project.py
+```
 
-Detailed implementation notes are available in `docs/navigation.md`.
+The audit checks:
 
-## Complete homepage
+- HTML5 doctypes and language attributes
+- Duplicate IDs
+- Local file references
+- Inline CSS and inline JavaScript
+- Image alternative text and dimensions
+- Lazy-loaded iframe titles
+- JavaScript syntax through Node.js
+- CSS delimiter balance
+- SVG XML validity
 
-Prompt 4 replaces the setup hero with a production-quality, conversion-focused hospital homepage containing:
+The same validation runs automatically through `.github/workflows/validate.yml` on pushes and pull requests.
 
-- Premium clinical hero and quick-access actions
-- Animated hospital statistics
-- About and clinical-quality presentation
-- Six medical department cards
-- Responsive Swiper doctor showcase
-- Why-choose-us and emergency support panels
-- Three realistic preventive health packages
-- Patient testimonial carousel
-- Accessible single-open FAQ accordion
-- EmailJS-ready appointment request form with honest email fallback
-- Embedded Google Map and visitor information
-- Full newsletter and multi-column hospital footer
-- Lightweight local SVG artwork with explicit dimensions and accessible alt text
+## Create a release archive
 
-Homepage-specific presentation is in `assets/css/home.css`. Interactive behavior is in `assets/js/homepage.js`, while form delivery remains centralized in `assets/js/forms.js`.
+```bash
+./scripts/package-release.sh
+```
 
-Detailed implementation notes are available in `docs/homepage.md`.
+## Forms
 
+Configure public EmailJS values in:
 
-## Prompt 5: Internal Pages
+```text
+assets/js/config.js
+```
 
-All core internal pages are fully designed and responsive. See `docs/internal-pages.md` for the page inventory and production notes.
+Until EmailJS is configured, supported forms open a prefilled email draft. Never commit private credentials.
 
+## Production optimization
 
-## Prompt 6: Service Pages
+The final build includes:
 
-Six complete specialty pages now share a reusable service-page system for hero content, symptoms, treatments, doctors, facilities, FAQs, and appointment conversion. See `docs/service-pages.md` for implementation and production notes.
+- Explicit media dimensions to reduce layout shift
+- High-priority loading only for visible branding and first meaningful page imagery
+- Lazy loading for below-the-fold images, footer branding, and maps
+- Async image decoding
+- Deferred JavaScript
+- Scroll work batched through `requestAnimationFrame`
+- Below-the-fold rendering containment
+- Initial loader disabled by default to protect first paint
+- Reduced-motion and reduced-data support
+- Narrow-screen and horizontal-overflow safeguards
+- Print styles
+- Secure new-tab links
+- Browser-history state restoration
 
-## Prompt 7: Reusable Components
+Actual Lighthouse scores must be measured on the final deployed domain and hosting environment.
 
-The project includes an extended UI component library with a live reference page at `pages/components.html`. See `docs/components.md` for class and behavior guidance.
+## Documentation
 
+- `docs/design-system.md`
+- `docs/navigation.md`
+- `docs/homepage.md`
+- `docs/internal-pages.md`
+- `docs/service-pages.md`
+- `docs/components.md`
+- `docs/animations.md`
+- `docs/final-production.md`
+- `docs/customization-guide.md`
+- `docs/deployment.md`
+- `docs/browser-compatibility.md`
+- `docs/release-checklist.md`
+- `docs/validation-report.md`
 
-## Prompt 8: Animation System
+## Important demo notice
 
-The production motion layer includes AOS reveals, locale-aware counters, subtle parallax, hover and button micro-interactions, a dynamic page loader, scroll progress, back-to-top control, sticky element state detection, and full reduced-motion support.
-
-Preview the visual reference at `pages/animations.html` and read `docs/animations.md`.
+The hospital identity, doctors, qualifications, schedules, patient stories, package prices, address, contact details, and medical content are demonstration data. Replace and review them with the client, qualified clinicians, and legal professionals before any real-world launch.
