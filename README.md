@@ -71,3 +71,25 @@ Open the visual reference page at:
 ```text
 http://localhost:8000/pages/design-system.html
 ```
+
+## Navigation system
+
+Prompt 3 adds the complete shared hospital navigation experience:
+
+- Premium 24/7 information top bar
+- Sticky desktop and mobile header
+- Accessible medical-department mega menu
+- Responsive off-canvas mobile navigation
+- Emergency and appointment calls to action
+- Search dialog with keyboard shortcut and live page filtering
+- Persistent light/dark theme control
+- Automatic active-page highlighting
+- Escape-key, outside-click, focus-return, and reduced-motion behavior
+
+Keyboard shortcuts:
+
+- `/` opens site search when focus is not inside a form control.
+- `Ctrl + K` or `Command + K` opens site search.
+- `Escape` closes search, mobile navigation, or an open dropdown.
+
+Detailed implementation notes are available in `docs/navigation.md`.
