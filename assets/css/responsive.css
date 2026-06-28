@@ -1,0 +1,31 @@
+/* Mobile-first adjustments for the setup shell. */
+@media (max-width: 56rem) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 38rem) {
+  .site-header .button {
+    display: none;
+  }
+
+  .button-group .button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

@@ -1,0 +1,48 @@
+/* Page-level starter styles. Detailed section styling is added with each page phase. */
+.setup-hero {
+  display: grid;
+  min-height: calc(100svh - 5rem);
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 18%, rgb(20 184 166 / 16%), transparent 28rem),
+    radial-gradient(circle at 15% 72%, rgb(37 99 235 / 14%), transparent 30rem),
+    var(--color-background);
+}
+
+.setup-hero__content {
+  max-width: 56rem;
+  text-align: center;
+}
+
+.setup-hero h1 {
+  font-size: clamp(2.75rem, 8vw, 6rem);
+  letter-spacing: -0.045em;
+}
+
+.setup-hero p:not(.eyebrow) {
+  max-width: 44rem;
+  margin-inline: auto;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.setup-hero .button-group {
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.error-page {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.error-page__content {
+  max-width: 42rem;
+}
+
+.error-page img {
+  margin: 0 auto 1.5rem;
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pramish-sahu.github.io/mediva-care-hospital/sitemap.xml
