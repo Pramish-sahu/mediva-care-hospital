@@ -93,3 +93,25 @@ Keyboard shortcuts:
 - `Escape` closes search, mobile navigation, or an open dropdown.
 
 Detailed implementation notes are available in `docs/navigation.md`.
+
+## Complete homepage
+
+Prompt 4 replaces the setup hero with a production-quality, conversion-focused hospital homepage containing:
+
+- Premium clinical hero and quick-access actions
+- Animated hospital statistics
+- About and clinical-quality presentation
+- Six medical department cards
+- Responsive Swiper doctor showcase
+- Why-choose-us and emergency support panels
+- Three realistic preventive health packages
+- Patient testimonial carousel
+- Accessible single-open FAQ accordion
+- EmailJS-ready appointment request form with honest email fallback
+- Embedded Google Map and visitor information
+- Full newsletter and multi-column hospital footer
+- Lightweight local SVG artwork with explicit dimensions and accessible alt text
+
+Homepage-specific presentation is in `assets/css/home.css`. Interactive behavior is in `assets/js/homepage.js`, while form delivery remains centralized in `assets/js/forms.js`.
+
+Detailed implementation notes are available in `docs/homepage.md`.

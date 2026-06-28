@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
+<title id="title">Mediva Care clinical team illustration</title>
+<desc id="desc">A modern medical team with a doctor, nurse, patient care dashboard, and healthcare symbols.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eff7ff"/><stop offset="1" stop-color="#e7fffb"/></linearGradient>
+  <linearGradient id="coat" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#dceeff"/></linearGradient>
+  <linearGradient id="scrubs" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#14b8a6"/><stop offset="1" stop-color="#0f766e"/></linearGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0f4c81"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#0f172a" flood-opacity=".14"/></filter>
+</defs>
+<rect width="900" height="760" rx="48" fill="url(#bg)"/>
+<circle cx="728" cy="105" r="76" fill="#14b8a6" opacity=".12"/>
+<circle cx="160" cy="600" r="112" fill="#2563eb" opacity=".09"/>
+<path d="M96 220C210 116 374 96 500 148s180 180 270 170" fill="none" stroke="#0f4c81" stroke-opacity=".08" stroke-width="18" stroke-linecap="round"/>
+<g filter="url(#shadow)">
+  <rect x="76" y="74" width="252" height="160" rx="24" fill="#fff"/>
+  <rect x="99" y="101" width="50" height="50" rx="15" fill="#eff7ff"/>
+  <path d="M124 112v28M110 126h28" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+  <text x="166" y="120" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#0f172a">Care Coordination</text>
+  <text x="166" y="147" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Specialists connected</text>
+  <path d="M100 188h204" stroke="#e2e8f0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M100 188h145" stroke="#14b8a6" stroke-width="8" stroke-linecap="round"/>
+</g>
+<g filter="url(#shadow)">
+  <rect x="598" y="470" width="244" height="176" rx="26" fill="#fff"/>
+  <text x="625" y="507" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Live patient monitoring</text>
+  <path d="M624 560h28l18-38 28 78 28-58 18 18h55" fill="none" stroke="#14b8a6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="766" cy="560" r="7" fill="#14b8a6"/>
+  <text x="625" y="620" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#0f4c81">98%</text>
+  <text x="694" y="618" font-family="Arial, sans-serif" font-size="12" fill="#64748b">patient satisfaction</text>
+</g>
+<!-- nurse -->
+<g transform="translate(145 270)">
+  <circle cx="115" cy="78" r="48" fill="#d99b78"/>
+  <path d="M70 76c4-48 88-66 104 0-24-18-58-24-104 0Z" fill="#1e293b"/>
+  <path d="M82 134c-38 18-60 74-56 184h182c6-112-18-166-62-184Z" fill="url(#scrubs)"/>
+  <path d="M98 148v38c0 26 36 26 36 0v-38" fill="none" stroke="#ccfbf1" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="116" cy="188" r="11" fill="#eff7ff" stroke="#0f4c81" stroke-width="5"/>
+  <rect x="154" y="190" width="84" height="110" rx="14" fill="#fff" transform="rotate(8 154 190)"/>
+  <path d="M178 220h37M175 240h42M172 260h34" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+</g>
+<!-- lead doctor -->
+<g transform="translate(350 125)">
+  <ellipse cx="176" cy="502" rx="154" ry="38" fill="#0f172a" opacity=".09"/>
+  <circle cx="176" cy="112" r="73" fill="#bd7a57"/>
+  <path d="M106 112c0-73 122-105 142-15 2 12 0 24-2 33-18-31-76-47-140-18Z" fill="#172033"/>
+  <path d="M102 206c-68 38-88 134-78 296h308c12-162-10-260-82-296Z" fill="url(#coat)"/>
+  <path d="M138 206l38 56 38-56" fill="#dceeff"/>
+  <path d="M176 264v194" stroke="#cbd5e1" stroke-width="4"/>
+  <path d="M128 217c-4 46 10 86 48 98 40-12 54-53 48-98" fill="none" stroke="#0f4c81" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="176" cy="318" r="17" fill="#eff7ff" stroke="#0f4c81" stroke-width="7"/>
+  <rect x="211" y="280" width="82" height="116" rx="16" fill="url(#screen)" transform="rotate(-7 211 280)"/>
+  <rect x="225" y="298" width="52" height="10" rx="5" fill="#fff" opacity=".9"/>
+  <rect x="225" y="320" width="38" height="8" rx="4" fill="#fff" opacity=".55"/>
+  <path d="M228 359h14l8-18 10 32 12-22h12" fill="none" stroke="#5eead4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M80 282c-20 52-24 118-17 188M273 282c20 52 24 118 17 188" fill="none" stroke="#b9ddff" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="146" cy="112" r="5" fill="#172033"/><circle cx="207" cy="112" r="5" fill="#172033"/>
+  <path d="M153 142c16 13 32 13 48 0" fill="none" stroke="#7c422f" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g transform="translate(710 220)">
+  <circle cx="0" cy="0" r="44" fill="#fff" filter="url(#shadow)"/>
+  <path d="M0-19v38M-19 0h38" stroke="#ef4444" stroke-width="10" stroke-linecap="round"/>
+</g>
+<g transform="translate(104 520)">
+  <rect width="186" height="92" rx="22" fill="#fff" filter="url(#shadow)"/>
+  <circle cx="42" cy="46" r="22" fill="#f0fdfa"/>
+  <path d="M34 46l6 6 12-15" fill="none" stroke="#14b8a6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="76" y="40" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Appointments today</text>
+  <text x="76" y="66" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a">128</text>
+</g>
+</svg>
