@@ -115,3 +115,8 @@ Prompt 4 replaces the setup hero with a production-quality, conversion-focused h
 Homepage-specific presentation is in `assets/css/home.css`. Interactive behavior is in `assets/js/homepage.js`, while form delivery remains centralized in `assets/js/forms.js`.
 
 Detailed implementation notes are available in `docs/homepage.md`.
+
+
+## Prompt 5: Internal Pages
+
+All core internal pages are fully designed and responsive. See `docs/internal-pages.md` for the page inventory and production notes.

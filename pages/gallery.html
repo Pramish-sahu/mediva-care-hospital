@@ -1,316 +1,270 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="View Mediva Care Hospital facilities, treatment areas, diagnostic technology, patient rooms, and care environments." />
-    <meta name="theme-color" content="#0f4c81" />
-    <title>Hospital Gallery | Mediva Care Hospital</title>
-    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../assets/css/base.css" />
-    <link rel="stylesheet" href="../assets/css/layout.css" />
-    <link rel="stylesheet" href="../assets/css/navigation.css" />
-    <link rel="stylesheet" href="../assets/css/components.css" />
-    <link rel="stylesheet" href="../assets/css/utilities.css" />
-    <link rel="stylesheet" href="../assets/css/animations.css" />
-    <link rel="stylesheet" href="../assets/css/pages.css" />
-    <link rel="stylesheet" href="../assets/css/responsive.css" />
-  </head>
-  <body data-nav-section="more">
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
-    <header class="site-header" data-header>
-      <div class="topbar">
-        <div class="container topbar__inner">
-          <div class="topbar__group">
-            <span class="topbar__item topbar__item--open">
-              <span class="topbar__status-dot" aria-hidden="true"></span>
-              <span>Open 24 hours, every day</span>
-            </span>
-            <a class="topbar__item topbar__item--location" href="../pages/contact.html">
-              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-              <span>Sector 18, New Delhi</span>
-            </a>
-          </div>
-
-          <div class="topbar__group">
-            <a class="topbar__link topbar__link--phone" href="tel:+911145678900">
-              <i class="fa-solid fa-phone" aria-hidden="true"></i>
-              <span>+91 11 4567 8900</span>
-            </a>
-            <a class="topbar__link topbar__link--email" href="mailto:care@medivahospital.com">
-              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
-              <span>care@medivahospital.com</span>
-            </a>
-            <a class="topbar__emergency" href="tel:+911145678900">
-              <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
-              <span>Emergency</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="navbar">
-        <div class="container navbar__inner">
-          <a class="brand" href="../index.html" aria-label="Mediva Care Hospital home">
-            <img
-              class="brand__logo brand__logo--default"
-              src="../assets/logos/logo.svg"
-              alt="Mediva Care Hospital"
-              width="220"
-              height="56"
-            />
-            <img
-              class="brand__logo brand__logo--inverse"
-              src="../assets/logos/logo-white.svg"
-              alt=""
-              width="220"
-              height="56"
-              aria-hidden="true"
-            />
-          </a>
-
-          <nav
-            class="primary-nav"
-            id="primary-navigation"
-            aria-label="Primary navigation"
-            data-primary-nav
-          >
-            <div class="primary-nav__mobile-header">
-              <span class="primary-nav__mobile-title">Explore Mediva</span>
-              <button class="nav-mobile-close" type="button" aria-label="Close navigation" data-menu-close>
-                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <ul class="primary-nav__list">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html" data-nav-link data-nav-key="home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/about.html" data-nav-link data-nav-key="about">About</a>
-              </li>
-              <li class="nav-item nav-item--mega">
-                <div class="nav-item__control">
-                  <a
-                    class="nav-link"
-                    href="../pages/departments.html"
-                    data-nav-link
-                    data-nav-key="departments"
-                  >Departments</a>
-                  <button
-                    class="nav-caret"
-                    type="button"
-                    aria-label="Show departments menu"
-                    aria-expanded="false"
-                    aria-controls="departments-menu"
-                    data-dropdown-toggle
-                  >
-                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                  </button>
-                </div>
-
-                <div class="mega-menu" id="departments-menu">
-                  <div class="mega-menu__grid">
-                    <section aria-labelledby="clinical-departments-title">
-                      <p class="mega-menu__section-title" id="clinical-departments-title">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore Mediva Care Hospital facilities including patient rooms, ICU, operation theatres, diagnostics, emergency, and family spaces." name="description"/>
+<meta content="#0f4c81" name="theme-color"/>
+<title>Hospital Gallery | Mediva Care Hospital</title>
+<link href="../assets/favicon/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<link href="../assets/css/base.css" rel="stylesheet"/>
+<link href="../assets/css/layout.css" rel="stylesheet"/>
+<link href="../assets/css/navigation.css" rel="stylesheet"/>
+<link href="../assets/css/components.css" rel="stylesheet"/>
+<link href="../assets/css/utilities.css" rel="stylesheet"/>
+<link href="../assets/css/animations.css" rel="stylesheet"/>
+<link href="../assets/css/pages.css" rel="stylesheet"/>
+<link href="../assets/css/internal.css" rel="stylesheet"/><link href="../assets/css/responsive.css" rel="stylesheet"/>
+</head>
+<body data-nav-section="more">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" data-header="">
+<div class="topbar">
+<div class="container topbar__inner">
+<div class="topbar__group">
+<span class="topbar__item topbar__item--open">
+<span aria-hidden="true" class="topbar__status-dot"></span>
+<span>Open 24 hours, every day</span>
+</span>
+<a class="topbar__item topbar__item--location" href="../pages/contact.html">
+<i aria-hidden="true" class="fa-solid fa-location-dot"></i>
+<span>Sector 18, New Delhi</span>
+</a>
+</div>
+<div class="topbar__group">
+<a class="topbar__link topbar__link--phone" href="tel:+911145678900">
+<i aria-hidden="true" class="fa-solid fa-phone"></i>
+<span>+91 11 4567 8900</span>
+</a>
+<a class="topbar__link topbar__link--email" href="mailto:care@medivahospital.com">
+<i aria-hidden="true" class="fa-regular fa-envelope"></i>
+<span>care@medivahospital.com</span>
+</a>
+<a class="topbar__emergency" href="tel:+911145678900">
+<i aria-hidden="true" class="fa-solid fa-truck-medical"></i>
+<span>Emergency</span>
+</a>
+</div>
+</div>
+</div>
+<div class="navbar">
+<div class="container navbar__inner">
+<a aria-label="Mediva Care Hospital home" class="brand" href="../index.html">
+<img alt="Mediva Care Hospital" class="brand__logo brand__logo--default" height="56" src="../assets/logos/logo.svg" width="220"/>
+<img alt="" aria-hidden="true" class="brand__logo brand__logo--inverse" height="56" src="../assets/logos/logo-white.svg" width="220"/>
+</a>
+<nav aria-label="Primary navigation" class="primary-nav" data-primary-nav="" id="primary-navigation">
+<div class="primary-nav__mobile-header">
+<span class="primary-nav__mobile-title">Explore Mediva</span>
+<button aria-label="Close navigation" class="nav-mobile-close" data-menu-close="" type="button">
+<i aria-hidden="true" class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<ul class="primary-nav__list">
+<li class="nav-item">
+<a class="nav-link" data-nav-key="home" data-nav-link="" href="../index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="about" data-nav-link="" href="../pages/about.html">About</a>
+</li>
+<li class="nav-item nav-item--mega">
+<div class="nav-item__control">
+<a class="nav-link" data-nav-key="departments" data-nav-link="" href="../pages/departments.html">Departments</a>
+<button aria-controls="departments-menu" aria-expanded="false" aria-label="Show departments menu" class="nav-caret" data-dropdown-toggle="" type="button">
+<i aria-hidden="true" class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+<div class="mega-menu" id="departments-menu">
+<div class="mega-menu__grid">
+<section aria-labelledby="clinical-departments-title">
+<p class="mega-menu__section-title" id="clinical-departments-title">
                         Clinical departments
                       </p>
-                      <ul class="mega-menu__links mega-menu__links--two-columns">
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/cardiology.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span>
-                            <span>Cardiology</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/neurology.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></span>
-                            <span>Neurology</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/orthopedics.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-bone" aria-hidden="true"></i></span>
-                            <span>Orthopedics</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/pediatrics.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-child-reaching" aria-hidden="true"></i></span>
-                            <span>Pediatrics</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/dental.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-tooth" aria-hidden="true"></i></span>
-                            <span>Dental Care</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/emergency.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-truck-medical" aria-hidden="true"></i></span>
-                            <span>Emergency Care</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </section>
-
-                    <section aria-labelledby="explore-care-title">
-                      <p class="mega-menu__section-title" id="explore-care-title">Explore care</p>
-                      <ul class="mega-menu__links">
-                        <li><a class="mega-menu__link" href="../pages/departments.html" data-nav-link><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i><span>All departments</span></a></li>
-                        <li><a class="mega-menu__link" href="../pages/doctors.html" data-nav-link><i class="fa-solid fa-user-doctor" aria-hidden="true"></i><span>Find a specialist</span></a></li>
-                        <li><a class="mega-menu__link" href="../pages/packages.html" data-nav-link><i class="fa-solid fa-notes-medical" aria-hidden="true"></i><span>Preventive health checks</span></a></li>
-                        <li><a class="mega-menu__link" href="../pages/contact.html" data-nav-link><i class="fa-regular fa-calendar-check" aria-hidden="true"></i><span>Request an appointment</span></a></li>
-                      </ul>
-                    </section>
-
-                    <article class="mega-menu__feature">
-                      <span class="mega-menu__feature-icon"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></span>
-                      <p class="mega-menu__feature-title">Need urgent care?</p>
-                      <p>Our emergency team is available around the clock for rapid assessment and coordinated care.</p>
-                      <a href="tel:+911145678900">Call emergency desk <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                    </article>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/doctors.html" data-nav-link data-nav-key="doctors">Doctors</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/packages.html" data-nav-link data-nav-key="packages">Packages</a>
-              </li>
-              <li class="nav-item nav-item--dropdown">
-                <div class="nav-item__control">
-                  <button
-                    class="nav-button nav-button--dropdown"
-                    type="button"
-                    aria-expanded="false"
-                    aria-controls="more-menu"
-                    data-dropdown-toggle
-                    data-nav-key="more"
-                  >
-                    <span>More</span>
-                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                  </button>
-                </div>
-                <ul class="nav-submenu" id="more-menu">
-                  <li><a class="nav-submenu__link" href="../pages/testimonials.html" data-nav-link><i class="fa-regular fa-comments" aria-hidden="true"></i>Testimonials</a></li>
-                  <li><a class="nav-submenu__link" href="../pages/gallery.html" data-nav-link><i class="fa-regular fa-images" aria-hidden="true"></i>Gallery</a></li>
-                  <li><a class="nav-submenu__link" href="../pages/privacy-policy.html" data-nav-link><i class="fa-solid fa-user-shield" aria-hidden="true"></i>Privacy Policy</a></li>
-                  <li><a class="nav-submenu__link" href="../pages/terms.html" data-nav-link><i class="fa-regular fa-file-lines" aria-hidden="true"></i>Terms of Use</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/contact.html" data-nav-link data-nav-key="contact">Contact</a>
-              </li>
-            </ul>
-
-            <div class="primary-nav__mobile-actions">
-              <a class="button button--danger button--block" href="tel:+911145678900">
-                <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
+<ul class="mega-menu__links mega-menu__links--two-columns">
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/cardiology.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-heart-pulse"></i></span>
+<span>Cardiology</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/neurology.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-brain"></i></span>
+<span>Neurology</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/orthopedics.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-bone"></i></span>
+<span>Orthopedics</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/pediatrics.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-child-reaching"></i></span>
+<span>Pediatrics</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/dental.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-tooth"></i></span>
+<span>Dental Care</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/emergency.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-truck-medical"></i></span>
+<span>Emergency Care</span>
+</a>
+</li>
+</ul>
+</section>
+<section aria-labelledby="explore-care-title">
+<p class="mega-menu__section-title" id="explore-care-title">Explore care</p>
+<ul class="mega-menu__links">
+<li><a class="mega-menu__link" data-nav-link="" href="../pages/departments.html"><i aria-hidden="true" class="fa-solid fa-table-cells-large"></i><span>All departments</span></a></li>
+<li><a class="mega-menu__link" data-nav-link="" href="../pages/doctors.html"><i aria-hidden="true" class="fa-solid fa-user-doctor"></i><span>Find a specialist</span></a></li>
+<li><a class="mega-menu__link" data-nav-link="" href="../pages/packages.html"><i aria-hidden="true" class="fa-solid fa-notes-medical"></i><span>Preventive health checks</span></a></li>
+<li><a class="mega-menu__link" data-nav-link="" href="../pages/contact.html"><i aria-hidden="true" class="fa-regular fa-calendar-check"></i><span>Request an appointment</span></a></li>
+</ul>
+</section>
+<article class="mega-menu__feature">
+<span class="mega-menu__feature-icon"><i aria-hidden="true" class="fa-solid fa-shield-heart"></i></span>
+<p class="mega-menu__feature-title">Need urgent care?</p>
+<p>Our emergency team is available around the clock for rapid assessment and coordinated care.</p>
+<a href="tel:+911145678900">Call emergency desk <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</article>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="doctors" data-nav-link="" href="../pages/doctors.html">Doctors</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="packages" data-nav-link="" href="../pages/packages.html">Packages</a>
+</li>
+<li class="nav-item nav-item--dropdown">
+<div class="nav-item__control">
+<button aria-controls="more-menu" aria-expanded="false" class="nav-button nav-button--dropdown" data-dropdown-toggle="" data-nav-key="more" type="button">
+<span>More</span>
+<i aria-hidden="true" class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+<ul class="nav-submenu" id="more-menu">
+<li><a class="nav-submenu__link" data-nav-link="" href="../pages/testimonials.html"><i aria-hidden="true" class="fa-regular fa-comments"></i>Testimonials</a></li>
+<li><a class="nav-submenu__link" data-nav-link="" href="../pages/gallery.html"><i aria-hidden="true" class="fa-regular fa-images"></i>Gallery</a></li>
+<li><a class="nav-submenu__link" data-nav-link="" href="../pages/privacy-policy.html"><i aria-hidden="true" class="fa-solid fa-user-shield"></i>Privacy Policy</a></li>
+<li><a class="nav-submenu__link" data-nav-link="" href="../pages/terms.html"><i aria-hidden="true" class="fa-regular fa-file-lines"></i>Terms of Use</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="contact" data-nav-link="" href="../pages/contact.html">Contact</a>
+</li>
+</ul>
+<div class="primary-nav__mobile-actions">
+<a class="button button--danger button--block" href="tel:+911145678900">
+<i aria-hidden="true" class="fa-solid fa-truck-medical"></i>
                 Emergency Call
               </a>
-              <a class="button button--primary button--block" href="../pages/contact.html">
-                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+<a class="button button--primary button--block" href="../pages/contact.html">
+<i aria-hidden="true" class="fa-regular fa-calendar-check"></i>
                 Book Appointment
               </a>
-            </div>
-          </nav>
-
-          <div class="navbar__actions">
-            <button class="nav-icon-button" type="button" aria-label="Search website" data-search-open>
-              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-            </button>
-            <button
-              class="nav-icon-button"
-              type="button"
-              aria-label="Switch to dark theme"
-              aria-pressed="false"
-              data-theme-toggle
-            >
-              <i class="fa-regular fa-moon nav-icon-button__moon" aria-hidden="true"></i>
-              <i class="fa-regular fa-sun nav-icon-button__sun" aria-hidden="true"></i>
-            </button>
-            <a class="button button--primary navbar__appointment" href="../pages/contact.html">
-              <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+</div>
+</nav>
+<div class="navbar__actions">
+<button aria-label="Search website" class="nav-icon-button" data-search-open="" type="button">
+<i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
+</button>
+<button aria-label="Switch to dark theme" aria-pressed="false" class="nav-icon-button" data-theme-toggle="" type="button">
+<i aria-hidden="true" class="fa-regular fa-moon nav-icon-button__moon"></i>
+<i aria-hidden="true" class="fa-regular fa-sun nav-icon-button__sun"></i>
+</button>
+<a class="button button--primary navbar__appointment" href="../pages/contact.html">
+<i aria-hidden="true" class="fa-regular fa-calendar-check"></i>
               Book Appointment
             </a>
-            <button
-              class="nav-menu-toggle"
-              type="button"
-              aria-label="Open navigation"
-              aria-expanded="false"
-              aria-controls="primary-navigation"
-              data-menu-toggle
-            >
-              <span class="nav-menu-toggle__line"></span>
-              <span class="nav-menu-toggle__line"></span>
-              <span class="nav-menu-toggle__line"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <button class="nav-backdrop" type="button" aria-label="Close navigation" data-menu-backdrop></button>
-    </header>
-
-    <dialog class="site-search-dialog" aria-labelledby="site-search-title" data-search-dialog>
-      <div class="site-search-dialog__panel">
-        <div class="site-search-dialog__header">
-          <div>
-            <p class="site-search-dialog__eyebrow">Quick access</p>
-            <h2 class="site-search-dialog__title" id="site-search-title">How can we help?</h2>
-          </div>
-          <button class="site-search-dialog__close" type="button" aria-label="Close search" data-search-close>
-            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-          </button>
-        </div>
-
-        <form class="site-search-form" role="search" data-site-search-form>
-          <label class="visually-hidden" for="site-search-input">Search hospital pages</label>
-          <i class="fa-solid fa-magnifying-glass site-search-form__icon" aria-hidden="true"></i>
-          <input
-            class="site-search-form__input"
-            id="site-search-input"
-            name="query"
-            type="search"
-            placeholder="Search departments, doctors, packages..."
-            autocomplete="off"
-            data-site-search-input
-          />
-          <span class="site-search-form__shortcut" aria-hidden="true">Ctrl K</span>
-        </form>
-        <p class="site-search-dialog__hint">Press Enter to open the first result or Escape to close.</p>
-        <div class="site-search-results" aria-live="polite" data-site-search-results></div>
-      </div>
-    </dialog>
-    <main id="main-content">
-      <section class="setup-hero section">
-        <div class="container setup-hero__content">
-          <p class="eyebrow">Mediva Care Hospital</p>
-          <h1>Inside Mediva Care Hospital</h1>
-          <p>View Mediva Care Hospital facilities, treatment areas, diagnostic technology, patient rooms, and care environments.</p>
-          <a class="button button--primary" href="contact.html">Book an Appointment</a>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="container"><p>&copy; <span data-current-year></span> Mediva Care Hospital.</p></div>
-    </footer>
-    <script src="../assets/js/config.js" defer></script>
-    <script src="../assets/js/navigation.js" defer></script>
-    <script src="../assets/js/main.js" defer></script>
-  </body>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="nav-menu-toggle" data-menu-toggle="" type="button">
+<span class="nav-menu-toggle__line"></span>
+<span class="nav-menu-toggle__line"></span>
+<span class="nav-menu-toggle__line"></span>
+</button>
+</div>
+</div>
+</div>
+<button aria-label="Close navigation" class="nav-backdrop" data-menu-backdrop="" type="button"></button>
+</header>
+<dialog aria-labelledby="site-search-title" class="site-search-dialog" data-search-dialog="">
+<div class="site-search-dialog__panel">
+<div class="site-search-dialog__header">
+<div>
+<p class="site-search-dialog__eyebrow">Quick access</p>
+<h2 class="site-search-dialog__title" id="site-search-title">How can we help?</h2>
+</div>
+<button aria-label="Close search" class="site-search-dialog__close" data-search-close="" type="button">
+<i aria-hidden="true" class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<form class="site-search-form" data-site-search-form="" role="search">
+<label class="visually-hidden" for="site-search-input">Search hospital pages</label>
+<i aria-hidden="true" class="fa-solid fa-magnifying-glass site-search-form__icon"></i>
+<input autocomplete="off" class="site-search-form__input" data-site-search-input="" id="site-search-input" name="query" placeholder="Search departments, doctors, packages..." type="search"/>
+<span aria-hidden="true" class="site-search-form__shortcut">Ctrl K</span>
+</form>
+<p class="site-search-dialog__hint">Press Enter to open the first result or Escape to close.</p>
+<div aria-live="polite" class="site-search-results" data-site-search-results=""></div>
+</div>
+</dialog>
+<main id="main-content">
+<section class="page-hero">
+<div class="container page-hero__layout">
+<div class="page-hero__content">
+<nav aria-label="Breadcrumb" class="breadcrumb"><a href="../index.html">Home</a><i aria-hidden="true" class="fa-solid fa-chevron-right"></i><span aria-current="page">Gallery</span></nav>
+<span class="page-hero__eyebrow">Gallery</span>
+<h1>Step inside Mediva Care</h1>
+<p class="page-hero__lead">Explore the spaces, technology, and thoughtful details that support safe, efficient, and comfortable care.</p>
+<div class="page-hero__actions"><a class="button button--accent button--lg" href="contact.html">Arrange a Visit</a><a class="button button--outline-light button--lg" href="about.html">About Our Hospital</a></div>
+</div>
+<div class="page-hero__visual"><img alt="" aria-hidden="true" height="520" src="../assets/images/gallery/hospital-exterior.svg" width="620"/><div class="page-hero__metric"><i class="fa-solid fa-building-circle-check"></i><div><strong>Purpose-built</strong><span>For clinical safety and patient comfort</span></div></div></div>
+</div>
+</section>
+<section class="internal-section"><div class="container"><div class="filter-toolbar" data-filter-group="gallery"><div><div class="section-heading"><span class="section-heading__eyebrow">Explore our facilities</span><h2 class="section-heading__title">A closer look at the care environment</h2><p class="section-heading__text">Select an image to view it in a larger accessible lightbox.</p></div></div><div class="filter-toolbar__controls"><button aria-pressed="true" class="filter-chip is-active" data-filter-button="all" type="button">All</button><button class="filter-chip" data-filter-button="facilities" type="button">Facilities</button><button class="filter-chip" data-filter-button="critical-care" type="button">Critical Care</button><button class="filter-chip" data-filter-button="diagnostics" type="button">Diagnostics</button><button class="filter-chip" data-filter-button="emergency" type="button">Emergency</button></div></div><div class="gallery-grid"><button class="gallery-card" data-filter-category="campus" data-filter-target="gallery" data-filter-text="Hospital Exterior Campus A welcoming multispecialty care campus designed for easy navigation." data-gallery-alt="Illustration of hospital exterior" data-gallery-description="A welcoming multispecialty care campus designed for easy navigation." data-gallery-open="" data-gallery-src="../assets/images/gallery/hospital-exterior.svg" data-gallery-title="Hospital Exterior" type="button"><img alt="Illustration of hospital exterior" height="640" loading="lazy" src="../assets/images/gallery/hospital-exterior.svg" width="960"/><span class="gallery-card__caption"><strong>Hospital Exterior</strong><span>Campus</span></span></button><button class="gallery-card" data-filter-category="facilities" data-filter-target="gallery" data-filter-text="Reception Lobby Facilities A calm arrival space with dedicated patient support desks." data-gallery-alt="Illustration of reception lobby" data-gallery-description="A calm arrival space with dedicated patient support desks." data-gallery-open="" data-gallery-src="../assets/images/gallery/reception-lobby.svg" data-gallery-title="Reception Lobby" type="button"><img alt="Illustration of reception lobby" height="640" loading="lazy" src="../assets/images/gallery/reception-lobby.svg" width="960"/><span class="gallery-card__caption"><strong>Reception Lobby</strong><span>Facilities</span></span></button><button class="gallery-card" data-filter-category="critical-care" data-filter-target="gallery" data-filter-text="Advanced ICU Critical Care Technology-supported intensive care with continuous clinical monitoring." data-gallery-alt="Illustration of advanced icu" data-gallery-description="Technology-supported intensive care with continuous clinical monitoring." data-gallery-open="" data-gallery-src="../assets/images/gallery/advanced-icu.svg" data-gallery-title="Advanced ICU" type="button"><img alt="Illustration of advanced icu" height="640" loading="lazy" src="../assets/images/gallery/advanced-icu.svg" width="960"/><span class="gallery-card__caption"><strong>Advanced ICU</strong><span>Critical Care</span></span></button><button class="gallery-card" data-filter-category="surgery" data-filter-target="gallery" data-filter-text="Modular Operation Theatre Surgery Controlled surgical environments designed around safety protocols." data-gallery-alt="Illustration of modular operation theatre" data-gallery-description="Controlled surgical environments designed around safety protocols." data-gallery-open="" data-gallery-src="../assets/images/gallery/operation-theatre.svg" data-gallery-title="Modular Operation Theatre" type="button"><img alt="Illustration of modular operation theatre" height="640" loading="lazy" src="../assets/images/gallery/operation-theatre.svg" width="960"/><span class="gallery-card__caption"><strong>Modular Operation Theatre</strong><span>Surgery</span></span></button><button class="gallery-card" data-filter-category="diagnostics" data-filter-target="gallery" data-filter-text="Diagnostic Laboratory Diagnostics Integrated laboratory services supporting timely clinical decisions." data-gallery-alt="Illustration of diagnostic laboratory" data-gallery-description="Integrated laboratory services supporting timely clinical decisions." data-gallery-open="" data-gallery-src="../assets/images/gallery/diagnostic-lab.svg" data-gallery-title="Diagnostic Laboratory" type="button"><img alt="Illustration of diagnostic laboratory" height="640" loading="lazy" src="../assets/images/gallery/diagnostic-lab.svg" width="960"/><span class="gallery-card__caption"><strong>Diagnostic Laboratory</strong><span>Diagnostics</span></span></button><button class="gallery-card" data-filter-category="cardiology" data-filter-target="gallery" data-filter-text="Cardiac Care Suite Cardiology Specialized monitoring and intervention spaces for heart care." data-gallery-alt="Illustration of cardiac care suite" data-gallery-description="Specialized monitoring and intervention spaces for heart care." data-gallery-open="" data-gallery-src="../assets/images/gallery/cardiac-suite.svg" data-gallery-title="Cardiac Care Suite" type="button"><img alt="Illustration of cardiac care suite" height="640" loading="lazy" src="../assets/images/gallery/cardiac-suite.svg" width="960"/><span class="gallery-card__caption"><strong>Cardiac Care Suite</strong><span>Cardiology</span></span></button><button class="gallery-card" data-filter-category="pediatrics" data-filter-target="gallery" data-filter-text="Pediatric Wing Pediatrics Friendly clinical spaces created to reduce anxiety for children." data-gallery-alt="Illustration of pediatric wing" data-gallery-description="Friendly clinical spaces created to reduce anxiety for children." data-gallery-open="" data-gallery-src="../assets/images/gallery/pediatric-wing.svg" data-gallery-title="Pediatric Wing" type="button"><img alt="Illustration of pediatric wing" height="640" loading="lazy" src="../assets/images/gallery/pediatric-wing.svg" width="960"/><span class="gallery-card__caption"><strong>Pediatric Wing</strong><span>Pediatrics</span></span></button><button class="gallery-card" data-filter-category="patient-rooms" data-filter-target="gallery" data-filter-text="Private Patient Room Patient Rooms Comfortable rooms balancing clinical access, privacy, and family support." data-gallery-alt="Illustration of private patient room" data-gallery-description="Comfortable rooms balancing clinical access, privacy, and family support." data-gallery-open="" data-gallery-src="../assets/images/gallery/private-room.svg" data-gallery-title="Private Patient Room" type="button"><img alt="Illustration of private patient room" height="640" loading="lazy" src="../assets/images/gallery/private-room.svg" width="960"/><span class="gallery-card__caption"><strong>Private Patient Room</strong><span>Patient Rooms</span></span></button><button class="gallery-card" data-filter-category="support-services" data-filter-target="gallery" data-filter-text="Hospital Pharmacy Support Services In-hospital medication support with prescription review." data-gallery-alt="Illustration of hospital pharmacy" data-gallery-description="In-hospital medication support with prescription review." data-gallery-open="" data-gallery-src="../assets/images/gallery/pharmacy.svg" data-gallery-title="Hospital Pharmacy" type="button"><img alt="Illustration of hospital pharmacy" height="640" loading="lazy" src="../assets/images/gallery/pharmacy.svg" width="960"/><span class="gallery-card__caption"><strong>Hospital Pharmacy</strong><span>Support Services</span></span></button><button class="gallery-card" data-filter-category="rehabilitation" data-filter-target="gallery" data-filter-text="Rehabilitation Studio Rehabilitation Supervised recovery spaces for mobility, strength, and confidence." data-gallery-alt="Illustration of rehabilitation studio" data-gallery-description="Supervised recovery spaces for mobility, strength, and confidence." data-gallery-open="" data-gallery-src="../assets/images/gallery/rehabilitation.svg" data-gallery-title="Rehabilitation Studio" type="button"><img alt="Illustration of rehabilitation studio" height="640" loading="lazy" src="../assets/images/gallery/rehabilitation.svg" width="960"/><span class="gallery-card__caption"><strong>Rehabilitation Studio</strong><span>Rehabilitation</span></span></button><button class="gallery-card" data-filter-category="emergency" data-filter-target="gallery" data-filter-text="Emergency Ambulance Bay Emergency Direct access for rapid triage and emergency stabilization." data-gallery-alt="Illustration of emergency ambulance bay" data-gallery-description="Direct access for rapid triage and emergency stabilization." data-gallery-open="" data-gallery-src="../assets/images/gallery/ambulance-bay.svg" data-gallery-title="Emergency Ambulance Bay" type="button"><img alt="Illustration of emergency ambulance bay" height="640" loading="lazy" src="../assets/images/gallery/ambulance-bay.svg" width="960"/><span class="gallery-card__caption"><strong>Emergency Ambulance Bay</strong><span>Emergency</span></span></button><button class="gallery-card" data-filter-category="facilities" data-filter-target="gallery" data-filter-text="Family Lounge Facilities Quiet support spaces for families during inpatient care." data-gallery-alt="Illustration of family lounge" data-gallery-description="Quiet support spaces for families during inpatient care." data-gallery-open="" data-gallery-src="../assets/images/gallery/family-lounge.svg" data-gallery-title="Family Lounge" type="button"><img alt="Illustration of family lounge" height="640" loading="lazy" src="../assets/images/gallery/family-lounge.svg" width="960"/><span class="gallery-card__caption"><strong>Family Lounge</strong><span>Facilities</span></span></button></div><div class="filter-empty" data-filter-empty="gallery"><h3>No images in this category</h3><p>Select another gallery category.</p></div></div></section>
+<dialog aria-labelledby="gallery-lightbox-title" class="gallery-lightbox" data-gallery-lightbox=""><div class="gallery-lightbox__media"><button aria-label="Close image" class="gallery-lightbox__close" data-lightbox-close="" type="button"><i class="fa-solid fa-xmark"></i></button><img alt="" data-lightbox-image="" src=""/></div><div class="gallery-lightbox__caption"><strong data-lightbox-title="" id="gallery-lightbox-title"></strong><span data-lightbox-description=""></span></div></dialog>
+<section class="internal-section internal-section--soft"><div class="container"><div class="section-heading section-heading--center"><span class="section-heading__eyebrow">Designed around care</span><h2 class="section-heading__title">Clinical environments should work for people</h2><p class="section-heading__text">Our facilities balance advanced care requirements with natural light, privacy, clear wayfinding, and family comfort.</p></div><div class="feature-grid"><article class="feature-card"><span class="feature-card__icon"><i class="fa-solid fa-shield-virus"></i></span><h3>Safety by design</h3><p>Controlled zones, infection-prevention workflows, and clear clinical circulation.</p></article><article class="feature-card"><span class="feature-card__icon"><i class="fa-solid fa-universal-access"></i></span><h3>Accessible movement</h3><p>Step-free access, clear signage, and supportive assistance across key areas.</p></article><article class="feature-card"><span class="feature-card__icon"><i class="fa-solid fa-leaf"></i></span><h3>Healing atmosphere</h3><p>Calm colors, daylight, privacy, and quieter spaces help reduce stress.</p></article></div></div></section><section class="internal-section internal-section--compact"><div class="container"><div class="cta-band"><div class="cta-band__inner"><div><h2>Would you like to visit Mediva?</h2><p>Arrange a hospital tour, ask about admission facilities, or speak with our patient experience team.</p></div><div class="button-group"><a class="button button--accent button--lg" href="../pages/contact.html"><i aria-hidden="true" class="fa-regular fa-calendar-check"></i>Book Appointment</a><a class="button button--outline-light button--lg" href="tel:+911145678900"><i aria-hidden="true" class="fa-solid fa-phone"></i>Call Care Desk</a></div></div></div></div></section></main>
+<footer class="site-footer site-footer--complete">
+<div class="container site-footer__newsletter">
+<div>
+<span class="site-footer__newsletter-icon"><i aria-hidden="true" class="fa-regular fa-envelope-open"></i></span>
+<div><h2>Health guidance, delivered thoughtfully</h2><p>Receive practical wellness tips and hospital updates. No spam.</p></div>
+</div>
+<div>
+<form class="newsletter-form" data-newsletter-form="">
+<label class="visually-hidden" for="newsletter-email-pages-gallery">Email address</label>
+<input autocomplete="email" id="newsletter-email-pages-gallery" name="email" placeholder="Your email address" required="" type="email"/>
+<button class="button button--accent" type="submit">Subscribe</button>
+</form>
+<p aria-live="polite" class="form-status" data-newsletter-status=""></p>
+</div>
+</div>
+<div class="container site-footer__grid">
+<div class="site-footer__about">
+<a aria-label="Mediva Care Hospital home" href="../index.html"><img alt="Mediva Care Hospital" height="56" src="../assets/logos/logo-white.svg" width="220"/></a>
+<p>Advanced medicine, compassionate teams, and dependable support for every stage of your health journey.</p>
+<div class="site-footer__social"><a aria-label="Mediva Care on Facebook" href="#"><i aria-hidden="true" class="fa-brands fa-facebook-f"></i></a><a aria-label="Mediva Care on Instagram" href="#"><i aria-hidden="true" class="fa-brands fa-instagram"></i></a><a aria-label="Mediva Care on LinkedIn" href="#"><i aria-hidden="true" class="fa-brands fa-linkedin-in"></i></a><a aria-label="Mediva Care on YouTube" href="#"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a></div>
+</div>
+<div><h3>Quick Links</h3><ul class="site-footer__links"><li><a href="../pages/about.html">About Us</a></li><li><a href="../pages/doctors.html">Our Doctors</a></li><li><a href="../pages/packages.html">Health Packages</a></li><li><a href="../pages/testimonials.html">Patient Stories</a></li><li><a href="../pages/contact.html">Contact Us</a></li></ul></div>
+<div><h3>Departments</h3><ul class="site-footer__links"><li><a href="../pages/services/cardiology.html">Cardiology</a></li><li><a href="../pages/services/neurology.html">Neurology</a></li><li><a href="../pages/services/orthopedics.html">Orthopedics</a></li><li><a href="../pages/services/pediatrics.html">Pediatrics</a></li><li><a href="../pages/services/emergency.html">Emergency Care</a></li></ul></div>
+<div><h3>Contact</h3><ul class="site-footer__contact"><li><i aria-hidden="true" class="fa-solid fa-location-dot"></i><span>Sector 18, New Delhi 110075</span></li><li><i aria-hidden="true" class="fa-solid fa-phone"></i><a href="tel:+911145678900">+91 11 4567 8900</a></li><li><i aria-hidden="true" class="fa-regular fa-envelope"></i><a href="mailto:care@medivahospital.com">care@medivahospital.com</a></li><li><i aria-hidden="true" class="fa-regular fa-clock"></i><span>Open 24 hours, every day</span></li></ul></div>
+</div>
+<div class="site-footer__bottom"><div class="container"><p>© <span data-current-year=""></span> Mediva Care Hospital. All rights reserved.</p><div><a href="../pages/privacy-policy.html">Privacy Policy</a><a href="../pages/terms.html">Terms of Use</a><a href="../pages/contact.html">Accessibility</a></div></div></div>
+</footer>
+<script defer="" src="../assets/js/config.js"></script>
+<script defer="" src="../assets/js/navigation.js"></script>
+<script defer="True" src="../assets/js/forms.js"></script><script defer="True" src="../assets/js/internal-pages.js"></script><script defer="" src="../assets/js/main.js"></script>
+</body>
 </html>

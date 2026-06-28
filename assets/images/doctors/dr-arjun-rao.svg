@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 680" role="img" aria-labelledby="title desc">
+<title id="title">Doctor portrait illustration</title><desc id="desc">Professional illustrated portrait of a Mediva Care specialist.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ede9fe"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+<rect width="640" height="680" rx="36" fill="url(#g)"/><circle cx="510" cy="110" r="90" fill="#4c1d95" opacity=".08"/><circle cx="120" cy="560" r="120" fill="#6d28d9" opacity=".08"/>
+<path d="M182 648c18-148 77-221 138-221s120 73 138 221" fill="#fff"/><path d="M237 447l83 111 83-111c55 31 88 94 100 201H137c12-107 45-170 100-201z" fill="#6d28d9"/>
+<path d="M279 427h82l10 58-51 73-51-73z" fill="#e7b994"/><ellipse cx="320" cy="275" rx="112" ry="136" fill="#e7b994"/>
+<path d="M210 270c0-115 44-178 111-178 78 0 118 54 118 168-31-24-59-64-70-105-45 62-92 90-159 91z" fill="#182233"/>
+<circle cx="279" cy="286" r="6" fill="#172033"/><circle cx="361" cy="286" r="6" fill="#172033"/><path d="M287 343c21 16 45 16 66 0" fill="none" stroke="#9b5c55" stroke-width="6" stroke-linecap="round"/>
+<path d="M246 518c-31 26-47 64-49 114M394 518c31 26 47 64 49 114" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".85"/>
+<circle cx="320" cy="568" r="24" fill="none" stroke="#d7e1ec" stroke-width="9"/><path d="M320 543v-34" stroke="#d7e1ec" stroke-width="9" stroke-linecap="round"/>
+<circle cx="548" cy="598" r="42" fill="#4c1d95" opacity=".9"/><text x="548" y="610" fill="#fff" font-family="Arial,sans-serif" font-weight="700" font-size="30" text-anchor="middle">AR</text>
+</svg>
