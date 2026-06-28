@@ -1,31 +1,115 @@
-/* Mobile-first adjustments for the setup shell. */
-@media (max-width: 56rem) {
+/**
+ * Mediva Care Hospital — Responsive System
+ * Mobile-first breakpoints: 36rem, 48rem, 64rem, 75rem.
+ */
+
+/* Mobile defaults */
+.grid--2,
+.grid--3,
+.grid--4 {
+  grid-template-columns: 1fr;
+}
+
+.site-nav {
+  display: none;
+}
+
+/* Small tablets and large phones: 576px */
+@media (min-width: 36rem) {
+  .form-row--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:col-6 { grid-column: span 6; }
+  .sm\:col-12 { grid-column: span 12; }
+}
+
+/* Tablets: 768px */
+@media (min-width: 48rem) {
+  .grid--2,
+  .grid--4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .split {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:col-3 { grid-column: span 3; }
+  .md\:col-4 { grid-column: span 4; }
+  .md\:col-5 { grid-column: span 5; }
+  .md\:col-6 { grid-column: span 6; }
+  .md\:col-7 { grid-column: span 7; }
+  .md\:col-8 { grid-column: span 8; }
+  .md\:col-9 { grid-column: span 9; }
+  .md\:col-12 { grid-column: span 12; }
+
+  .md\:u-text-left { text-align: left !important; }
+  .md\:u-text-center { text-align: center !important; }
+}
+
+/* Laptops: 1024px */
+@media (min-width: 64rem) {
   .site-nav {
-    display: none;
+    display: flex;
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:col-3 { grid-column: span 3; }
+  .lg\:col-4 { grid-column: span 4; }
+  .lg\:col-5 { grid-column: span 5; }
+  .lg\:col-6 { grid-column: span 6; }
+  .lg\:col-7 { grid-column: span 7; }
+  .lg\:col-8 { grid-column: span 8; }
+  .lg\:col-9 { grid-column: span 9; }
+  .lg\:col-12 { grid-column: span 12; }
+}
+
+/* Desktop: 1200px */
+@media (min-width: 75rem) {
+  :root {
+    --header-height: 5.25rem;
   }
 }
 
-@media (max-width: 38rem) {
+/* Compact mobile behavior */
+@media (max-width: 47.999rem) {
   .site-header .button {
     display: none;
   }
 
-  .button-group .button {
+  .button-group--mobile-stack {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .button-group--mobile-stack .button {
     width: 100%;
+  }
+
+  .card__footer {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
+@media (max-width: 35.999rem) {
+  .button-group .button {
+    width: 100%;
   }
 
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+  .section-heading__text {
+    font-size: var(--font-size-base);
   }
 }

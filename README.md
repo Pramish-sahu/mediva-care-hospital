@@ -53,3 +53,21 @@ Add production EmailJS values only in `assets/js/config.js`. Never commit privat
 - Use lowercase, hyphen-separated filenames.
 - Compress images before committing.
 - Add explicit image `width` and `height` in HTML to reduce layout shift.
+
+## Design system
+
+Prompt 2 adds a complete reusable CSS design system:
+
+- Brand, neutral, and feedback color tokens
+- Fluid typography scale using Poppins and Inter
+- Consistent spacing, radius, border, shadow, motion, and z-index tokens
+- Responsive containers and a 12-column grid
+- Reusable buttons, cards, badges, icons, forms, alerts, and section headings
+- Utility classes and reduced-motion-safe animation helpers
+- Mobile-first breakpoints at 576px, 768px, 1024px, and 1200px
+
+Open the visual reference page at:
+
+```text
+http://localhost:8000/pages/design-system.html
+```

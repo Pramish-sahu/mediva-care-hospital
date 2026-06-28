@@ -1,7 +1,11 @@
-/* Page-level starter styles. Detailed section styling is added with each page phase. */
+/**
+ * Mediva Care Hospital — Page-Specific Styles
+ * Kept intentionally small; shared visual rules belong to the design system.
+ */
+
 .setup-hero {
   display: grid;
-  min-height: calc(100svh - 5rem);
+  min-height: calc(100svh - var(--header-height));
   place-items: center;
   overflow: hidden;
   background:
@@ -16,26 +20,28 @@
 }
 
 .setup-hero h1 {
-  font-size: clamp(2.75rem, 8vw, 6rem);
-  letter-spacing: -0.045em;
+  margin-bottom: var(--space-6);
+  font-size: var(--font-size-display);
 }
 
 .setup-hero p:not(.eyebrow) {
   max-width: 44rem;
   margin-inline: auto;
+  color: var(--color-text-muted);
   font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: var(--line-height-relaxed);
 }
 
 .setup-hero .button-group {
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: var(--space-8);
 }
 
 .error-page {
   display: grid;
   min-height: 100svh;
   place-items: center;
-  padding: 2rem;
+  padding: var(--space-8);
   text-align: center;
 }
 
@@ -44,5 +50,102 @@
 }
 
 .error-page img {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto var(--space-6);
 }
+
+/* Design system reference page */
+.design-system-hero {
+  padding-block: clamp(var(--space-16), 9vw, var(--space-28));
+  color: rgb(255 255 255 / 78%);
+  background:
+    radial-gradient(circle at 85% 20%, rgb(20 184 166 / 24%), transparent 24rem),
+    var(--gradient-dark);
+}
+
+.design-system-hero h1 {
+  max-width: 54rem;
+  margin-bottom: var(--space-5);
+  color: var(--color-white);
+}
+
+.design-system-hero p {
+  max-width: 42rem;
+  font-size: var(--font-size-lg);
+}
+
+.design-system-block + .design-system-block {
+  margin-top: var(--space-16);
+}
+
+.design-system-label {
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: var(--border-default);
+}
+
+.swatch {
+  overflow: hidden;
+  border: var(--border-default);
+  border-radius: var(--radius-xl);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.swatch__color {
+  min-height: 7rem;
+  background: var(--swatch-color);
+}
+
+.swatch__body {
+  padding: var(--space-4);
+}
+
+.swatch__body strong,
+.swatch__body span {
+  display: block;
+}
+
+.swatch__body span {
+  color: var(--color-text-subtle);
+  font-size: var(--font-size-xs);
+}
+
+.token-row {
+  display: flex;
+  min-height: 4rem;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-4) 0;
+  border-bottom: var(--border-default);
+}
+
+.token-row:last-child {
+  border-bottom: 0;
+}
+
+.token-row__sample {
+  width: var(--sample-size, 2rem);
+  height: var(--sample-size, 2rem);
+  flex: 0 0 auto;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary-100);
+}
+
+.design-system-swatches {
+  --grid-min: 11rem;
+}
+
+.stack--6 {
+  --stack-gap: var(--space-6);
+}
+
+.swatch__color--primary { --swatch-color: #0f4c81; }
+.swatch__color--secondary { --swatch-color: #2563eb; }
+.swatch__color--accent { --swatch-color: #14b8a6; }
+.swatch__color--danger { --swatch-color: #ef4444; }
+.swatch__color--dark { --swatch-color: #0f172a; }
+.swatch__color--background { --swatch-color: #f8fafc; }
+
+.token-row__sample--4 { --sample-size: var(--space-4); }
+.token-row__sample--6 { --sample-size: var(--space-6); }
+.token-row__sample--8 { --sample-size: var(--space-8); }

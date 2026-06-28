@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mediva Care Hospital visual design system and reusable component reference." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#0f4c81" />
+    <title>Design System | Mediva Care Hospital</title>
+
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/utilities.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" data-header>
+      <div class="container site-header__inner">
+        <a class="brand" href="../index.html" aria-label="Mediva Care Hospital home">
+          <img
+            class="brand__logo"
+            src="../assets/logos/logo.svg"
+            alt="Mediva Care Hospital"
+            width="220"
+            height="56"
+          />
+        </a>
+        <nav class="site-nav" aria-label="Design system navigation">
+          <a href="#colors">Colors</a>
+          <a href="#typography">Typography</a>
+          <a href="#buttons">Buttons</a>
+          <a href="#cards">Cards</a>
+          <a href="#forms">Forms</a>
+        </nav>
+        <a class="button button--primary" href="../index.html">View Website</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="design-system-hero">
+        <div class="container">
+          <span class="badge badge--accent u-mb-4">Version 1.0</span>
+          <h1>Mediva Care Hospital Design System</h1>
+          <p>
+            A reusable visual foundation for a premium healthcare experience—built for clarity,
+            trust, accessibility, and consistent responsive implementation.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--surface">
+        <div class="container">
+          <section id="colors" class="design-system-block" aria-labelledby="colors-title">
+            <div class="design-system-label">
+              <p class="eyebrow">Foundation</p>
+              <h2 id="colors-title">Color system</h2>
+              <p class="u-text-muted u-mt-4">
+                Brand, accent, semantic, and neutral tokens are defined as CSS custom properties.
+              </p>
+            </div>
+
+            <div class="grid--auto-fit design-system-swatches">
+              <article class="swatch">
+                <div class="swatch__color swatch__color--primary"></div>
+                <div class="swatch__body"><strong>Primary</strong><span>#0F4C81</span></div>
+              </article>
+              <article class="swatch">
+                <div class="swatch__color swatch__color--secondary"></div>
+                <div class="swatch__body"><strong>Secondary</strong><span>#2563EB</span></div>
+              </article>
+              <article class="swatch">
+                <div class="swatch__color swatch__color--accent"></div>
+                <div class="swatch__body"><strong>Accent</strong><span>#14B8A6</span></div>
+              </article>
+              <article class="swatch">
+                <div class="swatch__color swatch__color--danger"></div>
+                <div class="swatch__body"><strong>Danger</strong><span>#EF4444</span></div>
+              </article>
+              <article class="swatch">
+                <div class="swatch__color swatch__color--dark"></div>
+                <div class="swatch__body"><strong>Dark</strong><span>#0F172A</span></div>
+              </article>
+              <article class="swatch">
+                <div class="swatch__color swatch__color--background"></div>
+                <div class="swatch__body"><strong>Background</strong><span>#F8FAFC</span></div>
+              </article>
+            </div>
+          </section>
+
+          <section id="typography" class="design-system-block" aria-labelledby="type-title">
+            <div class="design-system-label">
+              <p class="eyebrow">Hierarchy</p>
+              <h2 id="type-title">Typography</h2>
+              <p class="u-text-muted u-mt-4">
+                Poppins creates authoritative headings, while Inter keeps long-form content highly readable.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card__body stack stack--6">
+                <h1>Heading One — Advanced Care</h1>
+                <h2>Heading Two — Clinical Excellence</h2>
+                <h3>Heading Three — Patient-First Medicine</h3>
+                <h4>Heading Four — Trusted Specialists</h4>
+                <h5>Heading Five — Modern Diagnostics</h5>
+                <h6>Heading Six — Compassionate Support</h6>
+                <p class="u-text-lg">
+                  Lead paragraph: clear, confident healthcare communication designed to build trust quickly.
+                </p>
+                <p class="u-text-muted">
+                  Body paragraph: Mediva Care Hospital combines experienced specialists, advanced facilities,
+                  and coordinated support to make every stage of care easier to understand.
+                </p>
+                <small class="u-text-subtle">Supporting text and accessible helper content.</small>
+              </div>
+            </div>
+          </section>
+
+          <section id="buttons" class="design-system-block" aria-labelledby="buttons-title">
+            <div class="design-system-label">
+              <p class="eyebrow">Actions</p>
+              <h2 id="buttons-title">Buttons</h2>
+            </div>
+
+            <div class="stack">
+              <div class="button-group">
+                <a class="button button--primary" href="#buttons">
+                  <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                  Book Appointment
+                </a>
+                <a class="button button--secondary" href="#buttons">Explore Services</a>
+                <a class="button button--accent" href="#buttons">Call Care Team</a>
+                <button class="button button--danger" type="button">Emergency</button>
+                <button class="button button--ghost" type="button">Learn More</button>
+              </div>
+              <div class="button-group">
+                <button class="button button--primary button--sm" type="button">Small Button</button>
+                <button class="button button--primary" type="button">Default Button</button>
+                <button class="button button--primary button--lg" type="button">Large Button</button>
+                <button class="button button--secondary" type="button" disabled>Disabled</button>
+                <button class="button button--secondary button--icon" type="button" aria-label="Search">
+                  <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section id="cards" class="design-system-block" aria-labelledby="cards-title">
+            <div class="design-system-label">
+              <p class="eyebrow">Surfaces</p>
+              <h2 id="cards-title">Cards and badges</h2>
+            </div>
+
+            <div class="grid--3">
+              <article class="card card--interactive">
+                <div class="card__body">
+                  <span class="badge badge--primary u-mb-4">Cardiology</span>
+                  <div class="icon-box icon-box--lg u-mb-6">
+                    <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="card__title">Advanced Heart Care</h3>
+                  <p class="card__text">
+                    Specialist consultation, diagnostics, prevention, and coordinated treatment planning.
+                  </p>
+                  <div class="card__footer">
+                    <a class="button button--ghost button--sm" href="#cards">View Department</a>
+                    <span class="badge badge--success"><span class="badge__dot"></span>Available</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card card--soft">
+                <div class="card__body">
+                  <span class="badge badge--accent u-mb-4">Preventive Care</span>
+                  <div class="icon-box icon-box--accent icon-box--lg u-mb-6">
+                    <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="card__title">Complete Health Check</h3>
+                  <p class="card__text">
+                    A thoughtfully structured screening package for proactive long-term wellbeing.
+                  </p>
+                  <div class="card__footer">
+                    <strong class="u-text-primary">₹4,999</strong>
+                    <span class="badge badge--warning">Popular</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card card--dark">
+                <div class="card__body">
+                  <span class="badge badge--danger u-mb-4">24/7 Emergency</span>
+                  <div class="icon-box icon-box--danger icon-box--lg u-mb-6">
+                    <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="card__title u-text-white">Immediate Medical Support</h3>
+                  <p>Rapid assessment and coordinated critical-care response, available every day.</p>
+                  <div class="card__footer">
+                    <a class="button button--outline-light button--sm" href="tel:+911800000000">Call Now</a>
+                    <span class="badge badge--neutral">Open Now</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="cluster u-mt-8">
+              <span class="badge badge--primary">Primary</span>
+              <span class="badge badge--accent">Accent</span>
+              <span class="badge badge--success">Success</span>
+              <span class="badge badge--warning">Warning</span>
+              <span class="badge badge--danger">Danger</span>
+              <span class="badge badge--neutral">Neutral</span>
+            </div>
+          </section>
+
+          <section id="forms" class="design-system-block" aria-labelledby="forms-title">
+            <div class="design-system-label">
+              <p class="eyebrow">Data entry</p>
+              <h2 id="forms-title">Form system</h2>
+            </div>
+
+            <div class="grid">
+              <div class="col-12 lg:col-7">
+                <form class="card" action="#" method="post">
+                  <div class="card__body form">
+                    <div class="form-row form-row--2">
+                      <div class="form-group">
+                        <label class="form-label" for="patient-name">
+                          Patient name <span class="form-label__required">*</span>
+                        </label>
+                        <div class="input-group">
+                          <i class="input-group__icon fa-regular fa-user" aria-hidden="true"></i>
+                          <input
+                            class="form-control"
+                            id="patient-name"
+                            name="patient-name"
+                            type="text"
+                            placeholder="Enter full name"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="form-label" for="patient-phone">Phone number</label>
+                        <div class="input-group">
+                          <i class="input-group__icon fa-solid fa-phone" aria-hidden="true"></i>
+                          <input
+                            class="form-control"
+                            id="patient-phone"
+                            name="patient-phone"
+                            type="tel"
+                            placeholder="+91 98765 43210"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row form-row--2">
+                      <div class="form-group">
+                        <label class="form-label" for="department">Department</label>
+                        <select class="form-control" id="department" name="department">
+                          <option value="">Select a department</option>
+                          <option>Cardiology</option>
+                          <option>Neurology</option>
+                          <option>Orthopedics</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group form-group--error">
+                        <label class="form-label" for="patient-email">Email address</label>
+                        <input
+                          class="form-control"
+                          id="patient-email"
+                          name="patient-email"
+                          type="email"
+                          value="incorrect-email"
+                          aria-invalid="true"
+                          aria-describedby="email-error"
+                        />
+                        <span class="form-message form-message--error" id="email-error">
+                          Enter a valid email address.
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label" for="message">How can we help?</label>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        placeholder="Briefly describe the care you need"
+                      ></textarea>
+                      <span class="form-help">Do not include confidential medical records in this form.</span>
+                    </div>
+
+                    <label class="check-control">
+                      <input type="checkbox" name="consent" />
+                      <span>I agree to be contacted regarding this appointment request.</span>
+                    </label>
+
+                    <div class="button-group">
+                      <button class="button button--primary" type="submit">Request Appointment</button>
+                      <button class="button button--secondary" type="reset">Clear Form</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <aside class="col-12 lg:col-5 stack" aria-label="Form feedback examples">
+                <div class="alert alert--info">
+                  <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                  <span>Appointment requests are usually confirmed during hospital working hours.</span>
+                </div>
+                <div class="alert alert--success">
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                  <span>Your request was submitted successfully.</span>
+                </div>
+                <div class="alert alert--warning">
+                  <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                  <span>This form is not intended for medical emergencies.</span>
+                </div>
+                <div class="alert alert--danger">
+                  <i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>
+                  <span>Unable to submit. Check the highlighted fields and try again.</span>
+                </div>
+              </aside>
+            </div>
+          </section>
+
+          <section class="design-system-block" aria-labelledby="spacing-title">
+            <div class="design-system-label">
+              <p class="eyebrow">Consistency</p>
+              <h2 id="spacing-title">Spacing, radius, and shadows</h2>
+            </div>
+
+            <div class="grid--3">
+              <article class="card card--flat">
+                <div class="card__body">
+                  <h3 class="card__title">Spacing scale</h3>
+                  <div class="token-row"><span class="token-row__sample token-row__sample--4"></span><code>--space-4</code><span>1rem</span></div>
+                  <div class="token-row"><span class="token-row__sample token-row__sample--6"></span><code>--space-6</code><span>1.5rem</span></div>
+                  <div class="token-row"><span class="token-row__sample token-row__sample--8"></span><code>--space-8</code><span>2rem</span></div>
+                </div>
+              </article>
+
+              <article class="card card--flat">
+                <div class="card__body stack">
+                  <h3 class="card__title">Radius scale</h3>
+                  <div class="u-p-6 u-bg-brand-soft u-rounded-md">Medium radius</div>
+                  <div class="u-p-6 u-bg-brand-soft u-rounded-xl">Extra-large radius</div>
+                  <div class="u-p-6 u-bg-brand-soft u-rounded-full u-text-center">Pill radius</div>
+                </div>
+              </article>
+
+              <article class="card card--flat">
+                <div class="card__body stack">
+                  <h3 class="card__title">Shadow scale</h3>
+                  <div class="u-p-6 u-bg-white u-rounded-lg u-shadow-sm">Small shadow</div>
+                  <div class="u-p-6 u-bg-white u-rounded-lg u-shadow-md">Medium shadow</div>
+                  <div class="u-p-6 u-bg-white u-rounded-lg u-shadow-lg">Large shadow</div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span data-current-year></span> Mediva Care Hospital Design System.</p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/navigation.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>
