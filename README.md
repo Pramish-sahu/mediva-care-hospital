@@ -120,3 +120,8 @@ Detailed implementation notes are available in `docs/homepage.md`.
 ## Prompt 5: Internal Pages
 
 All core internal pages are fully designed and responsive. See `docs/internal-pages.md` for the page inventory and production notes.
+
+
+## Prompt 6: Service Pages
+
+Six complete specialty pages now share a reusable service-page system for hero content, symptoms, treatments, doctors, facilities, FAQs, and appointment conversion. See `docs/service-pages.md` for implementation and production notes.
