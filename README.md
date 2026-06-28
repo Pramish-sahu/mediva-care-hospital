@@ -125,3 +125,7 @@ All core internal pages are fully designed and responsive. See `docs/internal-pa
 ## Prompt 6: Service Pages
 
 Six complete specialty pages now share a reusable service-page system for hero content, symptoms, treatments, doctors, facilities, FAQs, and appointment conversion. See `docs/service-pages.md` for implementation and production notes.
+
+## Prompt 7: Reusable Components
+
+The project includes an extended UI component library with a live reference page at `pages/components.html`. See `docs/components.md` for class and behavior guidance.

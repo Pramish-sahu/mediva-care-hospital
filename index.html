@@ -1,842 +1,716 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Mediva Care Hospital provides trusted multispecialty healthcare, expert doctors, advanced diagnostics, and patient-first medical care."
-    />
-    <meta name="theme-color" content="#0f4c81" />
-
-    <title>Mediva Care Hospital | Advanced Care, Human Touch</title>
-
-    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="assets/css/base.css" />
-    <link rel="stylesheet" href="assets/css/layout.css" />
-    <link rel="stylesheet" href="assets/css/navigation.css" />
-    <link rel="stylesheet" href="assets/css/components.css" />
-    <link rel="stylesheet" href="assets/css/utilities.css" />
-    <link rel="stylesheet" href="assets/css/animations.css" />
-    <link rel="stylesheet" href="assets/css/pages.css" />
-    <link rel="stylesheet" href="assets/css/home.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-  </head>
-  <body data-nav-section="home">
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
-    <header class="site-header" data-header>
-      <div class="topbar">
-        <div class="container topbar__inner">
-          <div class="topbar__group">
-            <span class="topbar__item topbar__item--open">
-              <span class="topbar__status-dot" aria-hidden="true"></span>
-              <span>Open 24 hours, every day</span>
-            </span>
-            <a class="topbar__item topbar__item--location" href="pages/contact.html">
-              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-              <span>Sector 18, New Delhi</span>
-            </a>
-          </div>
-
-          <div class="topbar__group">
-            <a class="topbar__link topbar__link--phone" href="tel:+911145678900">
-              <i class="fa-solid fa-phone" aria-hidden="true"></i>
-              <span>+91 11 4567 8900</span>
-            </a>
-            <a class="topbar__link topbar__link--email" href="mailto:care@medivahospital.com">
-              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
-              <span>care@medivahospital.com</span>
-            </a>
-            <a class="topbar__emergency" href="tel:+911145678900">
-              <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
-              <span>Emergency</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="navbar">
-        <div class="container navbar__inner">
-          <a class="brand" href="index.html" aria-label="Mediva Care Hospital home">
-            <img
-              class="brand__logo brand__logo--default"
-              src="assets/logos/logo.svg"
-              alt="Mediva Care Hospital"
-              width="220"
-              height="56"
-            />
-            <img
-              class="brand__logo brand__logo--inverse"
-              src="assets/logos/logo-white.svg"
-              alt=""
-              width="220"
-              height="56"
-              aria-hidden="true"
-            />
-          </a>
-
-          <nav
-            class="primary-nav"
-            id="primary-navigation"
-            aria-label="Primary navigation"
-            data-primary-nav
-          >
-            <div class="primary-nav__mobile-header">
-              <span class="primary-nav__mobile-title">Explore Mediva</span>
-              <button class="nav-mobile-close" type="button" aria-label="Close navigation" data-menu-close>
-                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <ul class="primary-nav__list">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html" data-nav-link data-nav-key="home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/about.html" data-nav-link data-nav-key="about">About</a>
-              </li>
-              <li class="nav-item nav-item--mega">
-                <div class="nav-item__control">
-                  <a
-                    class="nav-link"
-                    href="pages/departments.html"
-                    data-nav-link
-                    data-nav-key="departments"
-                  >Departments</a>
-                  <button
-                    class="nav-caret"
-                    type="button"
-                    aria-label="Show departments menu"
-                    aria-expanded="false"
-                    aria-controls="departments-menu"
-                    data-dropdown-toggle
-                  >
-                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                  </button>
-                </div>
-
-                <div class="mega-menu" id="departments-menu">
-                  <div class="mega-menu__grid">
-                    <section aria-labelledby="clinical-departments-title">
-                      <p class="mega-menu__section-title" id="clinical-departments-title">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Mediva Care Hospital provides trusted multispecialty healthcare, expert doctors, advanced diagnostics, and patient-first medical care." name="description"/>
+<meta content="#0f4c81" name="theme-color"/>
+<title>Mediva Care Hospital | Advanced Care, Human Touch</title>
+<link href="assets/favicon/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/favicon/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="assets/favicon/site.webmanifest" rel="manifest"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+<link href="assets/css/base.css" rel="stylesheet"/>
+<link href="assets/css/layout.css" rel="stylesheet"/>
+<link href="assets/css/navigation.css" rel="stylesheet"/>
+<link href="assets/css/components.css" rel="stylesheet"/><link href="assets/css/component-library.css" rel="stylesheet"/>
+<link href="assets/css/utilities.css" rel="stylesheet"/>
+<link href="assets/css/animations.css" rel="stylesheet"/>
+<link href="assets/css/pages.css" rel="stylesheet"/>
+<link href="assets/css/home.css" rel="stylesheet"/>
+<link href="assets/css/responsive.css" rel="stylesheet"/>
+</head>
+<body data-nav-section="home">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" data-header="">
+<div class="topbar">
+<div class="container topbar__inner">
+<div class="topbar__group">
+<span class="topbar__item topbar__item--open">
+<span aria-hidden="true" class="topbar__status-dot"></span>
+<span>Open 24 hours, every day</span>
+</span>
+<a class="topbar__item topbar__item--location" href="pages/contact.html">
+<i aria-hidden="true" class="fa-solid fa-location-dot"></i>
+<span>Sector 18, New Delhi</span>
+</a>
+</div>
+<div class="topbar__group">
+<a class="topbar__link topbar__link--phone" href="tel:+911145678900">
+<i aria-hidden="true" class="fa-solid fa-phone"></i>
+<span>+91 11 4567 8900</span>
+</a>
+<a class="topbar__link topbar__link--email" href="mailto:care@medivahospital.com">
+<i aria-hidden="true" class="fa-regular fa-envelope"></i>
+<span>care@medivahospital.com</span>
+</a>
+<a class="topbar__emergency" href="tel:+911145678900">
+<i aria-hidden="true" class="fa-solid fa-truck-medical"></i>
+<span>Emergency</span>
+</a>
+</div>
+</div>
+</div>
+<div class="navbar">
+<div class="container navbar__inner">
+<a aria-label="Mediva Care Hospital home" class="brand" href="index.html">
+<img alt="Mediva Care Hospital" class="brand__logo brand__logo--default" height="56" src="assets/logos/logo.svg" width="220"/>
+<img alt="" aria-hidden="true" class="brand__logo brand__logo--inverse" height="56" src="assets/logos/logo-white.svg" width="220"/>
+</a>
+<nav aria-label="Primary navigation" class="primary-nav" data-primary-nav="" id="primary-navigation">
+<div class="primary-nav__mobile-header">
+<span class="primary-nav__mobile-title">Explore Mediva</span>
+<button aria-label="Close navigation" class="nav-mobile-close" data-menu-close="" type="button">
+<i aria-hidden="true" class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<ul class="primary-nav__list">
+<li class="nav-item">
+<a class="nav-link" data-nav-key="home" data-nav-link="" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="about" data-nav-link="" href="pages/about.html">About</a>
+</li>
+<li class="nav-item nav-item--mega">
+<div class="nav-item__control">
+<a class="nav-link" data-nav-key="departments" data-nav-link="" href="pages/departments.html">Departments</a>
+<button aria-controls="departments-menu" aria-expanded="false" aria-label="Show departments menu" class="nav-caret" data-dropdown-toggle="" type="button">
+<i aria-hidden="true" class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+<div class="mega-menu" id="departments-menu">
+<div class="mega-menu__grid">
+<section aria-labelledby="clinical-departments-title">
+<p class="mega-menu__section-title" id="clinical-departments-title">
                         Clinical departments
                       </p>
-                      <ul class="mega-menu__links mega-menu__links--two-columns">
-                        <li>
-                          <a class="mega-menu__link" href="pages/services/cardiology.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span>
-                            <span>Cardiology</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="pages/services/neurology.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></span>
-                            <span>Neurology</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="pages/services/orthopedics.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-bone" aria-hidden="true"></i></span>
-                            <span>Orthopedics</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="pages/services/pediatrics.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-child-reaching" aria-hidden="true"></i></span>
-                            <span>Pediatrics</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="pages/services/dental.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-tooth" aria-hidden="true"></i></span>
-                            <span>Dental Care</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="pages/services/emergency.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-truck-medical" aria-hidden="true"></i></span>
-                            <span>Emergency Care</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </section>
-
-                    <section aria-labelledby="explore-care-title">
-                      <p class="mega-menu__section-title" id="explore-care-title">Explore care</p>
-                      <ul class="mega-menu__links">
-                        <li><a class="mega-menu__link" href="pages/departments.html" data-nav-link><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i><span>All departments</span></a></li>
-                        <li><a class="mega-menu__link" href="pages/doctors.html" data-nav-link><i class="fa-solid fa-user-doctor" aria-hidden="true"></i><span>Find a specialist</span></a></li>
-                        <li><a class="mega-menu__link" href="pages/packages.html" data-nav-link><i class="fa-solid fa-notes-medical" aria-hidden="true"></i><span>Preventive health checks</span></a></li>
-                        <li><a class="mega-menu__link" href="pages/contact.html" data-nav-link><i class="fa-regular fa-calendar-check" aria-hidden="true"></i><span>Request an appointment</span></a></li>
-                      </ul>
-                    </section>
-
-                    <article class="mega-menu__feature">
-                      <span class="mega-menu__feature-icon"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></span>
-                      <p class="mega-menu__feature-title">Need urgent care?</p>
-                      <p>Our emergency team is available around the clock for rapid assessment and coordinated care.</p>
-                      <a href="tel:+911145678900">Call emergency desk <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                    </article>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/doctors.html" data-nav-link data-nav-key="doctors">Doctors</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/packages.html" data-nav-link data-nav-key="packages">Packages</a>
-              </li>
-              <li class="nav-item nav-item--dropdown">
-                <div class="nav-item__control">
-                  <button
-                    class="nav-button nav-button--dropdown"
-                    type="button"
-                    aria-expanded="false"
-                    aria-controls="more-menu"
-                    data-dropdown-toggle
-                    data-nav-key="more"
-                  >
-                    <span>More</span>
-                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                  </button>
-                </div>
-                <ul class="nav-submenu" id="more-menu">
-                  <li><a class="nav-submenu__link" href="pages/testimonials.html" data-nav-link><i class="fa-regular fa-comments" aria-hidden="true"></i>Testimonials</a></li>
-                  <li><a class="nav-submenu__link" href="pages/gallery.html" data-nav-link><i class="fa-regular fa-images" aria-hidden="true"></i>Gallery</a></li>
-                  <li><a class="nav-submenu__link" href="pages/privacy-policy.html" data-nav-link><i class="fa-solid fa-user-shield" aria-hidden="true"></i>Privacy Policy</a></li>
-                  <li><a class="nav-submenu__link" href="pages/terms.html" data-nav-link><i class="fa-regular fa-file-lines" aria-hidden="true"></i>Terms of Use</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/contact.html" data-nav-link data-nav-key="contact">Contact</a>
-              </li>
-            </ul>
-
-            <div class="primary-nav__mobile-actions">
-              <a class="button button--danger button--block" href="tel:+911145678900">
-                <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
+<ul class="mega-menu__links mega-menu__links--two-columns">
+<li>
+<a class="mega-menu__link" data-nav-link="" href="pages/services/cardiology.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-heart-pulse"></i></span>
+<span>Cardiology</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="pages/services/neurology.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-brain"></i></span>
+<span>Neurology</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="pages/services/orthopedics.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-bone"></i></span>
+<span>Orthopedics</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="pages/services/pediatrics.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-child-reaching"></i></span>
+<span>Pediatrics</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="pages/services/dental.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-tooth"></i></span>
+<span>Dental Care</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="pages/services/emergency.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-truck-medical"></i></span>
+<span>Emergency Care</span>
+</a>
+</li>
+</ul>
+</section>
+<section aria-labelledby="explore-care-title">
+<p class="mega-menu__section-title" id="explore-care-title">Explore care</p>
+<ul class="mega-menu__links">
+<li><a class="mega-menu__link" data-nav-link="" href="pages/departments.html"><i aria-hidden="true" class="fa-solid fa-table-cells-large"></i><span>All departments</span></a></li>
+<li><a class="mega-menu__link" data-nav-link="" href="pages/doctors.html"><i aria-hidden="true" class="fa-solid fa-user-doctor"></i><span>Find a specialist</span></a></li>
+<li><a class="mega-menu__link" data-nav-link="" href="pages/packages.html"><i aria-hidden="true" class="fa-solid fa-notes-medical"></i><span>Preventive health checks</span></a></li>
+<li><a class="mega-menu__link" data-nav-link="" href="pages/contact.html"><i aria-hidden="true" class="fa-regular fa-calendar-check"></i><span>Request an appointment</span></a></li>
+</ul>
+</section>
+<article class="mega-menu__feature">
+<span class="mega-menu__feature-icon"><i aria-hidden="true" class="fa-solid fa-shield-heart"></i></span>
+<p class="mega-menu__feature-title">Need urgent care?</p>
+<p>Our emergency team is available around the clock for rapid assessment and coordinated care.</p>
+<a href="tel:+911145678900">Call emergency desk <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</article>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="doctors" data-nav-link="" href="pages/doctors.html">Doctors</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="packages" data-nav-link="" href="pages/packages.html">Packages</a>
+</li>
+<li class="nav-item nav-item--dropdown">
+<div class="nav-item__control">
+<button aria-controls="more-menu" aria-expanded="false" class="nav-button nav-button--dropdown" data-dropdown-toggle="" data-nav-key="more" type="button">
+<span>More</span>
+<i aria-hidden="true" class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+<ul class="nav-submenu" id="more-menu">
+<li><a class="nav-submenu__link" data-nav-link="" href="pages/testimonials.html"><i aria-hidden="true" class="fa-regular fa-comments"></i>Testimonials</a></li>
+<li><a class="nav-submenu__link" data-nav-link="" href="pages/gallery.html"><i aria-hidden="true" class="fa-regular fa-images"></i>Gallery</a></li>
+<li><a class="nav-submenu__link" data-nav-link="" href="pages/privacy-policy.html"><i aria-hidden="true" class="fa-solid fa-user-shield"></i>Privacy Policy</a></li>
+<li><a class="nav-submenu__link" data-nav-link="" href="pages/terms.html"><i aria-hidden="true" class="fa-regular fa-file-lines"></i>Terms of Use</a></li>
+<li><a class="nav-submenu__link" data-nav-link="" href="pages/components.html"><i aria-hidden="true" class="fa-solid fa-layer-group"></i>Components</a></li></ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="contact" data-nav-link="" href="pages/contact.html">Contact</a>
+</li>
+</ul>
+<div class="primary-nav__mobile-actions">
+<a class="button button--danger button--block" href="tel:+911145678900">
+<i aria-hidden="true" class="fa-solid fa-truck-medical"></i>
                 Emergency Call
               </a>
-              <a class="button button--primary button--block" href="pages/contact.html">
-                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+<a class="button button--primary button--block" href="pages/contact.html">
+<i aria-hidden="true" class="fa-regular fa-calendar-check"></i>
                 Book Appointment
               </a>
-            </div>
-          </nav>
-
-          <div class="navbar__actions">
-            <button class="nav-icon-button" type="button" aria-label="Search website" data-search-open>
-              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-            </button>
-            <button
-              class="nav-icon-button"
-              type="button"
-              aria-label="Switch to dark theme"
-              aria-pressed="false"
-              data-theme-toggle
-            >
-              <i class="fa-regular fa-moon nav-icon-button__moon" aria-hidden="true"></i>
-              <i class="fa-regular fa-sun nav-icon-button__sun" aria-hidden="true"></i>
-            </button>
-            <a class="button button--primary navbar__appointment" href="pages/contact.html">
-              <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+</div>
+</nav>
+<div class="navbar__actions">
+<button aria-label="Search website" class="nav-icon-button" data-search-open="" type="button">
+<i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
+</button>
+<button aria-label="Switch to dark theme" aria-pressed="false" class="nav-icon-button" data-theme-toggle="" type="button">
+<i aria-hidden="true" class="fa-regular fa-moon nav-icon-button__moon"></i>
+<i aria-hidden="true" class="fa-regular fa-sun nav-icon-button__sun"></i>
+</button>
+<a class="button button--primary navbar__appointment" href="pages/contact.html">
+<i aria-hidden="true" class="fa-regular fa-calendar-check"></i>
               Book Appointment
             </a>
-            <button
-              class="nav-menu-toggle"
-              type="button"
-              aria-label="Open navigation"
-              aria-expanded="false"
-              aria-controls="primary-navigation"
-              data-menu-toggle
-            >
-              <span class="nav-menu-toggle__line"></span>
-              <span class="nav-menu-toggle__line"></span>
-              <span class="nav-menu-toggle__line"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <button class="nav-backdrop" type="button" aria-label="Close navigation" data-menu-backdrop></button>
-    </header>
-
-    <dialog class="site-search-dialog" aria-labelledby="site-search-title" data-search-dialog>
-      <div class="site-search-dialog__panel">
-        <div class="site-search-dialog__header">
-          <div>
-            <p class="site-search-dialog__eyebrow">Quick access</p>
-            <h2 class="site-search-dialog__title" id="site-search-title">How can we help?</h2>
-          </div>
-          <button class="site-search-dialog__close" type="button" aria-label="Close search" data-search-close>
-            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-          </button>
-        </div>
-
-        <form class="site-search-form" role="search" data-site-search-form>
-          <label class="visually-hidden" for="site-search-input">Search hospital pages</label>
-          <i class="fa-solid fa-magnifying-glass site-search-form__icon" aria-hidden="true"></i>
-          <input
-            class="site-search-form__input"
-            id="site-search-input"
-            name="query"
-            type="search"
-            placeholder="Search departments, doctors, packages..."
-            autocomplete="off"
-            data-site-search-input
-          />
-          <span class="site-search-form__shortcut" aria-hidden="true">Ctrl K</span>
-        </form>
-        <p class="site-search-dialog__hint">Press Enter to open the first result or Escape to close.</p>
-        <div class="site-search-results" aria-live="polite" data-site-search-results></div>
-      </div>
-    </dialog>
-
-    <main id="main-content">
-      <!-- Hero -->
-      <section class="home-hero" aria-labelledby="hero-title">
-        <div class="home-hero__glow home-hero__glow--one" aria-hidden="true"></div>
-        <div class="home-hero__glow home-hero__glow--two" aria-hidden="true"></div>
-        <div class="container home-hero__grid">
-          <div class="home-hero__content" data-aos="fade-right">
-            <div class="home-hero__eyebrow">
-              <span class="home-hero__eyebrow-icon"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></span>
-              <span>Trusted multispecialty care in New Delhi</span>
-            </div>
-            <h1 id="hero-title">Advanced medicine.<br /><span>Care that feels human.</span></h1>
-            <p class="home-hero__lead">
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="nav-menu-toggle" data-menu-toggle="" type="button">
+<span class="nav-menu-toggle__line"></span>
+<span class="nav-menu-toggle__line"></span>
+<span class="nav-menu-toggle__line"></span>
+</button>
+</div>
+</div>
+</div>
+<button aria-label="Close navigation" class="nav-backdrop" data-menu-backdrop="" type="button"></button>
+</header>
+<dialog aria-labelledby="site-search-title" class="site-search-dialog" data-search-dialog="">
+<div class="site-search-dialog__panel">
+<div class="site-search-dialog__header">
+<div>
+<p class="site-search-dialog__eyebrow">Quick access</p>
+<h2 class="site-search-dialog__title" id="site-search-title">How can we help?</h2>
+</div>
+<button aria-label="Close search" class="site-search-dialog__close" data-search-close="" type="button">
+<i aria-hidden="true" class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<form class="site-search-form" data-site-search-form="" role="search">
+<label class="visually-hidden" for="site-search-input">Search hospital pages</label>
+<i aria-hidden="true" class="fa-solid fa-magnifying-glass site-search-form__icon"></i>
+<input autocomplete="off" class="site-search-form__input" data-site-search-input="" id="site-search-input" name="query" placeholder="Search departments, doctors, packages..." type="search"/>
+<span aria-hidden="true" class="site-search-form__shortcut">Ctrl K</span>
+</form>
+<p class="site-search-dialog__hint">Press Enter to open the first result or Escape to close.</p>
+<div aria-live="polite" class="site-search-results" data-site-search-results=""></div>
+</div>
+</dialog>
+<main id="main-content">
+<!-- Hero -->
+<section aria-labelledby="hero-title" class="home-hero">
+<div aria-hidden="true" class="home-hero__glow home-hero__glow--one"></div>
+<div aria-hidden="true" class="home-hero__glow home-hero__glow--two"></div>
+<div class="container home-hero__grid">
+<div class="home-hero__content" data-aos="fade-right">
+<div class="home-hero__eyebrow">
+<span class="home-hero__eyebrow-icon"><i aria-hidden="true" class="fa-solid fa-shield-heart"></i></span>
+<span>Trusted multispecialty care in New Delhi</span>
+</div>
+<h1 id="hero-title">Advanced medicine.<br/><span>Care that feels human.</span></h1>
+<p class="home-hero__lead">
               From preventive health checks to complex specialty treatment, Mediva Care brings
               experienced doctors, modern diagnostics, and compassionate support together under one roof.
             </p>
-            <div class="button-group button-group--mobile-stack home-hero__actions">
-              <a class="button button--primary button--lg button--ripple" href="#appointment">
-                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+<div class="button-group button-group--mobile-stack home-hero__actions">
+<a class="button button--primary button--lg button--ripple" href="#appointment">
+<i aria-hidden="true" class="fa-regular fa-calendar-check"></i>
                 Book an Appointment
               </a>
-              <a class="button button--secondary button--lg button--ripple" href="pages/doctors.html">
-                <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+<a class="button button--secondary button--lg button--ripple" href="pages/doctors.html">
+<i aria-hidden="true" class="fa-solid fa-user-doctor"></i>
                 Find a Doctor
               </a>
-            </div>
-            <div class="home-hero__trust" aria-label="Hospital trust indicators">
-              <div class="home-hero__trust-avatars" aria-hidden="true">
-                <span>AM</span><span>IK</span><span>RM</span><span>MN</span>
-              </div>
-              <div>
-                <div class="home-hero__stars" aria-label="Rated 4.9 out of 5">
-                  <i class="fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-solid fa-star" aria-hidden="true"></i>
-                  <strong>4.9</strong>
-                </div>
-                <p>Trusted by 250,000+ patients and families</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="home-hero__visual" data-aos="fade-left" data-aos-delay="120">
-            <div class="home-hero__image-wrap">
-              <img
-                class="home-hero__image"
-                src="assets/images/hero/hero-medical-team.svg"
-                alt="Mediva Care doctors and nurses coordinating patient care"
-                width="900"
-                height="760"
-                fetchpriority="high"
-              />
-            </div>
-            <div class="floating-card floating-card--availability animate-float">
-              <span class="floating-card__icon floating-card__icon--success"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></span>
-              <div><strong>Doctor available</strong><span>Average wait: 12 minutes</span></div>
-            </div>
-            <a class="floating-card floating-card--emergency" href="tel:+911145678900">
-              <span class="floating-card__icon floating-card__icon--danger"><i class="fa-solid fa-truck-medical" aria-hidden="true"></i></span>
-              <div><strong>24/7 Emergency</strong><span>+91 11 4567 8900</span></div>
-            </a>
-          </div>
-        </div>
-
-        <div class="container home-hero__quick-actions" data-aos="fade-up" data-aos-delay="180">
-          <a class="quick-action" href="pages/doctors.html">
-            <span class="quick-action__icon"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i></span>
-            <span><strong>Find a Doctor</strong><small>Search by specialty</small></span>
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-          </a>
-          <a class="quick-action" href="#appointment">
-            <span class="quick-action__icon"><i class="fa-regular fa-calendar-check" aria-hidden="true"></i></span>
-            <span><strong>Book Appointment</strong><small>Choose a convenient time</small></span>
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-          </a>
-          <a class="quick-action" href="pages/packages.html">
-            <span class="quick-action__icon"><i class="fa-solid fa-notes-medical" aria-hidden="true"></i></span>
-            <span><strong>Health Packages</strong><small>Preventive care plans</small></span>
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-          </a>
-          <a class="quick-action quick-action--emergency" href="pages/services/emergency.html">
-            <span class="quick-action__icon"><i class="fa-solid fa-kit-medical" aria-hidden="true"></i></span>
-            <span><strong>Emergency Care</strong><small>Immediate medical support</small></span>
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-          </a>
-        </div>
-      </section>
-
-      <!-- Statistics -->
-      <section class="stats-strip" aria-label="Mediva Care achievements">
-        <div class="container stats-strip__grid">
-          <article class="stat-item" data-aos="fade-up">
-            <span class="stat-item__icon"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
-            <div><strong><span data-counter="25">0</span>+</strong><span>Years of trusted care</span></div>
-          </article>
-          <article class="stat-item" data-aos="fade-up" data-aos-delay="80">
-            <span class="stat-item__icon"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i></span>
-            <div><strong><span data-counter="80">0</span>+</strong><span>Specialist doctors</span></div>
-          </article>
-          <article class="stat-item" data-aos="fade-up" data-aos-delay="160">
-            <span class="stat-item__icon"><i class="fa-solid fa-users" aria-hidden="true"></i></span>
-            <div><strong><span data-counter="250">0</span>K+</strong><span>Patients supported</span></div>
-          </article>
-          <article class="stat-item" data-aos="fade-up" data-aos-delay="240">
-            <span class="stat-item__icon"><i class="fa-solid fa-face-smile" aria-hidden="true"></i></span>
-            <div><strong><span data-counter="98">0</span>%</strong><span>Patient satisfaction</span></div>
-          </article>
-        </div>
-      </section>
-
-      <!-- About -->
-      <section class="section section--surface home-about" id="about" aria-labelledby="about-title">
-        <div class="container split home-about__grid">
-          <div class="home-about__media" data-aos="fade-right">
-            <div class="home-about__image-frame">
-              <img
-                src="assets/images/about/mediva-hospital-building.svg"
-                alt="Modern Mediva Care Hospital building with emergency access"
-                width="900"
-                height="700"
-                loading="lazy"
-              />
-            </div>
-            <div class="home-about__experience-card">
-              <span>25+</span>
-              <strong>Years of clinical excellence</strong>
-            </div>
-            <div class="home-about__quality-card">
-              <i class="fa-solid fa-award" aria-hidden="true"></i>
-              <span><strong>NABH-aligned care</strong><small>Quality-first protocols</small></span>
-            </div>
-          </div>
-
-          <div class="home-about__content" data-aos="fade-left">
-            <div class="section-heading">
-              <span class="section-heading__eyebrow">About Mediva Care</span>
-              <h2 class="section-heading__title" id="about-title">Healthcare built around your comfort, safety, and recovery</h2>
-              <p class="section-heading__text">
+</div>
+<div aria-label="Hospital trust indicators" class="home-hero__trust">
+<div aria-hidden="true" class="home-hero__trust-avatars">
+<span>AM</span><span>IK</span><span>RM</span><span>MN</span>
+</div>
+<div>
+<div aria-label="Rated 4.9 out of 5" class="home-hero__stars">
+<i aria-hidden="true" class="fa-solid fa-star"></i>
+<i aria-hidden="true" class="fa-solid fa-star"></i>
+<i aria-hidden="true" class="fa-solid fa-star"></i>
+<i aria-hidden="true" class="fa-solid fa-star"></i>
+<i aria-hidden="true" class="fa-solid fa-star"></i>
+<strong>4.9</strong>
+</div>
+<p>Trusted by 250,000+ patients and families</p>
+</div>
+</div>
+</div>
+<div class="home-hero__visual" data-aos="fade-left" data-aos-delay="120">
+<div class="home-hero__image-wrap">
+<img alt="Mediva Care doctors and nurses coordinating patient care" class="home-hero__image" fetchpriority="high" height="760" src="assets/images/hero/hero-medical-team.svg" width="900"/>
+</div>
+<div class="floating-card floating-card--availability animate-float">
+<span class="floating-card__icon floating-card__icon--success"><i aria-hidden="true" class="fa-solid fa-circle-check"></i></span>
+<div><strong>Doctor available</strong><span>Average wait: 12 minutes</span></div>
+</div>
+<a class="floating-card floating-card--emergency" href="tel:+911145678900">
+<span class="floating-card__icon floating-card__icon--danger"><i aria-hidden="true" class="fa-solid fa-truck-medical"></i></span>
+<div><strong>24/7 Emergency</strong><span>+91 11 4567 8900</span></div>
+</a>
+</div>
+</div>
+<div class="container home-hero__quick-actions" data-aos="fade-up" data-aos-delay="180">
+<a class="quick-action" href="pages/doctors.html">
+<span class="quick-action__icon"><i aria-hidden="true" class="fa-solid fa-user-doctor"></i></span>
+<span><strong>Find a Doctor</strong><small>Search by specialty</small></span>
+<i aria-hidden="true" class="fa-solid fa-arrow-right"></i>
+</a>
+<a class="quick-action" href="#appointment">
+<span class="quick-action__icon"><i aria-hidden="true" class="fa-regular fa-calendar-check"></i></span>
+<span><strong>Book Appointment</strong><small>Choose a convenient time</small></span>
+<i aria-hidden="true" class="fa-solid fa-arrow-right"></i>
+</a>
+<a class="quick-action" href="pages/packages.html">
+<span class="quick-action__icon"><i aria-hidden="true" class="fa-solid fa-notes-medical"></i></span>
+<span><strong>Health Packages</strong><small>Preventive care plans</small></span>
+<i aria-hidden="true" class="fa-solid fa-arrow-right"></i>
+</a>
+<a class="quick-action quick-action--emergency" href="pages/services/emergency.html">
+<span class="quick-action__icon"><i aria-hidden="true" class="fa-solid fa-kit-medical"></i></span>
+<span><strong>Emergency Care</strong><small>Immediate medical support</small></span>
+<i aria-hidden="true" class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</section>
+<!-- Statistics -->
+<section aria-label="Mediva Care achievements" class="stats-strip">
+<div class="container stats-strip__grid">
+<article class="stat-item" data-aos="fade-up">
+<span class="stat-item__icon"><i aria-hidden="true" class="fa-solid fa-calendar-check"></i></span>
+<div><strong><span data-counter="25">0</span>+</strong><span>Years of trusted care</span></div>
+</article>
+<article class="stat-item" data-aos="fade-up" data-aos-delay="80">
+<span class="stat-item__icon"><i aria-hidden="true" class="fa-solid fa-user-doctor"></i></span>
+<div><strong><span data-counter="80">0</span>+</strong><span>Specialist doctors</span></div>
+</article>
+<article class="stat-item" data-aos="fade-up" data-aos-delay="160">
+<span class="stat-item__icon"><i aria-hidden="true" class="fa-solid fa-users"></i></span>
+<div><strong><span data-counter="250">0</span>K+</strong><span>Patients supported</span></div>
+</article>
+<article class="stat-item" data-aos="fade-up" data-aos-delay="240">
+<span class="stat-item__icon"><i aria-hidden="true" class="fa-solid fa-face-smile"></i></span>
+<div><strong><span data-counter="98">0</span>%</strong><span>Patient satisfaction</span></div>
+</article>
+</div>
+</section>
+<!-- About -->
+<section aria-labelledby="about-title" class="section section--surface home-about" id="about">
+<div class="container split home-about__grid">
+<div class="home-about__media" data-aos="fade-right">
+<div class="home-about__image-frame">
+<img alt="Modern Mediva Care Hospital building with emergency access" height="700" loading="lazy" src="assets/images/about/mediva-hospital-building.svg" width="900"/>
+</div>
+<div class="home-about__experience-card">
+<span>25+</span>
+<strong>Years of clinical excellence</strong>
+</div>
+<div class="home-about__quality-card">
+<i aria-hidden="true" class="fa-solid fa-award"></i>
+<span><strong>NABH-aligned care</strong><small>Quality-first protocols</small></span>
+</div>
+</div>
+<div class="home-about__content" data-aos="fade-left">
+<div class="section-heading">
+<span class="section-heading__eyebrow">About Mediva Care</span>
+<h2 class="section-heading__title" id="about-title">Healthcare built around your comfort, safety, and recovery</h2>
+<p class="section-heading__text">
                 Mediva Care Hospital is a modern multispecialty institution designed to make expert
                 healthcare easier to access and more reassuring to experience.
               </p>
-            </div>
-            <p>
+</div>
+<p>
               Our consultants work as one connected team, supported by advanced diagnostics,
               transparent communication, and trained patient-care coordinators who guide families
               through every stage of treatment.
             </p>
-            <div class="home-about__features">
-              <div class="home-about__feature">
-                <span><i class="fa-solid fa-microscope" aria-hidden="true"></i></span>
-                <div><h3>Advanced diagnostics</h3><p>Fast, accurate testing with modern imaging and laboratory technology.</p></div>
-              </div>
-              <div class="home-about__feature">
-                <span><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>
-                <div><h3>Coordinated specialists</h3><p>Multidisciplinary teams collaborate on complex and long-term care.</p></div>
-              </div>
-              <div class="home-about__feature">
-                <span><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i></span>
-                <div><h3>Patient-first support</h3><p>Clear guidance, respectful care, and dedicated assistance for families.</p></div>
-              </div>
-              <div class="home-about__feature">
-                <span><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></span>
-                <div><h3>Safety-led protocols</h3><p>Evidence-based standards and rigorous infection-control practices.</p></div>
-              </div>
-            </div>
-            <div class="button-group home-about__actions">
-              <a class="button button--primary button--ripple" href="pages/about.html">Discover Our Story</a>
-              <a class="text-link" href="pages/gallery.html">View hospital gallery <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Departments -->
-      <section class="section section--soft departments-section" id="departments" aria-labelledby="departments-title">
-        <div class="container">
-          <div class="section-heading section-heading--center" data-aos="fade-up">
-            <span class="section-heading__eyebrow">Centers of excellence</span>
-            <h2 class="section-heading__title" id="departments-title">Specialist care for every stage of life</h2>
-            <p class="section-heading__text">Explore our leading departments, each supported by experienced consultants, modern facilities, and coordinated care teams.</p>
-          </div>
-          <div class="departments-grid">
-            <article class="department-card" data-aos="fade-up">
-              <span class="department-card__icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span>
-              <span class="department-card__number">01</span>
-              <h3>Cardiology</h3>
-              <p>Preventive heart care, diagnostics, interventional support, and cardiac rehabilitation.</p>
-              <a href="pages/services/cardiology.html">Explore Cardiology <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </article>
-            <article class="department-card" data-aos="fade-up" data-aos-delay="60">
-              <span class="department-card__icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></span>
-              <span class="department-card__number">02</span>
-              <h3>Neurology</h3>
-              <p>Specialist assessment and treatment for brain, spine, nerve, and stroke conditions.</p>
-              <a href="pages/services/neurology.html">Explore Neurology <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </article>
-            <article class="department-card" data-aos="fade-up" data-aos-delay="120">
-              <span class="department-card__icon"><i class="fa-solid fa-bone" aria-hidden="true"></i></span>
-              <span class="department-card__number">03</span>
-              <h3>Orthopedics</h3>
-              <p>Joint, spine, sports injury, fracture, and rehabilitation care for better mobility.</p>
-              <a href="pages/services/orthopedics.html">Explore Orthopedics <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </article>
-            <article class="department-card" data-aos="fade-up">
-              <span class="department-card__icon"><i class="fa-solid fa-child-reaching" aria-hidden="true"></i></span>
-              <span class="department-card__number">04</span>
-              <h3>Pediatrics</h3>
-              <p>Compassionate medical care, growth monitoring, and vaccinations for children.</p>
-              <a href="pages/services/pediatrics.html">Explore Pediatrics <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </article>
-            <article class="department-card" data-aos="fade-up" data-aos-delay="60">
-              <span class="department-card__icon"><i class="fa-solid fa-tooth" aria-hidden="true"></i></span>
-              <span class="department-card__number">05</span>
-              <h3>Dental Care</h3>
-              <p>Preventive, restorative, cosmetic, and surgical dentistry in a calming setting.</p>
-              <a href="pages/services/dental.html">Explore Dental Care <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </article>
-            <article class="department-card department-card--emergency" data-aos="fade-up" data-aos-delay="120">
-              <span class="department-card__icon"><i class="fa-solid fa-truck-medical" aria-hidden="true"></i></span>
-              <span class="department-card__number">24/7</span>
-              <h3>Emergency Care</h3>
-              <p>Rapid assessment, trauma support, critical care access, and ambulance coordination.</p>
-              <a href="pages/services/emergency.html">Get Emergency Help <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </article>
-          </div>
-          <div class="section-action" data-aos="fade-up">
-            <a class="button button--secondary button--ripple" href="pages/departments.html">View All Departments</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Doctors -->
-      <section class="section section--surface doctors-section" id="doctors" aria-labelledby="doctors-title">
-        <div class="container">
-          <div class="doctors-section__heading" data-aos="fade-up">
-            <div class="section-heading">
-              <span class="section-heading__eyebrow">Meet our specialists</span>
-              <h2 class="section-heading__title" id="doctors-title">Experienced doctors. Personal attention.</h2>
-              <p class="section-heading__text">Our consultants combine deep clinical expertise with clear communication and thoughtful, individual care.</p>
-            </div>
-            <div class="swiper-controls" aria-label="Doctor carousel controls">
-              <button class="swiper-control doctors-prev" type="button" aria-label="Previous doctors"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
-              <button class="swiper-control doctors-next" type="button" aria-label="Next doctors"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
-            </div>
-          </div>
-
-          <div class="swiper doctors-swiper" data-doctors-swiper>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <article class="doctor-card">
-                  <div class="doctor-card__media">
-                    <img src="assets/images/doctors/dr-aarav-mehta.svg" alt="Illustrated portrait of Dr. Aarav Mehta" width="560" height="640" loading="lazy" />
-                    <span class="doctor-card__availability"><span></span> Available today</span>
-                    <div class="doctor-card__social"><a href="mailto:care@medivahospital.com" aria-label="Email Dr. Aarav Mehta"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a><a href="#appointment" aria-label="Book an appointment with Dr. Aarav Mehta"><i class="fa-regular fa-calendar" aria-hidden="true"></i></a></div>
-                  </div>
-                  <div class="doctor-card__body">
-                    <span>Senior Consultant, Cardiology</span>
-                    <h3>Dr. Aarav Mehta</h3>
-                    <p>MBBS, MD, DM Cardiology · 18 years</p>
-                    <div class="doctor-card__meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9</span><span><i class="fa-regular fa-clock" aria-hidden="true"></i> Mon–Sat</span></div>
-                    <a class="doctor-card__link" href="pages/doctor-details.html">View Profile <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="doctor-card">
-                  <div class="doctor-card__media">
-                    <img src="assets/images/doctors/dr-isha-kapoor.svg" alt="Illustrated portrait of Dr. Isha Kapoor" width="560" height="640" loading="lazy" />
-                    <span class="doctor-card__availability"><span></span> Available tomorrow</span>
-                    <div class="doctor-card__social"><a href="mailto:care@medivahospital.com" aria-label="Email Dr. Isha Kapoor"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a><a href="#appointment" aria-label="Book an appointment with Dr. Isha Kapoor"><i class="fa-regular fa-calendar" aria-hidden="true"></i></a></div>
-                  </div>
-                  <div class="doctor-card__body">
-                    <span>Director, Neurology</span>
-                    <h3>Dr. Isha Kapoor</h3>
-                    <p>MBBS, MD, DM Neurology · 16 years</p>
-                    <div class="doctor-card__meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9</span><span><i class="fa-regular fa-clock" aria-hidden="true"></i> Tue–Sun</span></div>
-                    <a class="doctor-card__link" href="pages/doctor-details.html">View Profile <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="doctor-card">
-                  <div class="doctor-card__media">
-                    <img src="assets/images/doctors/dr-rohan-malhotra.svg" alt="Illustrated portrait of Dr. Rohan Malhotra" width="560" height="640" loading="lazy" />
-                    <span class="doctor-card__availability"><span></span> Available today</span>
-                    <div class="doctor-card__social"><a href="mailto:care@medivahospital.com" aria-label="Email Dr. Rohan Malhotra"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a><a href="#appointment" aria-label="Book an appointment with Dr. Rohan Malhotra"><i class="fa-regular fa-calendar" aria-hidden="true"></i></a></div>
-                  </div>
-                  <div class="doctor-card__body">
-                    <span>Senior Consultant, Orthopedics</span>
-                    <h3>Dr. Rohan Malhotra</h3>
-                    <p>MBBS, MS Orthopedics · 15 years</p>
-                    <div class="doctor-card__meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.8</span><span><i class="fa-regular fa-clock" aria-hidden="true"></i> Mon–Fri</span></div>
-                    <a class="doctor-card__link" href="pages/doctor-details.html">View Profile <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="doctor-card">
-                  <div class="doctor-card__media">
-                    <img src="assets/images/doctors/dr-meera-nair.svg" alt="Illustrated portrait of Dr. Meera Nair" width="560" height="640" loading="lazy" />
-                    <span class="doctor-card__availability"><span></span> Available tomorrow</span>
-                    <div class="doctor-card__social"><a href="mailto:care@medivahospital.com" aria-label="Email Dr. Meera Nair"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a><a href="#appointment" aria-label="Book an appointment with Dr. Meera Nair"><i class="fa-regular fa-calendar" aria-hidden="true"></i></a></div>
-                  </div>
-                  <div class="doctor-card__body">
-                    <span>Senior Consultant, Pediatrics</span>
-                    <h3>Dr. Meera Nair</h3>
-                    <p>MBBS, MD Pediatrics · 14 years</p>
-                    <div class="doctor-card__meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 5.0</span><span><i class="fa-regular fa-clock" aria-hidden="true"></i> Mon–Sat</span></div>
-                    <a class="doctor-card__link" href="pages/doctor-details.html">View Profile <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-pagination doctors-pagination"></div>
-          </div>
-          <div class="section-action" data-aos="fade-up"><a class="button button--secondary button--ripple" href="pages/doctors.html">Meet All Doctors</a></div>
-        </div>
-      </section>
-
-      <!-- Why choose us -->
-      <section class="section section--dark why-section" id="why-us" aria-labelledby="why-title">
-        <div class="why-section__pattern" aria-hidden="true"></div>
-        <div class="container why-section__grid">
-          <div class="why-section__content" data-aos="fade-right">
-            <span class="section-heading__eyebrow">Why choose Mediva</span>
-            <h2 id="why-title">Designed for better clinical outcomes and a calmer care experience</h2>
-            <p>Every detail—from appointment booking to follow-up—is built around safety, clarity, speed, and respect for each patient.</p>
-            <a class="button button--light button--ripple" href="#appointment">Start Your Care Journey</a>
-          </div>
-          <div class="why-section__features">
-            <article class="why-card" data-aos="fade-up"><span><i class="fa-solid fa-user-doctor" aria-hidden="true"></i></span><div><h3>Experienced specialists</h3><p>Consultants with strong clinical experience across major medical disciplines.</p></div></article>
-            <article class="why-card" data-aos="fade-up" data-aos-delay="70"><span><i class="fa-solid fa-microscope" aria-hidden="true"></i></span><div><h3>Modern technology</h3><p>Advanced diagnostics and well-equipped treatment facilities for timely decisions.</p></div></article>
-            <article class="why-card" data-aos="fade-up" data-aos-delay="140"><span><i class="fa-solid fa-clock" aria-hidden="true"></i></span><div><h3>24/7 critical support</h3><p>Emergency, laboratory, pharmacy, and intensive-care coordination around the clock.</p></div></article>
-            <article class="why-card" data-aos="fade-up" data-aos-delay="210"><span><i class="fa-solid fa-hand-holding-medical" aria-hidden="true"></i></span><div><h3>Continuity of care</h3><p>Coordinated follow-ups and clear treatment guidance after every consultation.</p></div></article>
-          </div>
-        </div>
-        <div class="container why-section__emergency" data-aos="fade-up">
-          <div><span class="why-section__emergency-icon"><i class="fa-solid fa-truck-medical" aria-hidden="true"></i></span><div><small>Medical emergency?</small><strong>Our rapid-response team is available 24 hours.</strong></div></div>
-          <a href="tel:+911145678900"><span>Emergency Helpline</span><strong>+91 11 4567 8900</strong><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></a>
-        </div>
-      </section>
-
-      <!-- Health packages -->
-      <section class="section section--soft packages-section" id="packages" aria-labelledby="packages-title">
-        <div class="container">
-          <div class="section-heading section-heading--center" data-aos="fade-up">
-            <span class="section-heading__eyebrow">Preventive health plans</span>
-            <h2 class="section-heading__title" id="packages-title">Health packages made for real life</h2>
-            <p class="section-heading__text">Early screening helps you understand risks sooner. Choose a thoughtfully designed package for yourself or your family.</p>
-          </div>
-          <div class="packages-grid">
-            <article class="package-card" data-aos="fade-up">
-              <div class="package-card__header"><span class="package-card__icon"><i class="fa-solid fa-seedling" aria-hidden="true"></i></span><span class="badge badge--accent">Essential</span></div>
-              <h3>Essential Wellness</h3><p>For adults seeking a reliable annual health baseline.</p>
-              <div class="package-card__price"><span>₹</span><strong>2,499</strong><small>/ person</small></div>
-              <ul><li><i class="fa-solid fa-check" aria-hidden="true"></i> Complete blood count</li><li><i class="fa-solid fa-check" aria-hidden="true"></i> Liver and kidney profile</li><li><i class="fa-solid fa-check" aria-hidden="true"></i> Blood sugar and lipid profile</li><li><i class="fa-solid fa-check" aria-hidden="true"></i> Physician consultation</li></ul>
-              <a class="button button--secondary button--block button--ripple" href="#appointment">Book Package</a>
-            </article>
-            <article class="package-card package-card--featured" data-aos="fade-up" data-aos-delay="80">
-              <span class="package-card__popular">Most Popular</span>
-              <div class="package-card__header"><span class="package-card__icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span><span class="badge badge--primary">Comprehensive</span></div>
-              <h3>Complete Health Plus</h3><p>A broader preventive review for busy professionals and families.</p>
-              <div class="package-card__price"><span>₹</span><strong>4,999</strong><small>/ person</small></div>
-              <ul><li><i class="fa-solid fa-check" aria-hidden="true"></i> 65+ diagnostic parameters</li><li><i class="fa-solid fa-check" aria-hidden="true"></i> ECG and chest X-ray</li><li><i class="fa-solid fa-check" aria-hidden="true"></i> Thyroid and vitamin screening</li><li><i class="fa-solid fa-check" aria-hidden="true"></i> Specialist review and report</li></ul>
-              <a class="button button--primary button--block button--ripple" href="#appointment">Book Package</a>
-            </article>
-            <article class="package-card" data-aos="fade-up" data-aos-delay="160">
-              <div class="package-card__header"><span class="package-card__icon"><i class="fa-solid fa-person-cane" aria-hidden="true"></i></span><span class="badge badge--warning">Senior Care</span></div>
-              <h3>Senior Wellness</h3><p>Focused screening for adults aged 60 and above.</p>
-              <div class="package-card__price"><span>₹</span><strong>6,499</strong><small>/ person</small></div>
-              <ul><li><i class="fa-solid fa-check" aria-hidden="true"></i> Bone and arthritis profile</li><li><i class="fa-solid fa-check" aria-hidden="true"></i> Cardiac risk assessment</li><li><i class="fa-solid fa-check" aria-hidden="true"></i> Vision and hearing screening</li><li><i class="fa-solid fa-check" aria-hidden="true"></i> Geriatrician consultation</li></ul>
-              <a class="button button--secondary button--block button--ripple" href="#appointment">Book Package</a>
-            </article>
-          </div>
-          <div class="section-action" data-aos="fade-up"><a class="text-link" href="pages/packages.html">Compare all health packages <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
-        </div>
-      </section>
-
-      <!-- Testimonials -->
-      <section class="section section--surface testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
-        <div class="container testimonials-section__grid">
-          <div class="testimonials-section__intro" data-aos="fade-right">
-            <span class="section-heading__eyebrow">Patient experiences</span>
-            <h2 id="testimonials-title">Stories that remind us why care matters</h2>
-            <p>Every recovery is personal. These experiences reflect the compassion, clarity, and clinical support our teams strive to provide each day.</p>
-            <div class="testimonials-section__rating"><strong>4.9</strong><div><div><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div><span>Average patient rating</span></div></div>
-            <div class="swiper-controls"><button class="swiper-control testimonials-prev" type="button" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button><button class="swiper-control testimonials-next" type="button" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
-          </div>
-          <div class="swiper testimonials-swiper" data-testimonials-swiper data-aos="fade-left">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><article class="testimonial-card"><i class="fa-solid fa-quote-left testimonial-card__quote" aria-hidden="true"></i><div class="testimonial-card__stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div><blockquote>“From the first consultation to my cardiac procedure and follow-up, every person explained things clearly. I felt safe, respected, and genuinely cared for.”</blockquote><div class="testimonial-card__author"><img src="assets/images/testimonials/patient-ananya.svg" alt="Illustrated portrait of patient Ananya Sharma" width="200" height="200" loading="lazy" /><div><strong>Ananya Sharma</strong><span>Cardiology patient</span></div><i class="fa-solid fa-circle-check" aria-label="Verified patient"></i></div></article></div>
-              <div class="swiper-slide"><article class="testimonial-card"><i class="fa-solid fa-quote-left testimonial-card__quote" aria-hidden="true"></i><div class="testimonial-card__stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div><blockquote>“The orthopedic team helped me return to walking comfortably after months of pain. The physiotherapy plan was practical and the follow-up was excellent.”</blockquote><div class="testimonial-card__author"><img src="assets/images/testimonials/patient-vikram.svg" alt="Illustrated portrait of patient Vikram Sethi" width="200" height="200" loading="lazy" /><div><strong>Vikram Sethi</strong><span>Orthopedics patient</span></div><i class="fa-solid fa-circle-check" aria-label="Verified patient"></i></div></article></div>
-              <div class="swiper-slide"><article class="testimonial-card"><i class="fa-solid fa-quote-left testimonial-card__quote" aria-hidden="true"></i><div class="testimonial-card__stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div><blockquote>“Our pediatrician was patient with both my daughter and me. Booking was simple, the clinic was calm, and we received clear guidance after the visit.”</blockquote><div class="testimonial-card__author"><img src="assets/images/testimonials/patient-sana.svg" alt="Illustrated portrait of patient Sana Khan" width="200" height="200" loading="lazy" /><div><strong>Sana Khan</strong><span>Parent and pediatric patient</span></div><i class="fa-solid fa-circle-check" aria-label="Verified patient"></i></div></article></div>
-            </div>
-            <div class="swiper-pagination testimonials-pagination"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section class="section section--soft faq-section" id="faq" aria-labelledby="faq-title">
-        <div class="container faq-section__grid">
-          <div class="faq-section__intro" data-aos="fade-right">
-            <span class="section-heading__eyebrow">Frequently asked questions</span>
-            <h2 id="faq-title">Helpful answers before your visit</h2>
-            <p>Can’t find what you need? Our patient support team is available every day to guide you.</p>
-            <div class="faq-section__support"><span><i class="fa-solid fa-headset" aria-hidden="true"></i></span><div><small>Patient support</small><a href="tel:+911145678900">+91 11 4567 8900</a></div></div>
-          </div>
-          <div class="accordion" data-accordion data-aos="fade-left">
-            <article class="accordion__item is-open">
-              <h3><button class="accordion__button" type="button" aria-expanded="true" aria-controls="faq-panel-1" id="faq-button-1"><span>How can I book an appointment?</span><i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
-              <div class="accordion__panel" id="faq-panel-1" role="region" aria-labelledby="faq-button-1"><div><p>Use the appointment form below, call our patient support line, or visit the hospital reception. Our team will confirm the doctor, date, and time with you.</p></div></div>
-            </article>
-            <article class="accordion__item">
-              <h3><button class="accordion__button" type="button" aria-expanded="false" aria-controls="faq-panel-2" id="faq-button-2"><span>What should I bring for my first consultation?</span><i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
-              <div class="accordion__panel" id="faq-panel-2" role="region" aria-labelledby="faq-button-2"><div><p>Please bring a valid ID, previous prescriptions, investigation reports, a list of current medicines, and insurance details if applicable.</p></div></div>
-            </article>
-            <article class="accordion__item">
-              <h3><button class="accordion__button" type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-button-3"><span>Does Mediva Care offer emergency services?</span><i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
-              <div class="accordion__panel" id="faq-panel-3" role="region" aria-labelledby="faq-button-3"><div><p>Yes. Our emergency department, diagnostic support, pharmacy coordination, and critical-care response operate 24 hours a day.</p></div></div>
-            </article>
-            <article class="accordion__item">
-              <h3><button class="accordion__button" type="button" aria-expanded="false" aria-controls="faq-panel-4" id="faq-button-4"><span>Can I reschedule or cancel my appointment?</span><i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
-              <div class="accordion__panel" id="faq-panel-4" role="region" aria-labelledby="faq-button-4"><div><p>Yes. Contact patient support at least four hours before your appointment whenever possible, and our team will help arrange another suitable time.</p></div></div>
-            </article>
-            <article class="accordion__item">
-              <h3><button class="accordion__button" type="button" aria-expanded="false" aria-controls="faq-panel-5" id="faq-button-5"><span>Are health packages available on weekends?</span><i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
-              <div class="accordion__panel" id="faq-panel-5" role="region" aria-labelledby="faq-button-5"><div><p>Selected preventive health packages are available on Saturdays and Sundays with advance booking. Fasting instructions are shared during confirmation.</p></div></div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Appointment and contact -->
-      <section class="section section--surface appointment-section" id="appointment" aria-labelledby="appointment-title">
-        <div class="container appointment-section__grid">
-          <div class="appointment-section__content" data-aos="fade-right">
-            <span class="section-heading__eyebrow">Book an appointment</span>
-            <h2 id="appointment-title">Take the next step toward better health</h2>
-            <p>Share a few details and our patient-care team will help you choose the right specialist and appointment time.</p>
-            <div class="appointment-section__contact-list">
-              <a href="tel:+911145678900"><span><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></span><div><small>Call patient support</small><strong>+91 11 4567 8900</strong></div></a>
-              <a href="mailto:care@medivahospital.com"><span><i class="fa-regular fa-envelope" aria-hidden="true"></i></span><div><small>Email us</small><strong>care@medivahospital.com</strong></div></a>
-              <div><span><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><div><small>Visit the hospital</small><strong>Sector 18, New Delhi 110075</strong></div></div>
-            </div>
-            <div class="appointment-section__promise"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i><p><strong>Your information stays private.</strong><span>We use your details only to coordinate your requested care.</span></p></div>
-          </div>
-
-          <form class="appointment-form" data-emailjs-form="appointment" novalidate data-aos="fade-left">
-            <div class="appointment-form__header"><span><i class="fa-regular fa-calendar-check" aria-hidden="true"></i></span><div><h3>Request an appointment</h3><p>We usually confirm requests within 30 minutes.</p></div></div>
-            <div class="form-row form-row--2">
-              <div class="form-group"><label class="form-label" for="appointment-name">Full name <span class="form-label__required">*</span></label><input class="form-control" id="appointment-name" name="name" type="text" autocomplete="name" placeholder="Your full name" required /></div>
-              <div class="form-group"><label class="form-label" for="appointment-phone">Phone number <span class="form-label__required">*</span></label><input class="form-control" id="appointment-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 98XX XXX XXX" required pattern="[0-9+() -]{8,18}" /></div>
-            </div>
-            <div class="form-row form-row--2">
-              <div class="form-group"><label class="form-label" for="appointment-email">Email address <span class="form-label__required">*</span></label><input class="form-control" id="appointment-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></div>
-              <div class="form-group"><label class="form-label" for="appointment-department">Department <span class="form-label__required">*</span></label><select class="form-control" id="appointment-department" name="department" required><option value="">Select a department</option><option>Cardiology</option><option>Neurology</option><option>Orthopedics</option><option>Pediatrics</option><option>Dental Care</option><option>General Medicine</option><option>Health Checkup</option></select></div>
-            </div>
-            <div class="form-row form-row--2">
-              <div class="form-group"><label class="form-label" for="appointment-date">Preferred date <span class="form-label__required">*</span></label><input class="form-control" id="appointment-date" name="preferred_date" type="date" required data-min-date /></div>
-              <div class="form-group"><label class="form-label" for="appointment-time">Preferred time</label><select class="form-control" id="appointment-time" name="preferred_time"><option>Morning, 9 AM–12 PM</option><option>Afternoon, 12 PM–4 PM</option><option>Evening, 4 PM–7 PM</option></select></div>
-            </div>
-            <div class="form-group"><label class="form-label" for="appointment-message">How can we help?</label><textarea class="form-control" id="appointment-message" name="message" rows="4" placeholder="Briefly describe your concern or preferred doctor"></textarea></div>
-            <label class="check-control"><input type="checkbox" name="consent" required /><span>I agree to be contacted by Mediva Care Hospital regarding this request.</span></label>
-            <button class="button button--primary button--lg button--block button--ripple" type="submit"><span>Request Appointment</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
-            <div class="form-status" role="status" aria-live="polite" data-form-status></div>
-          </form>
-        </div>
-      </section>
-
-      <!-- Map -->
-      <section class="map-section" aria-labelledby="location-title">
-        <div class="map-section__map">
-          <iframe
-            title="Map showing Mediva Care Hospital in Sector 18, New Delhi"
-            src="https://www.google.com/maps?q=Sector%2018%20New%20Delhi&z=14&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="container map-section__overlay-wrap">
-          <article class="map-section__card" data-aos="fade-right">
-            <span class="section-heading__eyebrow">Visit Mediva Care</span>
-            <h2 id="location-title">Easy to reach. Open around the clock.</h2>
-            <p>Sector 18, New Delhi 110075, India</p>
-            <ul><li><i class="fa-solid fa-car" aria-hidden="true"></i><span>Free patient and visitor parking</span></li><li><i class="fa-solid fa-train-subway" aria-hidden="true"></i><span>8 minutes from the nearest metro</span></li><li><i class="fa-solid fa-wheelchair" aria-hidden="true"></i><span>Wheelchair-accessible entrance</span></li></ul>
-            <a class="button button--primary button--ripple" href="https://www.google.com/maps/search/?api=1&query=Sector+18+New+Delhi" target="_blank" rel="noopener noreferrer">Get Directions <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer site-footer--complete">
-      <div class="container site-footer__newsletter">
-        <div><span class="site-footer__newsletter-icon"><i class="fa-regular fa-envelope-open" aria-hidden="true"></i></span><div><h2>Health guidance, delivered thoughtfully</h2><p>Receive practical wellness tips and hospital updates. No spam.</p></div></div>
-        <form class="newsletter-form" data-newsletter-form><label class="visually-hidden" for="newsletter-email">Email address</label><input id="newsletter-email" name="email" type="email" placeholder="Enter your email address" autocomplete="email" required /><button class="button button--accent button--ripple" type="submit">Subscribe</button><span class="newsletter-form__status" role="status" aria-live="polite" data-newsletter-status></span></form>
-      </div>
-
-      <div class="container site-footer__grid">
-        <div class="site-footer__about">
-          <a class="brand" href="index.html" aria-label="Mediva Care Hospital home"><img class="brand__logo" src="assets/logos/logo-white.svg" alt="Mediva Care Hospital" width="220" height="56" loading="lazy" /></a>
-          <p>Modern multispecialty healthcare built around clinical excellence, clear communication, and compassionate support.</p>
-          <div class="site-footer__social"><a href="#" aria-label="Mediva Care on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a href="#" aria-label="Mediva Care on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="#" aria-label="Mediva Care on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a href="#" aria-label="Mediva Care on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></div>
-        </div>
-        <div><h3>Quick Links</h3><ul class="site-footer__links"><li><a href="pages/about.html">About Us</a></li><li><a href="pages/doctors.html">Our Doctors</a></li><li><a href="pages/packages.html">Health Packages</a></li><li><a href="pages/testimonials.html">Patient Stories</a></li><li><a href="pages/contact.html">Contact Us</a></li></ul></div>
-        <div><h3>Departments</h3><ul class="site-footer__links"><li><a href="pages/services/cardiology.html">Cardiology</a></li><li><a href="pages/services/neurology.html">Neurology</a></li><li><a href="pages/services/orthopedics.html">Orthopedics</a></li><li><a href="pages/services/pediatrics.html">Pediatrics</a></li><li><a href="pages/services/emergency.html">Emergency Care</a></li></ul></div>
-        <div><h3>Contact</h3><ul class="site-footer__contact"><li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Sector 18, New Delhi 110075</span></li><li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+911145678900">+91 11 4567 8900</a></li><li><i class="fa-regular fa-envelope" aria-hidden="true"></i><a href="mailto:care@medivahospital.com">care@medivahospital.com</a></li><li><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Open 24 hours, every day</span></li></ul></div>
-      </div>
-
-      <div class="site-footer__bottom"><div class="container"><p>&copy; <span data-current-year></span> Mediva Care Hospital. All rights reserved.</p><div><a href="pages/privacy-policy.html">Privacy Policy</a><a href="pages/terms.html">Terms of Use</a><a href="pages/contact.html">Accessibility</a></div></div></div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="assets/js/config.js" defer></script>
-    <script src="assets/js/navigation.js" defer></script>
-    <script src="assets/js/animations.js" defer></script>
-    <script src="assets/js/forms.js" defer></script>
-    <script src="assets/js/homepage.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
-  </body>
+<div class="home-about__features">
+<div class="home-about__feature">
+<span><i aria-hidden="true" class="fa-solid fa-microscope"></i></span>
+<div><h3>Advanced diagnostics</h3><p>Fast, accurate testing with modern imaging and laboratory technology.</p></div>
+</div>
+<div class="home-about__feature">
+<span><i aria-hidden="true" class="fa-solid fa-people-group"></i></span>
+<div><h3>Coordinated specialists</h3><p>Multidisciplinary teams collaborate on complex and long-term care.</p></div>
+</div>
+<div class="home-about__feature">
+<span><i aria-hidden="true" class="fa-solid fa-hand-holding-heart"></i></span>
+<div><h3>Patient-first support</h3><p>Clear guidance, respectful care, and dedicated assistance for families.</p></div>
+</div>
+<div class="home-about__feature">
+<span><i aria-hidden="true" class="fa-solid fa-shield-heart"></i></span>
+<div><h3>Safety-led protocols</h3><p>Evidence-based standards and rigorous infection-control practices.</p></div>
+</div>
+</div>
+<div class="button-group home-about__actions">
+<a class="button button--primary button--ripple" href="pages/about.html">Discover Our Story</a>
+<a class="text-link" href="pages/gallery.html">View hospital gallery <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Departments -->
+<section aria-labelledby="departments-title" class="section section--soft departments-section" id="departments">
+<div class="container">
+<div class="section-heading section-heading--center" data-aos="fade-up">
+<span class="section-heading__eyebrow">Centers of excellence</span>
+<h2 class="section-heading__title" id="departments-title">Specialist care for every stage of life</h2>
+<p class="section-heading__text">Explore our leading departments, each supported by experienced consultants, modern facilities, and coordinated care teams.</p>
+</div>
+<div class="departments-grid">
+<article class="department-card" data-aos="fade-up">
+<span class="department-card__icon"><i aria-hidden="true" class="fa-solid fa-heart-pulse"></i></span>
+<span class="department-card__number">01</span>
+<h3>Cardiology</h3>
+<p>Preventive heart care, diagnostics, interventional support, and cardiac rehabilitation.</p>
+<a href="pages/services/cardiology.html">Explore Cardiology <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</article>
+<article class="department-card" data-aos="fade-up" data-aos-delay="60">
+<span class="department-card__icon"><i aria-hidden="true" class="fa-solid fa-brain"></i></span>
+<span class="department-card__number">02</span>
+<h3>Neurology</h3>
+<p>Specialist assessment and treatment for brain, spine, nerve, and stroke conditions.</p>
+<a href="pages/services/neurology.html">Explore Neurology <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</article>
+<article class="department-card" data-aos="fade-up" data-aos-delay="120">
+<span class="department-card__icon"><i aria-hidden="true" class="fa-solid fa-bone"></i></span>
+<span class="department-card__number">03</span>
+<h3>Orthopedics</h3>
+<p>Joint, spine, sports injury, fracture, and rehabilitation care for better mobility.</p>
+<a href="pages/services/orthopedics.html">Explore Orthopedics <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</article>
+<article class="department-card" data-aos="fade-up">
+<span class="department-card__icon"><i aria-hidden="true" class="fa-solid fa-child-reaching"></i></span>
+<span class="department-card__number">04</span>
+<h3>Pediatrics</h3>
+<p>Compassionate medical care, growth monitoring, and vaccinations for children.</p>
+<a href="pages/services/pediatrics.html">Explore Pediatrics <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</article>
+<article class="department-card" data-aos="fade-up" data-aos-delay="60">
+<span class="department-card__icon"><i aria-hidden="true" class="fa-solid fa-tooth"></i></span>
+<span class="department-card__number">05</span>
+<h3>Dental Care</h3>
+<p>Preventive, restorative, cosmetic, and surgical dentistry in a calming setting.</p>
+<a href="pages/services/dental.html">Explore Dental Care <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</article>
+<article class="department-card department-card--emergency" data-aos="fade-up" data-aos-delay="120">
+<span class="department-card__icon"><i aria-hidden="true" class="fa-solid fa-truck-medical"></i></span>
+<span class="department-card__number">24/7</span>
+<h3>Emergency Care</h3>
+<p>Rapid assessment, trauma support, critical care access, and ambulance coordination.</p>
+<a href="pages/services/emergency.html">Get Emergency Help <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</article>
+</div>
+<div class="section-action" data-aos="fade-up">
+<a class="button button--secondary button--ripple" href="pages/departments.html">View All Departments</a>
+</div>
+</div>
+</section>
+<!-- Doctors -->
+<section aria-labelledby="doctors-title" class="section section--surface doctors-section" id="doctors">
+<div class="container">
+<div class="doctors-section__heading" data-aos="fade-up">
+<div class="section-heading">
+<span class="section-heading__eyebrow">Meet our specialists</span>
+<h2 class="section-heading__title" id="doctors-title">Experienced doctors. Personal attention.</h2>
+<p class="section-heading__text">Our consultants combine deep clinical expertise with clear communication and thoughtful, individual care.</p>
+</div>
+<div aria-label="Doctor carousel controls" class="swiper-controls">
+<button aria-label="Previous doctors" class="swiper-control doctors-prev" type="button"><i aria-hidden="true" class="fa-solid fa-arrow-left"></i></button>
+<button aria-label="Next doctors" class="swiper-control doctors-next" type="button"><i aria-hidden="true" class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="swiper doctors-swiper" data-doctors-swiper="">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<article class="doctor-card">
+<div class="doctor-card__media">
+<img alt="Illustrated portrait of Dr. Aarav Mehta" height="640" loading="lazy" src="assets/images/doctors/dr-aarav-mehta.svg" width="560"/>
+<span class="doctor-card__availability"><span></span> Available today</span>
+<div class="doctor-card__social"><a aria-label="Email Dr. Aarav Mehta" href="mailto:care@medivahospital.com"><i aria-hidden="true" class="fa-regular fa-envelope"></i></a><a aria-label="Book an appointment with Dr. Aarav Mehta" href="#appointment"><i aria-hidden="true" class="fa-regular fa-calendar"></i></a></div>
+</div>
+<div class="doctor-card__body">
+<span>Senior Consultant, Cardiology</span>
+<h3>Dr. Aarav Mehta</h3>
+<p>MBBS, MD, DM Cardiology · 18 years</p>
+<div class="doctor-card__meta"><span><i aria-hidden="true" class="fa-solid fa-star"></i> 4.9</span><span><i aria-hidden="true" class="fa-regular fa-clock"></i> Mon–Sat</span></div>
+<a class="doctor-card__link" href="pages/doctor-details.html">View Profile <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="swiper-slide">
+<article class="doctor-card">
+<div class="doctor-card__media">
+<img alt="Illustrated portrait of Dr. Isha Kapoor" height="640" loading="lazy" src="assets/images/doctors/dr-isha-kapoor.svg" width="560"/>
+<span class="doctor-card__availability"><span></span> Available tomorrow</span>
+<div class="doctor-card__social"><a aria-label="Email Dr. Isha Kapoor" href="mailto:care@medivahospital.com"><i aria-hidden="true" class="fa-regular fa-envelope"></i></a><a aria-label="Book an appointment with Dr. Isha Kapoor" href="#appointment"><i aria-hidden="true" class="fa-regular fa-calendar"></i></a></div>
+</div>
+<div class="doctor-card__body">
+<span>Director, Neurology</span>
+<h3>Dr. Isha Kapoor</h3>
+<p>MBBS, MD, DM Neurology · 16 years</p>
+<div class="doctor-card__meta"><span><i aria-hidden="true" class="fa-solid fa-star"></i> 4.9</span><span><i aria-hidden="true" class="fa-regular fa-clock"></i> Tue–Sun</span></div>
+<a class="doctor-card__link" href="pages/doctor-details.html">View Profile <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="swiper-slide">
+<article class="doctor-card">
+<div class="doctor-card__media">
+<img alt="Illustrated portrait of Dr. Rohan Malhotra" height="640" loading="lazy" src="assets/images/doctors/dr-rohan-malhotra.svg" width="560"/>
+<span class="doctor-card__availability"><span></span> Available today</span>
+<div class="doctor-card__social"><a aria-label="Email Dr. Rohan Malhotra" href="mailto:care@medivahospital.com"><i aria-hidden="true" class="fa-regular fa-envelope"></i></a><a aria-label="Book an appointment with Dr. Rohan Malhotra" href="#appointment"><i aria-hidden="true" class="fa-regular fa-calendar"></i></a></div>
+</div>
+<div class="doctor-card__body">
+<span>Senior Consultant, Orthopedics</span>
+<h3>Dr. Rohan Malhotra</h3>
+<p>MBBS, MS Orthopedics · 15 years</p>
+<div class="doctor-card__meta"><span><i aria-hidden="true" class="fa-solid fa-star"></i> 4.8</span><span><i aria-hidden="true" class="fa-regular fa-clock"></i> Mon–Fri</span></div>
+<a class="doctor-card__link" href="pages/doctor-details.html">View Profile <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="swiper-slide">
+<article class="doctor-card">
+<div class="doctor-card__media">
+<img alt="Illustrated portrait of Dr. Meera Nair" height="640" loading="lazy" src="assets/images/doctors/dr-meera-nair.svg" width="560"/>
+<span class="doctor-card__availability"><span></span> Available tomorrow</span>
+<div class="doctor-card__social"><a aria-label="Email Dr. Meera Nair" href="mailto:care@medivahospital.com"><i aria-hidden="true" class="fa-regular fa-envelope"></i></a><a aria-label="Book an appointment with Dr. Meera Nair" href="#appointment"><i aria-hidden="true" class="fa-regular fa-calendar"></i></a></div>
+</div>
+<div class="doctor-card__body">
+<span>Senior Consultant, Pediatrics</span>
+<h3>Dr. Meera Nair</h3>
+<p>MBBS, MD Pediatrics · 14 years</p>
+<div class="doctor-card__meta"><span><i aria-hidden="true" class="fa-solid fa-star"></i> 5.0</span><span><i aria-hidden="true" class="fa-regular fa-clock"></i> Mon–Sat</span></div>
+<a class="doctor-card__link" href="pages/doctor-details.html">View Profile <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</div>
+</article>
+</div>
+</div>
+<div class="swiper-pagination doctors-pagination"></div>
+</div>
+<div class="section-action" data-aos="fade-up"><a class="button button--secondary button--ripple" href="pages/doctors.html">Meet All Doctors</a></div>
+</div>
+</section>
+<!-- Why choose us -->
+<section aria-labelledby="why-title" class="section section--dark why-section" id="why-us">
+<div aria-hidden="true" class="why-section__pattern"></div>
+<div class="container why-section__grid">
+<div class="why-section__content" data-aos="fade-right">
+<span class="section-heading__eyebrow">Why choose Mediva</span>
+<h2 id="why-title">Designed for better clinical outcomes and a calmer care experience</h2>
+<p>Every detail—from appointment booking to follow-up—is built around safety, clarity, speed, and respect for each patient.</p>
+<a class="button button--light button--ripple" href="#appointment">Start Your Care Journey</a>
+</div>
+<div class="why-section__features">
+<article class="why-card" data-aos="fade-up"><span><i aria-hidden="true" class="fa-solid fa-user-doctor"></i></span><div><h3>Experienced specialists</h3><p>Consultants with strong clinical experience across major medical disciplines.</p></div></article>
+<article class="why-card" data-aos="fade-up" data-aos-delay="70"><span><i aria-hidden="true" class="fa-solid fa-microscope"></i></span><div><h3>Modern technology</h3><p>Advanced diagnostics and well-equipped treatment facilities for timely decisions.</p></div></article>
+<article class="why-card" data-aos="fade-up" data-aos-delay="140"><span><i aria-hidden="true" class="fa-solid fa-clock"></i></span><div><h3>24/7 critical support</h3><p>Emergency, laboratory, pharmacy, and intensive-care coordination around the clock.</p></div></article>
+<article class="why-card" data-aos="fade-up" data-aos-delay="210"><span><i aria-hidden="true" class="fa-solid fa-hand-holding-medical"></i></span><div><h3>Continuity of care</h3><p>Coordinated follow-ups and clear treatment guidance after every consultation.</p></div></article>
+</div>
+</div>
+<div class="container why-section__emergency" data-aos="fade-up">
+<div><span class="why-section__emergency-icon"><i aria-hidden="true" class="fa-solid fa-truck-medical"></i></span><div><small>Medical emergency?</small><strong>Our rapid-response team is available 24 hours.</strong></div></div>
+<a href="tel:+911145678900"><span>Emergency Helpline</span><strong>+91 11 4567 8900</strong><i aria-hidden="true" class="fa-solid fa-phone-volume"></i></a>
+</div>
+</section>
+<!-- Health packages -->
+<section aria-labelledby="packages-title" class="section section--soft packages-section" id="packages">
+<div class="container">
+<div class="section-heading section-heading--center" data-aos="fade-up">
+<span class="section-heading__eyebrow">Preventive health plans</span>
+<h2 class="section-heading__title" id="packages-title">Health packages made for real life</h2>
+<p class="section-heading__text">Early screening helps you understand risks sooner. Choose a thoughtfully designed package for yourself or your family.</p>
+</div>
+<div class="packages-grid">
+<article class="package-card" data-aos="fade-up">
+<div class="package-card__header"><span class="package-card__icon"><i aria-hidden="true" class="fa-solid fa-seedling"></i></span><span class="badge badge--accent">Essential</span></div>
+<h3>Essential Wellness</h3><p>For adults seeking a reliable annual health baseline.</p>
+<div class="package-card__price"><span>₹</span><strong>2,499</strong><small>/ person</small></div>
+<ul><li><i aria-hidden="true" class="fa-solid fa-check"></i> Complete blood count</li><li><i aria-hidden="true" class="fa-solid fa-check"></i> Liver and kidney profile</li><li><i aria-hidden="true" class="fa-solid fa-check"></i> Blood sugar and lipid profile</li><li><i aria-hidden="true" class="fa-solid fa-check"></i> Physician consultation</li></ul>
+<a class="button button--secondary button--block button--ripple" href="#appointment">Book Package</a>
+</article>
+<article class="package-card package-card--featured" data-aos="fade-up" data-aos-delay="80">
+<span class="package-card__popular">Most Popular</span>
+<div class="package-card__header"><span class="package-card__icon"><i aria-hidden="true" class="fa-solid fa-heart-pulse"></i></span><span class="badge badge--primary">Comprehensive</span></div>
+<h3>Complete Health Plus</h3><p>A broader preventive review for busy professionals and families.</p>
+<div class="package-card__price"><span>₹</span><strong>4,999</strong><small>/ person</small></div>
+<ul><li><i aria-hidden="true" class="fa-solid fa-check"></i> 65+ diagnostic parameters</li><li><i aria-hidden="true" class="fa-solid fa-check"></i> ECG and chest X-ray</li><li><i aria-hidden="true" class="fa-solid fa-check"></i> Thyroid and vitamin screening</li><li><i aria-hidden="true" class="fa-solid fa-check"></i> Specialist review and report</li></ul>
+<a class="button button--primary button--block button--ripple" href="#appointment">Book Package</a>
+</article>
+<article class="package-card" data-aos="fade-up" data-aos-delay="160">
+<div class="package-card__header"><span class="package-card__icon"><i aria-hidden="true" class="fa-solid fa-person-cane"></i></span><span class="badge badge--warning">Senior Care</span></div>
+<h3>Senior Wellness</h3><p>Focused screening for adults aged 60 and above.</p>
+<div class="package-card__price"><span>₹</span><strong>6,499</strong><small>/ person</small></div>
+<ul><li><i aria-hidden="true" class="fa-solid fa-check"></i> Bone and arthritis profile</li><li><i aria-hidden="true" class="fa-solid fa-check"></i> Cardiac risk assessment</li><li><i aria-hidden="true" class="fa-solid fa-check"></i> Vision and hearing screening</li><li><i aria-hidden="true" class="fa-solid fa-check"></i> Geriatrician consultation</li></ul>
+<a class="button button--secondary button--block button--ripple" href="#appointment">Book Package</a>
+</article>
+</div>
+<div class="section-action" data-aos="fade-up"><a class="text-link" href="pages/packages.html">Compare all health packages <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a></div>
+</div>
+</section>
+<!-- Testimonials -->
+<section aria-labelledby="testimonials-title" class="section section--surface testimonials-section" id="testimonials">
+<div class="container testimonials-section__grid">
+<div class="testimonials-section__intro" data-aos="fade-right">
+<span class="section-heading__eyebrow">Patient experiences</span>
+<h2 id="testimonials-title">Stories that remind us why care matters</h2>
+<p>Every recovery is personal. These experiences reflect the compassion, clarity, and clinical support our teams strive to provide each day.</p>
+<div class="testimonials-section__rating"><strong>4.9</strong><div><div><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i></div><span>Average patient rating</span></div></div>
+<div class="swiper-controls"><button aria-label="Previous testimonial" class="swiper-control testimonials-prev" type="button"><i aria-hidden="true" class="fa-solid fa-arrow-left"></i></button><button aria-label="Next testimonial" class="swiper-control testimonials-next" type="button"><i aria-hidden="true" class="fa-solid fa-arrow-right"></i></button></div>
+</div>
+<div class="swiper testimonials-swiper" data-aos="fade-left" data-testimonials-swiper="">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><article class="testimonial-card"><i aria-hidden="true" class="fa-solid fa-quote-left testimonial-card__quote"></i><div aria-label="5 out of 5 stars" class="testimonial-card__stars"><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i></div><blockquote>“From the first consultation to my cardiac procedure and follow-up, every person explained things clearly. I felt safe, respected, and genuinely cared for.”</blockquote><div class="testimonial-card__author"><img alt="Illustrated portrait of patient Ananya Sharma" height="200" loading="lazy" src="assets/images/testimonials/patient-ananya.svg" width="200"/><div><strong>Ananya Sharma</strong><span>Cardiology patient</span></div><i aria-label="Verified patient" class="fa-solid fa-circle-check"></i></div></article></div>
+<div class="swiper-slide"><article class="testimonial-card"><i aria-hidden="true" class="fa-solid fa-quote-left testimonial-card__quote"></i><div aria-label="5 out of 5 stars" class="testimonial-card__stars"><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i></div><blockquote>“The orthopedic team helped me return to walking comfortably after months of pain. The physiotherapy plan was practical and the follow-up was excellent.”</blockquote><div class="testimonial-card__author"><img alt="Illustrated portrait of patient Vikram Sethi" height="200" loading="lazy" src="assets/images/testimonials/patient-vikram.svg" width="200"/><div><strong>Vikram Sethi</strong><span>Orthopedics patient</span></div><i aria-label="Verified patient" class="fa-solid fa-circle-check"></i></div></article></div>
+<div class="swiper-slide"><article class="testimonial-card"><i aria-hidden="true" class="fa-solid fa-quote-left testimonial-card__quote"></i><div aria-label="5 out of 5 stars" class="testimonial-card__stars"><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i></div><blockquote>“Our pediatrician was patient with both my daughter and me. Booking was simple, the clinic was calm, and we received clear guidance after the visit.”</blockquote><div class="testimonial-card__author"><img alt="Illustrated portrait of patient Sana Khan" height="200" loading="lazy" src="assets/images/testimonials/patient-sana.svg" width="200"/><div><strong>Sana Khan</strong><span>Parent and pediatric patient</span></div><i aria-label="Verified patient" class="fa-solid fa-circle-check"></i></div></article></div>
+</div>
+<div class="swiper-pagination testimonials-pagination"></div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section aria-labelledby="faq-title" class="section section--soft faq-section" id="faq">
+<div class="container faq-section__grid">
+<div class="faq-section__intro" data-aos="fade-right">
+<span class="section-heading__eyebrow">Frequently asked questions</span>
+<h2 id="faq-title">Helpful answers before your visit</h2>
+<p>Can’t find what you need? Our patient support team is available every day to guide you.</p>
+<div class="faq-section__support"><span><i aria-hidden="true" class="fa-solid fa-headset"></i></span><div><small>Patient support</small><a href="tel:+911145678900">+91 11 4567 8900</a></div></div>
+</div>
+<div class="accordion" data-accordion="" data-aos="fade-left">
+<article class="accordion__item is-open">
+<h3><button aria-controls="faq-panel-1" aria-expanded="true" class="accordion__button" id="faq-button-1" type="button"><span>How can I book an appointment?</span><i aria-hidden="true" class="fa-solid fa-plus"></i></button></h3>
+<div aria-labelledby="faq-button-1" class="accordion__panel" id="faq-panel-1" role="region"><div><p>Use the appointment form below, call our patient support line, or visit the hospital reception. Our team will confirm the doctor, date, and time with you.</p></div></div>
+</article>
+<article class="accordion__item">
+<h3><button aria-controls="faq-panel-2" aria-expanded="false" class="accordion__button" id="faq-button-2" type="button"><span>What should I bring for my first consultation?</span><i aria-hidden="true" class="fa-solid fa-plus"></i></button></h3>
+<div aria-labelledby="faq-button-2" class="accordion__panel" id="faq-panel-2" role="region"><div><p>Please bring a valid ID, previous prescriptions, investigation reports, a list of current medicines, and insurance details if applicable.</p></div></div>
+</article>
+<article class="accordion__item">
+<h3><button aria-controls="faq-panel-3" aria-expanded="false" class="accordion__button" id="faq-button-3" type="button"><span>Does Mediva Care offer emergency services?</span><i aria-hidden="true" class="fa-solid fa-plus"></i></button></h3>
+<div aria-labelledby="faq-button-3" class="accordion__panel" id="faq-panel-3" role="region"><div><p>Yes. Our emergency department, diagnostic support, pharmacy coordination, and critical-care response operate 24 hours a day.</p></div></div>
+</article>
+<article class="accordion__item">
+<h3><button aria-controls="faq-panel-4" aria-expanded="false" class="accordion__button" id="faq-button-4" type="button"><span>Can I reschedule or cancel my appointment?</span><i aria-hidden="true" class="fa-solid fa-plus"></i></button></h3>
+<div aria-labelledby="faq-button-4" class="accordion__panel" id="faq-panel-4" role="region"><div><p>Yes. Contact patient support at least four hours before your appointment whenever possible, and our team will help arrange another suitable time.</p></div></div>
+</article>
+<article class="accordion__item">
+<h3><button aria-controls="faq-panel-5" aria-expanded="false" class="accordion__button" id="faq-button-5" type="button"><span>Are health packages available on weekends?</span><i aria-hidden="true" class="fa-solid fa-plus"></i></button></h3>
+<div aria-labelledby="faq-button-5" class="accordion__panel" id="faq-panel-5" role="region"><div><p>Selected preventive health packages are available on Saturdays and Sundays with advance booking. Fasting instructions are shared during confirmation.</p></div></div>
+</article>
+</div>
+</div>
+</section>
+<!-- Appointment and contact -->
+<section aria-labelledby="appointment-title" class="section section--surface appointment-section" id="appointment">
+<div class="container appointment-section__grid">
+<div class="appointment-section__content" data-aos="fade-right">
+<span class="section-heading__eyebrow">Book an appointment</span>
+<h2 id="appointment-title">Take the next step toward better health</h2>
+<p>Share a few details and our patient-care team will help you choose the right specialist and appointment time.</p>
+<div class="appointment-section__contact-list">
+<a href="tel:+911145678900"><span><i aria-hidden="true" class="fa-solid fa-phone-volume"></i></span><div><small>Call patient support</small><strong>+91 11 4567 8900</strong></div></a>
+<a href="mailto:care@medivahospital.com"><span><i aria-hidden="true" class="fa-regular fa-envelope"></i></span><div><small>Email us</small><strong>care@medivahospital.com</strong></div></a>
+<div><span><i aria-hidden="true" class="fa-solid fa-location-dot"></i></span><div><small>Visit the hospital</small><strong>Sector 18, New Delhi 110075</strong></div></div>
+</div>
+<div class="appointment-section__promise"><i aria-hidden="true" class="fa-solid fa-shield-heart"></i><p><strong>Your information stays private.</strong><span>We use your details only to coordinate your requested care.</span></p></div>
+</div>
+<form class="appointment-form" data-aos="fade-left" data-emailjs-form="appointment" novalidate="">
+<div class="appointment-form__header"><span><i aria-hidden="true" class="fa-regular fa-calendar-check"></i></span><div><h3>Request an appointment</h3><p>We usually confirm requests within 30 minutes.</p></div></div>
+<div class="form-row form-row--2">
+<div class="form-group"><label class="form-label" for="appointment-name">Full name <span class="form-label__required">*</span></label><input autocomplete="name" class="form-control" id="appointment-name" name="name" placeholder="Your full name" required="" type="text"/></div>
+<div class="form-group"><label class="form-label" for="appointment-phone">Phone number <span class="form-label__required">*</span></label><input autocomplete="tel" class="form-control" id="appointment-phone" name="phone" pattern="[0-9+() -]{8,18}" placeholder="+91 98XX XXX XXX" required="" type="tel"/></div>
+</div>
+<div class="form-row form-row--2">
+<div class="form-group"><label class="form-label" for="appointment-email">Email address <span class="form-label__required">*</span></label><input autocomplete="email" class="form-control" id="appointment-email" name="email" placeholder="you@example.com" required="" type="email"/></div>
+<div class="form-group"><label class="form-label" for="appointment-department">Department <span class="form-label__required">*</span></label><select class="form-control" id="appointment-department" name="department" required=""><option value="">Select a department</option><option>Cardiology</option><option>Neurology</option><option>Orthopedics</option><option>Pediatrics</option><option>Dental Care</option><option>General Medicine</option><option>Health Checkup</option></select></div>
+</div>
+<div class="form-row form-row--2">
+<div class="form-group"><label class="form-label" for="appointment-date">Preferred date <span class="form-label__required">*</span></label><input class="form-control" data-min-date="" id="appointment-date" name="preferred_date" required="" type="date"/></div>
+<div class="form-group"><label class="form-label" for="appointment-time">Preferred time</label><select class="form-control" id="appointment-time" name="preferred_time"><option>Morning, 9 AM–12 PM</option><option>Afternoon, 12 PM–4 PM</option><option>Evening, 4 PM–7 PM</option></select></div>
+</div>
+<div class="form-group"><label class="form-label" for="appointment-message">How can we help?</label><textarea class="form-control" id="appointment-message" name="message" placeholder="Briefly describe your concern or preferred doctor" rows="4"></textarea></div>
+<label class="check-control"><input name="consent" required="" type="checkbox"/><span>I agree to be contacted by Mediva Care Hospital regarding this request.</span></label>
+<button class="button button--primary button--lg button--block button--ripple" type="submit"><span>Request Appointment</span><i aria-hidden="true" class="fa-solid fa-arrow-right"></i></button>
+<div aria-live="polite" class="form-status" data-form-status="" role="status"></div>
+</form>
+</div>
+</section>
+<!-- Map -->
+<section aria-labelledby="location-title" class="map-section">
+<div class="map-section__map">
+<iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Sector%2018%20New%20Delhi&amp;z=14&amp;output=embed" title="Map showing Mediva Care Hospital in Sector 18, New Delhi"></iframe>
+</div>
+<div class="container map-section__overlay-wrap">
+<article class="map-section__card" data-aos="fade-right">
+<span class="section-heading__eyebrow">Visit Mediva Care</span>
+<h2 id="location-title">Easy to reach. Open around the clock.</h2>
+<p>Sector 18, New Delhi 110075, India</p>
+<ul><li><i aria-hidden="true" class="fa-solid fa-car"></i><span>Free patient and visitor parking</span></li><li><i aria-hidden="true" class="fa-solid fa-train-subway"></i><span>8 minutes from the nearest metro</span></li><li><i aria-hidden="true" class="fa-solid fa-wheelchair"></i><span>Wheelchair-accessible entrance</span></li></ul>
+<a class="button button--primary button--ripple" href="https://www.google.com/maps/search/?api=1&amp;query=Sector+18+New+Delhi" rel="noopener noreferrer" target="_blank">Get Directions <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i></a>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer site-footer--complete">
+<div class="container site-footer__newsletter">
+<div><span class="site-footer__newsletter-icon"><i aria-hidden="true" class="fa-regular fa-envelope-open"></i></span><div><h2>Health guidance, delivered thoughtfully</h2><p>Receive practical wellness tips and hospital updates. No spam.</p></div></div>
+<form class="newsletter-form" data-newsletter-form=""><label class="visually-hidden" for="newsletter-email">Email address</label><input autocomplete="email" id="newsletter-email" name="email" placeholder="Enter your email address" required="" type="email"/><button class="button button--accent button--ripple" type="submit">Subscribe</button><span aria-live="polite" class="newsletter-form__status" data-newsletter-status="" role="status"></span></form>
+</div>
+<div class="container site-footer__grid">
+<div class="site-footer__about">
+<a aria-label="Mediva Care Hospital home" class="brand" href="index.html"><img alt="Mediva Care Hospital" class="brand__logo" height="56" loading="lazy" src="assets/logos/logo-white.svg" width="220"/></a>
+<p>Modern multispecialty healthcare built around clinical excellence, clear communication, and compassionate support.</p>
+<div class="site-footer__social"><a aria-label="Mediva Care on Facebook" href="#"><i aria-hidden="true" class="fa-brands fa-facebook-f"></i></a><a aria-label="Mediva Care on Instagram" href="#"><i aria-hidden="true" class="fa-brands fa-instagram"></i></a><a aria-label="Mediva Care on LinkedIn" href="#"><i aria-hidden="true" class="fa-brands fa-linkedin-in"></i></a><a aria-label="Mediva Care on YouTube" href="#"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a></div>
+</div>
+<div><h3>Quick Links</h3><ul class="site-footer__links"><li><a href="pages/about.html">About Us</a></li><li><a href="pages/doctors.html">Our Doctors</a></li><li><a href="pages/packages.html">Health Packages</a></li><li><a href="pages/testimonials.html">Patient Stories</a></li><li><a href="pages/contact.html">Contact Us</a></li></ul></div>
+<div><h3>Departments</h3><ul class="site-footer__links"><li><a href="pages/services/cardiology.html">Cardiology</a></li><li><a href="pages/services/neurology.html">Neurology</a></li><li><a href="pages/services/orthopedics.html">Orthopedics</a></li><li><a href="pages/services/pediatrics.html">Pediatrics</a></li><li><a href="pages/services/emergency.html">Emergency Care</a></li></ul></div>
+<div><h3>Contact</h3><ul class="site-footer__contact"><li><i aria-hidden="true" class="fa-solid fa-location-dot"></i><span>Sector 18, New Delhi 110075</span></li><li><i aria-hidden="true" class="fa-solid fa-phone"></i><a href="tel:+911145678900">+91 11 4567 8900</a></li><li><i aria-hidden="true" class="fa-regular fa-envelope"></i><a href="mailto:care@medivahospital.com">care@medivahospital.com</a></li><li><i aria-hidden="true" class="fa-regular fa-clock"></i><span>Open 24 hours, every day</span></li></ul></div>
+</div>
+<div class="site-footer__bottom"><div class="container"><p>© <span data-current-year=""></span> Mediva Care Hospital. All rights reserved.</p><div><a href="pages/privacy-policy.html">Privacy Policy</a><a href="pages/terms.html">Terms of Use</a><a href="pages/contact.html">Accessibility</a></div></div></div>
+</footer>
+<script defer="" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script defer="" src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script defer="" src="assets/js/config.js"></script>
+<script defer="" src="assets/js/navigation.js"></script>
+<script defer="" src="assets/js/animations.js"></script>
+<script defer="" src="assets/js/forms.js"></script>
+<script defer="" src="assets/js/homepage.js"></script>
+<script defer src="assets/js/components.js"></script><script defer="" src="assets/js/main.js"></script>
+</body>
 </html>

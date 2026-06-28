@@ -1,645 +1,511 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Mediva Care Hospital visual design system and reusable component reference." />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="theme-color" content="#0f4c81" />
-    <title>Design System | Mediva Care Hospital</title>
-
-    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../assets/css/base.css" />
-    <link rel="stylesheet" href="../assets/css/layout.css" />
-    <link rel="stylesheet" href="../assets/css/navigation.css" />
-    <link rel="stylesheet" href="../assets/css/components.css" />
-    <link rel="stylesheet" href="../assets/css/utilities.css" />
-    <link rel="stylesheet" href="../assets/css/animations.css" />
-    <link rel="stylesheet" href="../assets/css/pages.css" />
-    <link rel="stylesheet" href="../assets/css/responsive.css" />
-  </head>
-  <body data-nav-section="more">
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
-    <header class="site-header" data-header>
-      <div class="topbar">
-        <div class="container topbar__inner">
-          <div class="topbar__group">
-            <span class="topbar__item topbar__item--open">
-              <span class="topbar__status-dot" aria-hidden="true"></span>
-              <span>Open 24 hours, every day</span>
-            </span>
-            <a class="topbar__item topbar__item--location" href="../pages/contact.html">
-              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-              <span>Sector 18, New Delhi</span>
-            </a>
-          </div>
-
-          <div class="topbar__group">
-            <a class="topbar__link topbar__link--phone" href="tel:+911145678900">
-              <i class="fa-solid fa-phone" aria-hidden="true"></i>
-              <span>+91 11 4567 8900</span>
-            </a>
-            <a class="topbar__link topbar__link--email" href="mailto:care@medivahospital.com">
-              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
-              <span>care@medivahospital.com</span>
-            </a>
-            <a class="topbar__emergency" href="tel:+911145678900">
-              <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
-              <span>Emergency</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="navbar">
-        <div class="container navbar__inner">
-          <a class="brand" href="../index.html" aria-label="Mediva Care Hospital home">
-            <img
-              class="brand__logo brand__logo--default"
-              src="../assets/logos/logo.svg"
-              alt="Mediva Care Hospital"
-              width="220"
-              height="56"
-            />
-            <img
-              class="brand__logo brand__logo--inverse"
-              src="../assets/logos/logo-white.svg"
-              alt=""
-              width="220"
-              height="56"
-              aria-hidden="true"
-            />
-          </a>
-
-          <nav
-            class="primary-nav"
-            id="primary-navigation"
-            aria-label="Primary navigation"
-            data-primary-nav
-          >
-            <div class="primary-nav__mobile-header">
-              <span class="primary-nav__mobile-title">Explore Mediva</span>
-              <button class="nav-mobile-close" type="button" aria-label="Close navigation" data-menu-close>
-                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <ul class="primary-nav__list">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html" data-nav-link data-nav-key="home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/about.html" data-nav-link data-nav-key="about">About</a>
-              </li>
-              <li class="nav-item nav-item--mega">
-                <div class="nav-item__control">
-                  <a
-                    class="nav-link"
-                    href="../pages/departments.html"
-                    data-nav-link
-                    data-nav-key="departments"
-                  >Departments</a>
-                  <button
-                    class="nav-caret"
-                    type="button"
-                    aria-label="Show departments menu"
-                    aria-expanded="false"
-                    aria-controls="departments-menu"
-                    data-dropdown-toggle
-                  >
-                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                  </button>
-                </div>
-
-                <div class="mega-menu" id="departments-menu">
-                  <div class="mega-menu__grid">
-                    <section aria-labelledby="clinical-departments-title">
-                      <p class="mega-menu__section-title" id="clinical-departments-title">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Mediva Care Hospital visual design system and reusable component reference." name="description"/>
+<meta content="noindex, nofollow" name="robots"/>
+<meta content="#0f4c81" name="theme-color"/>
+<title>Design System | Mediva Care Hospital</title>
+<link href="../assets/favicon/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<link href="../assets/css/base.css" rel="stylesheet"/>
+<link href="../assets/css/layout.css" rel="stylesheet"/>
+<link href="../assets/css/navigation.css" rel="stylesheet"/>
+<link href="../assets/css/components.css" rel="stylesheet"/><link href="../assets/css/component-library.css" rel="stylesheet"/>
+<link href="../assets/css/utilities.css" rel="stylesheet"/>
+<link href="../assets/css/animations.css" rel="stylesheet"/>
+<link href="../assets/css/pages.css" rel="stylesheet"/>
+<link href="../assets/css/responsive.css" rel="stylesheet"/>
+</head>
+<body data-nav-section="more">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" data-header="">
+<div class="topbar">
+<div class="container topbar__inner">
+<div class="topbar__group">
+<span class="topbar__item topbar__item--open">
+<span aria-hidden="true" class="topbar__status-dot"></span>
+<span>Open 24 hours, every day</span>
+</span>
+<a class="topbar__item topbar__item--location" href="../pages/contact.html">
+<i aria-hidden="true" class="fa-solid fa-location-dot"></i>
+<span>Sector 18, New Delhi</span>
+</a>
+</div>
+<div class="topbar__group">
+<a class="topbar__link topbar__link--phone" href="tel:+911145678900">
+<i aria-hidden="true" class="fa-solid fa-phone"></i>
+<span>+91 11 4567 8900</span>
+</a>
+<a class="topbar__link topbar__link--email" href="mailto:care@medivahospital.com">
+<i aria-hidden="true" class="fa-regular fa-envelope"></i>
+<span>care@medivahospital.com</span>
+</a>
+<a class="topbar__emergency" href="tel:+911145678900">
+<i aria-hidden="true" class="fa-solid fa-truck-medical"></i>
+<span>Emergency</span>
+</a>
+</div>
+</div>
+</div>
+<div class="navbar">
+<div class="container navbar__inner">
+<a aria-label="Mediva Care Hospital home" class="brand" href="../index.html">
+<img alt="Mediva Care Hospital" class="brand__logo brand__logo--default" height="56" src="../assets/logos/logo.svg" width="220"/>
+<img alt="" aria-hidden="true" class="brand__logo brand__logo--inverse" height="56" src="../assets/logos/logo-white.svg" width="220"/>
+</a>
+<nav aria-label="Primary navigation" class="primary-nav" data-primary-nav="" id="primary-navigation">
+<div class="primary-nav__mobile-header">
+<span class="primary-nav__mobile-title">Explore Mediva</span>
+<button aria-label="Close navigation" class="nav-mobile-close" data-menu-close="" type="button">
+<i aria-hidden="true" class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<ul class="primary-nav__list">
+<li class="nav-item">
+<a class="nav-link" data-nav-key="home" data-nav-link="" href="../index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="about" data-nav-link="" href="../pages/about.html">About</a>
+</li>
+<li class="nav-item nav-item--mega">
+<div class="nav-item__control">
+<a class="nav-link" data-nav-key="departments" data-nav-link="" href="../pages/departments.html">Departments</a>
+<button aria-controls="departments-menu" aria-expanded="false" aria-label="Show departments menu" class="nav-caret" data-dropdown-toggle="" type="button">
+<i aria-hidden="true" class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+<div class="mega-menu" id="departments-menu">
+<div class="mega-menu__grid">
+<section aria-labelledby="clinical-departments-title">
+<p class="mega-menu__section-title" id="clinical-departments-title">
                         Clinical departments
                       </p>
-                      <ul class="mega-menu__links mega-menu__links--two-columns">
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/cardiology.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span>
-                            <span>Cardiology</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/neurology.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></span>
-                            <span>Neurology</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/orthopedics.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-bone" aria-hidden="true"></i></span>
-                            <span>Orthopedics</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/pediatrics.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-child-reaching" aria-hidden="true"></i></span>
-                            <span>Pediatrics</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/dental.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-tooth" aria-hidden="true"></i></span>
-                            <span>Dental Care</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="mega-menu__link" href="../pages/services/emergency.html" data-nav-link>
-                            <span class="mega-menu__icon"><i class="fa-solid fa-truck-medical" aria-hidden="true"></i></span>
-                            <span>Emergency Care</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </section>
-
-                    <section aria-labelledby="explore-care-title">
-                      <p class="mega-menu__section-title" id="explore-care-title">Explore care</p>
-                      <ul class="mega-menu__links">
-                        <li><a class="mega-menu__link" href="../pages/departments.html" data-nav-link><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i><span>All departments</span></a></li>
-                        <li><a class="mega-menu__link" href="../pages/doctors.html" data-nav-link><i class="fa-solid fa-user-doctor" aria-hidden="true"></i><span>Find a specialist</span></a></li>
-                        <li><a class="mega-menu__link" href="../pages/packages.html" data-nav-link><i class="fa-solid fa-notes-medical" aria-hidden="true"></i><span>Preventive health checks</span></a></li>
-                        <li><a class="mega-menu__link" href="../pages/contact.html" data-nav-link><i class="fa-regular fa-calendar-check" aria-hidden="true"></i><span>Request an appointment</span></a></li>
-                      </ul>
-                    </section>
-
-                    <article class="mega-menu__feature">
-                      <span class="mega-menu__feature-icon"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></span>
-                      <p class="mega-menu__feature-title">Need urgent care?</p>
-                      <p>Our emergency team is available around the clock for rapid assessment and coordinated care.</p>
-                      <a href="tel:+911145678900">Call emergency desk <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                    </article>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/doctors.html" data-nav-link data-nav-key="doctors">Doctors</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/packages.html" data-nav-link data-nav-key="packages">Packages</a>
-              </li>
-              <li class="nav-item nav-item--dropdown">
-                <div class="nav-item__control">
-                  <button
-                    class="nav-button nav-button--dropdown"
-                    type="button"
-                    aria-expanded="false"
-                    aria-controls="more-menu"
-                    data-dropdown-toggle
-                    data-nav-key="more"
-                  >
-                    <span>More</span>
-                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                  </button>
-                </div>
-                <ul class="nav-submenu" id="more-menu">
-                  <li><a class="nav-submenu__link" href="../pages/testimonials.html" data-nav-link><i class="fa-regular fa-comments" aria-hidden="true"></i>Testimonials</a></li>
-                  <li><a class="nav-submenu__link" href="../pages/gallery.html" data-nav-link><i class="fa-regular fa-images" aria-hidden="true"></i>Gallery</a></li>
-                  <li><a class="nav-submenu__link" href="../pages/privacy-policy.html" data-nav-link><i class="fa-solid fa-user-shield" aria-hidden="true"></i>Privacy Policy</a></li>
-                  <li><a class="nav-submenu__link" href="../pages/terms.html" data-nav-link><i class="fa-regular fa-file-lines" aria-hidden="true"></i>Terms of Use</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/contact.html" data-nav-link data-nav-key="contact">Contact</a>
-              </li>
-            </ul>
-
-            <div class="primary-nav__mobile-actions">
-              <a class="button button--danger button--block" href="tel:+911145678900">
-                <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
+<ul class="mega-menu__links mega-menu__links--two-columns">
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/cardiology.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-heart-pulse"></i></span>
+<span>Cardiology</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/neurology.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-brain"></i></span>
+<span>Neurology</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/orthopedics.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-bone"></i></span>
+<span>Orthopedics</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/pediatrics.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-child-reaching"></i></span>
+<span>Pediatrics</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/dental.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-tooth"></i></span>
+<span>Dental Care</span>
+</a>
+</li>
+<li>
+<a class="mega-menu__link" data-nav-link="" href="../pages/services/emergency.html">
+<span class="mega-menu__icon"><i aria-hidden="true" class="fa-solid fa-truck-medical"></i></span>
+<span>Emergency Care</span>
+</a>
+</li>
+</ul>
+</section>
+<section aria-labelledby="explore-care-title">
+<p class="mega-menu__section-title" id="explore-care-title">Explore care</p>
+<ul class="mega-menu__links">
+<li><a class="mega-menu__link" data-nav-link="" href="../pages/departments.html"><i aria-hidden="true" class="fa-solid fa-table-cells-large"></i><span>All departments</span></a></li>
+<li><a class="mega-menu__link" data-nav-link="" href="../pages/doctors.html"><i aria-hidden="true" class="fa-solid fa-user-doctor"></i><span>Find a specialist</span></a></li>
+<li><a class="mega-menu__link" data-nav-link="" href="../pages/packages.html"><i aria-hidden="true" class="fa-solid fa-notes-medical"></i><span>Preventive health checks</span></a></li>
+<li><a class="mega-menu__link" data-nav-link="" href="../pages/contact.html"><i aria-hidden="true" class="fa-regular fa-calendar-check"></i><span>Request an appointment</span></a></li>
+</ul>
+</section>
+<article class="mega-menu__feature">
+<span class="mega-menu__feature-icon"><i aria-hidden="true" class="fa-solid fa-shield-heart"></i></span>
+<p class="mega-menu__feature-title">Need urgent care?</p>
+<p>Our emergency team is available around the clock for rapid assessment and coordinated care.</p>
+<a href="tel:+911145678900">Call emergency desk <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+</article>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="doctors" data-nav-link="" href="../pages/doctors.html">Doctors</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="packages" data-nav-link="" href="../pages/packages.html">Packages</a>
+</li>
+<li class="nav-item nav-item--dropdown">
+<div class="nav-item__control">
+<button aria-controls="more-menu" aria-expanded="false" class="nav-button nav-button--dropdown" data-dropdown-toggle="" data-nav-key="more" type="button">
+<span>More</span>
+<i aria-hidden="true" class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+<ul class="nav-submenu" id="more-menu">
+<li><a class="nav-submenu__link" data-nav-link="" href="../pages/testimonials.html"><i aria-hidden="true" class="fa-regular fa-comments"></i>Testimonials</a></li>
+<li><a class="nav-submenu__link" data-nav-link="" href="../pages/gallery.html"><i aria-hidden="true" class="fa-regular fa-images"></i>Gallery</a></li>
+<li><a class="nav-submenu__link" data-nav-link="" href="../pages/privacy-policy.html"><i aria-hidden="true" class="fa-solid fa-user-shield"></i>Privacy Policy</a></li>
+<li><a class="nav-submenu__link" data-nav-link="" href="../pages/terms.html"><i aria-hidden="true" class="fa-regular fa-file-lines"></i>Terms of Use</a></li>
+<li><a class="nav-submenu__link" data-nav-link="" href="../pages/components.html"><i aria-hidden="true" class="fa-solid fa-layer-group"></i>Components</a></li></ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-nav-key="contact" data-nav-link="" href="../pages/contact.html">Contact</a>
+</li>
+</ul>
+<div class="primary-nav__mobile-actions">
+<a class="button button--danger button--block" href="tel:+911145678900">
+<i aria-hidden="true" class="fa-solid fa-truck-medical"></i>
                 Emergency Call
               </a>
-              <a class="button button--primary button--block" href="../pages/contact.html">
-                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+<a class="button button--primary button--block" href="../pages/contact.html">
+<i aria-hidden="true" class="fa-regular fa-calendar-check"></i>
                 Book Appointment
               </a>
-            </div>
-          </nav>
-
-          <div class="navbar__actions">
-            <button class="nav-icon-button" type="button" aria-label="Search website" data-search-open>
-              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-            </button>
-            <button
-              class="nav-icon-button"
-              type="button"
-              aria-label="Switch to dark theme"
-              aria-pressed="false"
-              data-theme-toggle
-            >
-              <i class="fa-regular fa-moon nav-icon-button__moon" aria-hidden="true"></i>
-              <i class="fa-regular fa-sun nav-icon-button__sun" aria-hidden="true"></i>
-            </button>
-            <a class="button button--primary navbar__appointment" href="../pages/contact.html">
-              <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+</div>
+</nav>
+<div class="navbar__actions">
+<button aria-label="Search website" class="nav-icon-button" data-search-open="" type="button">
+<i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
+</button>
+<button aria-label="Switch to dark theme" aria-pressed="false" class="nav-icon-button" data-theme-toggle="" type="button">
+<i aria-hidden="true" class="fa-regular fa-moon nav-icon-button__moon"></i>
+<i aria-hidden="true" class="fa-regular fa-sun nav-icon-button__sun"></i>
+</button>
+<a class="button button--primary navbar__appointment" href="../pages/contact.html">
+<i aria-hidden="true" class="fa-regular fa-calendar-check"></i>
               Book Appointment
             </a>
-            <button
-              class="nav-menu-toggle"
-              type="button"
-              aria-label="Open navigation"
-              aria-expanded="false"
-              aria-controls="primary-navigation"
-              data-menu-toggle
-            >
-              <span class="nav-menu-toggle__line"></span>
-              <span class="nav-menu-toggle__line"></span>
-              <span class="nav-menu-toggle__line"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <button class="nav-backdrop" type="button" aria-label="Close navigation" data-menu-backdrop></button>
-    </header>
-
-    <dialog class="site-search-dialog" aria-labelledby="site-search-title" data-search-dialog>
-      <div class="site-search-dialog__panel">
-        <div class="site-search-dialog__header">
-          <div>
-            <p class="site-search-dialog__eyebrow">Quick access</p>
-            <h2 class="site-search-dialog__title" id="site-search-title">How can we help?</h2>
-          </div>
-          <button class="site-search-dialog__close" type="button" aria-label="Close search" data-search-close>
-            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-          </button>
-        </div>
-
-        <form class="site-search-form" role="search" data-site-search-form>
-          <label class="visually-hidden" for="site-search-input">Search hospital pages</label>
-          <i class="fa-solid fa-magnifying-glass site-search-form__icon" aria-hidden="true"></i>
-          <input
-            class="site-search-form__input"
-            id="site-search-input"
-            name="query"
-            type="search"
-            placeholder="Search departments, doctors, packages..."
-            autocomplete="off"
-            data-site-search-input
-          />
-          <span class="site-search-form__shortcut" aria-hidden="true">Ctrl K</span>
-        </form>
-        <p class="site-search-dialog__hint">Press Enter to open the first result or Escape to close.</p>
-        <div class="site-search-results" aria-live="polite" data-site-search-results></div>
-      </div>
-    </dialog>
-
-    <main id="main-content">
-      <section class="design-system-hero">
-        <div class="container">
-          <span class="badge badge--accent u-mb-4">Version 1.0</span>
-          <h1>Mediva Care Hospital Design System</h1>
-          <p>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="nav-menu-toggle" data-menu-toggle="" type="button">
+<span class="nav-menu-toggle__line"></span>
+<span class="nav-menu-toggle__line"></span>
+<span class="nav-menu-toggle__line"></span>
+</button>
+</div>
+</div>
+</div>
+<button aria-label="Close navigation" class="nav-backdrop" data-menu-backdrop="" type="button"></button>
+</header>
+<dialog aria-labelledby="site-search-title" class="site-search-dialog" data-search-dialog="">
+<div class="site-search-dialog__panel">
+<div class="site-search-dialog__header">
+<div>
+<p class="site-search-dialog__eyebrow">Quick access</p>
+<h2 class="site-search-dialog__title" id="site-search-title">How can we help?</h2>
+</div>
+<button aria-label="Close search" class="site-search-dialog__close" data-search-close="" type="button">
+<i aria-hidden="true" class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<form class="site-search-form" data-site-search-form="" role="search">
+<label class="visually-hidden" for="site-search-input">Search hospital pages</label>
+<i aria-hidden="true" class="fa-solid fa-magnifying-glass site-search-form__icon"></i>
+<input autocomplete="off" class="site-search-form__input" data-site-search-input="" id="site-search-input" name="query" placeholder="Search departments, doctors, packages..." type="search"/>
+<span aria-hidden="true" class="site-search-form__shortcut">Ctrl K</span>
+</form>
+<p class="site-search-dialog__hint">Press Enter to open the first result or Escape to close.</p>
+<div aria-live="polite" class="site-search-results" data-site-search-results=""></div>
+</div>
+</dialog>
+<main id="main-content">
+<section class="design-system-hero">
+<div class="container">
+<span class="badge badge--accent u-mb-4">Version 1.0</span>
+<h1>Mediva Care Hospital Design System</h1>
+<p>
             A reusable visual foundation for a premium healthcare experience—built for clarity,
             trust, accessibility, and consistent responsive implementation.
           </p>
-        </div>
-      </section>
-
-      <section class="section section--surface">
-        <div class="container">
-          <section id="colors" class="design-system-block" aria-labelledby="colors-title">
-            <div class="design-system-label">
-              <p class="eyebrow">Foundation</p>
-              <h2 id="colors-title">Color system</h2>
-              <p class="u-text-muted u-mt-4">
+</div>
+</section>
+<section class="section section--surface">
+<div class="container">
+<section aria-labelledby="colors-title" class="design-system-block" id="colors">
+<div class="design-system-label">
+<p class="eyebrow">Foundation</p>
+<h2 id="colors-title">Color system</h2>
+<p class="u-text-muted u-mt-4">
                 Brand, accent, semantic, and neutral tokens are defined as CSS custom properties.
               </p>
-            </div>
-
-            <div class="grid--auto-fit design-system-swatches">
-              <article class="swatch">
-                <div class="swatch__color swatch__color--primary"></div>
-                <div class="swatch__body"><strong>Primary</strong><span>#0F4C81</span></div>
-              </article>
-              <article class="swatch">
-                <div class="swatch__color swatch__color--secondary"></div>
-                <div class="swatch__body"><strong>Secondary</strong><span>#2563EB</span></div>
-              </article>
-              <article class="swatch">
-                <div class="swatch__color swatch__color--accent"></div>
-                <div class="swatch__body"><strong>Accent</strong><span>#14B8A6</span></div>
-              </article>
-              <article class="swatch">
-                <div class="swatch__color swatch__color--danger"></div>
-                <div class="swatch__body"><strong>Danger</strong><span>#EF4444</span></div>
-              </article>
-              <article class="swatch">
-                <div class="swatch__color swatch__color--dark"></div>
-                <div class="swatch__body"><strong>Dark</strong><span>#0F172A</span></div>
-              </article>
-              <article class="swatch">
-                <div class="swatch__color swatch__color--background"></div>
-                <div class="swatch__body"><strong>Background</strong><span>#F8FAFC</span></div>
-              </article>
-            </div>
-          </section>
-
-          <section id="typography" class="design-system-block" aria-labelledby="type-title">
-            <div class="design-system-label">
-              <p class="eyebrow">Hierarchy</p>
-              <h2 id="type-title">Typography</h2>
-              <p class="u-text-muted u-mt-4">
+</div>
+<div class="grid--auto-fit design-system-swatches">
+<article class="swatch">
+<div class="swatch__color swatch__color--primary"></div>
+<div class="swatch__body"><strong>Primary</strong><span>#0F4C81</span></div>
+</article>
+<article class="swatch">
+<div class="swatch__color swatch__color--secondary"></div>
+<div class="swatch__body"><strong>Secondary</strong><span>#2563EB</span></div>
+</article>
+<article class="swatch">
+<div class="swatch__color swatch__color--accent"></div>
+<div class="swatch__body"><strong>Accent</strong><span>#14B8A6</span></div>
+</article>
+<article class="swatch">
+<div class="swatch__color swatch__color--danger"></div>
+<div class="swatch__body"><strong>Danger</strong><span>#EF4444</span></div>
+</article>
+<article class="swatch">
+<div class="swatch__color swatch__color--dark"></div>
+<div class="swatch__body"><strong>Dark</strong><span>#0F172A</span></div>
+</article>
+<article class="swatch">
+<div class="swatch__color swatch__color--background"></div>
+<div class="swatch__body"><strong>Background</strong><span>#F8FAFC</span></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="type-title" class="design-system-block" id="typography">
+<div class="design-system-label">
+<p class="eyebrow">Hierarchy</p>
+<h2 id="type-title">Typography</h2>
+<p class="u-text-muted u-mt-4">
                 Poppins creates authoritative headings, while Inter keeps long-form content highly readable.
               </p>
-            </div>
-
-            <div class="card">
-              <div class="card__body stack stack--6">
-                <h1>Heading One — Advanced Care</h1>
-                <h2>Heading Two — Clinical Excellence</h2>
-                <h3>Heading Three — Patient-First Medicine</h3>
-                <h4>Heading Four — Trusted Specialists</h4>
-                <h5>Heading Five — Modern Diagnostics</h5>
-                <h6>Heading Six — Compassionate Support</h6>
-                <p class="u-text-lg">
+</div>
+<div class="card">
+<div class="card__body stack stack--6">
+<h1>Heading One — Advanced Care</h1>
+<h2>Heading Two — Clinical Excellence</h2>
+<h3>Heading Three — Patient-First Medicine</h3>
+<h4>Heading Four — Trusted Specialists</h4>
+<h5>Heading Five — Modern Diagnostics</h5>
+<h6>Heading Six — Compassionate Support</h6>
+<p class="u-text-lg">
                   Lead paragraph: clear, confident healthcare communication designed to build trust quickly.
                 </p>
-                <p class="u-text-muted">
+<p class="u-text-muted">
                   Body paragraph: Mediva Care Hospital combines experienced specialists, advanced facilities,
                   and coordinated support to make every stage of care easier to understand.
                 </p>
-                <small class="u-text-subtle">Supporting text and accessible helper content.</small>
-              </div>
-            </div>
-          </section>
-
-          <section id="buttons" class="design-system-block" aria-labelledby="buttons-title">
-            <div class="design-system-label">
-              <p class="eyebrow">Actions</p>
-              <h2 id="buttons-title">Buttons</h2>
-            </div>
-
-            <div class="stack">
-              <div class="button-group">
-                <a class="button button--primary" href="#buttons">
-                  <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+<small class="u-text-subtle">Supporting text and accessible helper content.</small>
+</div>
+</div>
+</section>
+<section aria-labelledby="buttons-title" class="design-system-block" id="buttons">
+<div class="design-system-label">
+<p class="eyebrow">Actions</p>
+<h2 id="buttons-title">Buttons</h2>
+</div>
+<div class="stack">
+<div class="button-group">
+<a class="button button--primary" href="#buttons">
+<i aria-hidden="true" class="fa-solid fa-calendar-check"></i>
                   Book Appointment
                 </a>
-                <a class="button button--secondary" href="#buttons">Explore Services</a>
-                <a class="button button--accent" href="#buttons">Call Care Team</a>
-                <button class="button button--danger" type="button">Emergency</button>
-                <button class="button button--ghost" type="button">Learn More</button>
-              </div>
-              <div class="button-group">
-                <button class="button button--primary button--sm" type="button">Small Button</button>
-                <button class="button button--primary" type="button">Default Button</button>
-                <button class="button button--primary button--lg" type="button">Large Button</button>
-                <button class="button button--secondary" type="button" disabled>Disabled</button>
-                <button class="button button--secondary button--icon" type="button" aria-label="Search">
-                  <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                </button>
-              </div>
-            </div>
-          </section>
-
-          <section id="cards" class="design-system-block" aria-labelledby="cards-title">
-            <div class="design-system-label">
-              <p class="eyebrow">Surfaces</p>
-              <h2 id="cards-title">Cards and badges</h2>
-            </div>
-
-            <div class="grid--3">
-              <article class="card card--interactive">
-                <div class="card__body">
-                  <span class="badge badge--primary u-mb-4">Cardiology</span>
-                  <div class="icon-box icon-box--lg u-mb-6">
-                    <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
-                  </div>
-                  <h3 class="card__title">Advanced Heart Care</h3>
-                  <p class="card__text">
+<a class="button button--secondary" href="#buttons">Explore Services</a>
+<a class="button button--accent" href="#buttons">Call Care Team</a>
+<button class="button button--danger" type="button">Emergency</button>
+<button class="button button--ghost" type="button">Learn More</button>
+</div>
+<div class="button-group">
+<button class="button button--primary button--sm" type="button">Small Button</button>
+<button class="button button--primary" type="button">Default Button</button>
+<button class="button button--primary button--lg" type="button">Large Button</button>
+<button class="button button--secondary" disabled="" type="button">Disabled</button>
+<button aria-label="Search" class="button button--secondary button--icon" type="button">
+<i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
+</button>
+</div>
+</div>
+</section>
+<section aria-labelledby="cards-title" class="design-system-block" id="cards">
+<div class="design-system-label">
+<p class="eyebrow">Surfaces</p>
+<h2 id="cards-title">Cards and badges</h2>
+</div>
+<div class="grid--3">
+<article class="card card--interactive">
+<div class="card__body">
+<span class="badge badge--primary u-mb-4">Cardiology</span>
+<div class="icon-box icon-box--lg u-mb-6">
+<i aria-hidden="true" class="fa-solid fa-heart-pulse"></i>
+</div>
+<h3 class="card__title">Advanced Heart Care</h3>
+<p class="card__text">
                     Specialist consultation, diagnostics, prevention, and coordinated treatment planning.
                   </p>
-                  <div class="card__footer">
-                    <a class="button button--ghost button--sm" href="#cards">View Department</a>
-                    <span class="badge badge--success"><span class="badge__dot"></span>Available</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="card card--soft">
-                <div class="card__body">
-                  <span class="badge badge--accent u-mb-4">Preventive Care</span>
-                  <div class="icon-box icon-box--accent icon-box--lg u-mb-6">
-                    <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
-                  </div>
-                  <h3 class="card__title">Complete Health Check</h3>
-                  <p class="card__text">
+<div class="card__footer">
+<a class="button button--ghost button--sm" href="#cards">View Department</a>
+<span class="badge badge--success"><span class="badge__dot"></span>Available</span>
+</div>
+</div>
+</article>
+<article class="card card--soft">
+<div class="card__body">
+<span class="badge badge--accent u-mb-4">Preventive Care</span>
+<div class="icon-box icon-box--accent icon-box--lg u-mb-6">
+<i aria-hidden="true" class="fa-solid fa-shield-heart"></i>
+</div>
+<h3 class="card__title">Complete Health Check</h3>
+<p class="card__text">
                     A thoughtfully structured screening package for proactive long-term wellbeing.
                   </p>
-                  <div class="card__footer">
-                    <strong class="u-text-primary">₹4,999</strong>
-                    <span class="badge badge--warning">Popular</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="card card--dark">
-                <div class="card__body">
-                  <span class="badge badge--danger u-mb-4">24/7 Emergency</span>
-                  <div class="icon-box icon-box--danger icon-box--lg u-mb-6">
-                    <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
-                  </div>
-                  <h3 class="card__title u-text-white">Immediate Medical Support</h3>
-                  <p>Rapid assessment and coordinated critical-care response, available every day.</p>
-                  <div class="card__footer">
-                    <a class="button button--outline-light button--sm" href="tel:+911800000000">Call Now</a>
-                    <span class="badge badge--neutral">Open Now</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="cluster u-mt-8">
-              <span class="badge badge--primary">Primary</span>
-              <span class="badge badge--accent">Accent</span>
-              <span class="badge badge--success">Success</span>
-              <span class="badge badge--warning">Warning</span>
-              <span class="badge badge--danger">Danger</span>
-              <span class="badge badge--neutral">Neutral</span>
-            </div>
-          </section>
-
-          <section id="forms" class="design-system-block" aria-labelledby="forms-title">
-            <div class="design-system-label">
-              <p class="eyebrow">Data entry</p>
-              <h2 id="forms-title">Form system</h2>
-            </div>
-
-            <div class="grid">
-              <div class="col-12 lg:col-7">
-                <form class="card" action="#" method="post">
-                  <div class="card__body form">
-                    <div class="form-row form-row--2">
-                      <div class="form-group">
-                        <label class="form-label" for="patient-name">
+<div class="card__footer">
+<strong class="u-text-primary">₹4,999</strong>
+<span class="badge badge--warning">Popular</span>
+</div>
+</div>
+</article>
+<article class="card card--dark">
+<div class="card__body">
+<span class="badge badge--danger u-mb-4">24/7 Emergency</span>
+<div class="icon-box icon-box--danger icon-box--lg u-mb-6">
+<i aria-hidden="true" class="fa-solid fa-truck-medical"></i>
+</div>
+<h3 class="card__title u-text-white">Immediate Medical Support</h3>
+<p>Rapid assessment and coordinated critical-care response, available every day.</p>
+<div class="card__footer">
+<a class="button button--outline-light button--sm" href="tel:+911800000000">Call Now</a>
+<span class="badge badge--neutral">Open Now</span>
+</div>
+</div>
+</article>
+</div>
+<div class="cluster u-mt-8">
+<span class="badge badge--primary">Primary</span>
+<span class="badge badge--accent">Accent</span>
+<span class="badge badge--success">Success</span>
+<span class="badge badge--warning">Warning</span>
+<span class="badge badge--danger">Danger</span>
+<span class="badge badge--neutral">Neutral</span>
+</div>
+</section>
+<section aria-labelledby="forms-title" class="design-system-block" id="forms">
+<div class="design-system-label">
+<p class="eyebrow">Data entry</p>
+<h2 id="forms-title">Form system</h2>
+</div>
+<div class="grid">
+<div class="col-12 lg:col-7">
+<form action="#" class="card" method="post">
+<div class="card__body form">
+<div class="form-row form-row--2">
+<div class="form-group">
+<label class="form-label" for="patient-name">
                           Patient name <span class="form-label__required">*</span>
-                        </label>
-                        <div class="input-group">
-                          <i class="input-group__icon fa-regular fa-user" aria-hidden="true"></i>
-                          <input
-                            class="form-control"
-                            id="patient-name"
-                            name="patient-name"
-                            type="text"
-                            placeholder="Enter full name"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="form-label" for="patient-phone">Phone number</label>
-                        <div class="input-group">
-                          <i class="input-group__icon fa-solid fa-phone" aria-hidden="true"></i>
-                          <input
-                            class="form-control"
-                            id="patient-phone"
-                            name="patient-phone"
-                            type="tel"
-                            placeholder="+91 98765 43210"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="form-row form-row--2">
-                      <div class="form-group">
-                        <label class="form-label" for="department">Department</label>
-                        <select class="form-control" id="department" name="department">
-                          <option value="">Select a department</option>
-                          <option>Cardiology</option>
-                          <option>Neurology</option>
-                          <option>Orthopedics</option>
-                        </select>
-                      </div>
-
-                      <div class="form-group form-group--error">
-                        <label class="form-label" for="patient-email">Email address</label>
-                        <input
-                          class="form-control"
-                          id="patient-email"
-                          name="patient-email"
-                          type="email"
-                          value="incorrect-email"
-                          aria-invalid="true"
-                          aria-describedby="email-error"
-                        />
-                        <span class="form-message form-message--error" id="email-error">
+</label>
+<div class="input-group">
+<i aria-hidden="true" class="input-group__icon fa-regular fa-user"></i>
+<input class="form-control" id="patient-name" name="patient-name" placeholder="Enter full name" required="" type="text"/>
+</div>
+</div>
+<div class="form-group">
+<label class="form-label" for="patient-phone">Phone number</label>
+<div class="input-group">
+<i aria-hidden="true" class="input-group__icon fa-solid fa-phone"></i>
+<input class="form-control" id="patient-phone" name="patient-phone" placeholder="+91 98765 43210" type="tel"/>
+</div>
+</div>
+</div>
+<div class="form-row form-row--2">
+<div class="form-group">
+<label class="form-label" for="department">Department</label>
+<select class="form-control" id="department" name="department">
+<option value="">Select a department</option>
+<option>Cardiology</option>
+<option>Neurology</option>
+<option>Orthopedics</option>
+</select>
+</div>
+<div class="form-group form-group--error">
+<label class="form-label" for="patient-email">Email address</label>
+<input aria-describedby="email-error" aria-invalid="true" class="form-control" id="patient-email" name="patient-email" type="email" value="incorrect-email"/>
+<span class="form-message form-message--error" id="email-error">
                           Enter a valid email address.
                         </span>
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <label class="form-label" for="message">How can we help?</label>
-                      <textarea
-                        class="form-control"
-                        id="message"
-                        name="message"
-                        placeholder="Briefly describe the care you need"
-                      ></textarea>
-                      <span class="form-help">Do not include confidential medical records in this form.</span>
-                    </div>
-
-                    <label class="check-control">
-                      <input type="checkbox" name="consent" />
-                      <span>I agree to be contacted regarding this appointment request.</span>
-                    </label>
-
-                    <div class="button-group">
-                      <button class="button button--primary" type="submit">Request Appointment</button>
-                      <button class="button button--secondary" type="reset">Clear Form</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-
-              <aside class="col-12 lg:col-5 stack" aria-label="Form feedback examples">
-                <div class="alert alert--info">
-                  <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
-                  <span>Appointment requests are usually confirmed during hospital working hours.</span>
-                </div>
-                <div class="alert alert--success">
-                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-                  <span>Your request was submitted successfully.</span>
-                </div>
-                <div class="alert alert--warning">
-                  <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
-                  <span>This form is not intended for medical emergencies.</span>
-                </div>
-                <div class="alert alert--danger">
-                  <i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>
-                  <span>Unable to submit. Check the highlighted fields and try again.</span>
-                </div>
-              </aside>
-            </div>
-          </section>
-
-          <section class="design-system-block" aria-labelledby="spacing-title">
-            <div class="design-system-label">
-              <p class="eyebrow">Consistency</p>
-              <h2 id="spacing-title">Spacing, radius, and shadows</h2>
-            </div>
-
-            <div class="grid--3">
-              <article class="card card--flat">
-                <div class="card__body">
-                  <h3 class="card__title">Spacing scale</h3>
-                  <div class="token-row"><span class="token-row__sample token-row__sample--4"></span><code>--space-4</code><span>1rem</span></div>
-                  <div class="token-row"><span class="token-row__sample token-row__sample--6"></span><code>--space-6</code><span>1.5rem</span></div>
-                  <div class="token-row"><span class="token-row__sample token-row__sample--8"></span><code>--space-8</code><span>2rem</span></div>
-                </div>
-              </article>
-
-              <article class="card card--flat">
-                <div class="card__body stack">
-                  <h3 class="card__title">Radius scale</h3>
-                  <div class="u-p-6 u-bg-brand-soft u-rounded-md">Medium radius</div>
-                  <div class="u-p-6 u-bg-brand-soft u-rounded-xl">Extra-large radius</div>
-                  <div class="u-p-6 u-bg-brand-soft u-rounded-full u-text-center">Pill radius</div>
-                </div>
-              </article>
-
-              <article class="card card--flat">
-                <div class="card__body stack">
-                  <h3 class="card__title">Shadow scale</h3>
-                  <div class="u-p-6 u-bg-white u-rounded-lg u-shadow-sm">Small shadow</div>
-                  <div class="u-p-6 u-bg-white u-rounded-lg u-shadow-md">Medium shadow</div>
-                  <div class="u-p-6 u-bg-white u-rounded-lg u-shadow-lg">Large shadow</div>
-                </div>
-              </article>
-            </div>
-          </section>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; <span data-current-year></span> Mediva Care Hospital Design System.</p>
-      </div>
-    </footer>
-
-    <script src="../assets/js/navigation.js" defer></script>
-    <script src="../assets/js/main.js" defer></script>
-  </body>
+</div>
+</div>
+<div class="form-group">
+<label class="form-label" for="message">How can we help?</label>
+<textarea class="form-control" id="message" name="message" placeholder="Briefly describe the care you need"></textarea>
+<span class="form-help">Do not include confidential medical records in this form.</span>
+</div>
+<label class="check-control">
+<input name="consent" type="checkbox"/>
+<span>I agree to be contacted regarding this appointment request.</span>
+</label>
+<div class="button-group">
+<button class="button button--primary" type="submit">Request Appointment</button>
+<button class="button button--secondary" type="reset">Clear Form</button>
+</div>
+</div>
+</form>
+</div>
+<aside aria-label="Form feedback examples" class="col-12 lg:col-5 stack">
+<div class="alert alert--info">
+<i aria-hidden="true" class="fa-solid fa-circle-info"></i>
+<span>Appointment requests are usually confirmed during hospital working hours.</span>
+</div>
+<div class="alert alert--success">
+<i aria-hidden="true" class="fa-solid fa-circle-check"></i>
+<span>Your request was submitted successfully.</span>
+</div>
+<div class="alert alert--warning">
+<i aria-hidden="true" class="fa-solid fa-triangle-exclamation"></i>
+<span>This form is not intended for medical emergencies.</span>
+</div>
+<div class="alert alert--danger">
+<i aria-hidden="true" class="fa-solid fa-circle-exclamation"></i>
+<span>Unable to submit. Check the highlighted fields and try again.</span>
+</div>
+</aside>
+</div>
+</section>
+<section aria-labelledby="spacing-title" class="design-system-block">
+<div class="design-system-label">
+<p class="eyebrow">Consistency</p>
+<h2 id="spacing-title">Spacing, radius, and shadows</h2>
+</div>
+<div class="grid--3">
+<article class="card card--flat">
+<div class="card__body">
+<h3 class="card__title">Spacing scale</h3>
+<div class="token-row"><span class="token-row__sample token-row__sample--4"></span><code>--space-4</code><span>1rem</span></div>
+<div class="token-row"><span class="token-row__sample token-row__sample--6"></span><code>--space-6</code><span>1.5rem</span></div>
+<div class="token-row"><span class="token-row__sample token-row__sample--8"></span><code>--space-8</code><span>2rem</span></div>
+</div>
+</article>
+<article class="card card--flat">
+<div class="card__body stack">
+<h3 class="card__title">Radius scale</h3>
+<div class="u-p-6 u-bg-brand-soft u-rounded-md">Medium radius</div>
+<div class="u-p-6 u-bg-brand-soft u-rounded-xl">Extra-large radius</div>
+<div class="u-p-6 u-bg-brand-soft u-rounded-full u-text-center">Pill radius</div>
+</div>
+</article>
+<article class="card card--flat">
+<div class="card__body stack">
+<h3 class="card__title">Shadow scale</h3>
+<div class="u-p-6 u-bg-white u-rounded-lg u-shadow-sm">Small shadow</div>
+<div class="u-p-6 u-bg-white u-rounded-lg u-shadow-md">Medium shadow</div>
+<div class="u-p-6 u-bg-white u-rounded-lg u-shadow-lg">Large shadow</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<p>© <span data-current-year=""></span> Mediva Care Hospital Design System.</p>
+</div>
+</footer>
+<script defer="" src="../assets/js/navigation.js"></script>
+<script defer src="../assets/js/components.js"></script><script defer="" src="../assets/js/main.js"></script>
+</body>
 </html>

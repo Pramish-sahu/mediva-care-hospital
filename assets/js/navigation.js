@@ -132,6 +132,13 @@
       keywords: 'gallery photos facility rooms technology',
     },
     {
+      title: 'UI Components',
+      path: 'pages/components.html',
+      icon: 'fa-layer-group',
+      description: 'Reusable Mediva buttons, cards, forms, modals, accordions, and interface patterns.',
+      keywords: 'components design system ui buttons cards forms modal accordion',
+    },
+    {
       title: 'Contact & Appointments',
       path: 'pages/contact.html',
       icon: 'fa-calendar-check',
