@@ -139,6 +139,13 @@
       keywords: 'components design system ui buttons cards forms modal accordion',
     },
     {
+      title: 'Motion System',
+      path: 'pages/animations.html',
+      icon: 'fa-wand-magic-sparkles',
+      description: 'AOS reveals, counters, parallax, sticky behavior, and accessible micro-interactions.',
+      keywords: 'animation motion aos counter parallax hover loading sticky scroll',
+    },
+    {
       title: 'Contact & Appointments',
       path: 'pages/contact.html',
       icon: 'fa-calendar-check',

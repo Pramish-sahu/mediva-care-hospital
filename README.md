@@ -129,3 +129,10 @@ Six complete specialty pages now share a reusable service-page system for hero c
 ## Prompt 7: Reusable Components
 
 The project includes an extended UI component library with a live reference page at `pages/components.html`. See `docs/components.md` for class and behavior guidance.
+
+
+## Prompt 8: Animation System
+
+The production motion layer includes AOS reveals, locale-aware counters, subtle parallax, hover and button micro-interactions, a dynamic page loader, scroll progress, back-to-top control, sticky element state detection, and full reduced-motion support.
+
+Preview the visual reference at `pages/animations.html` and read `docs/animations.md`.

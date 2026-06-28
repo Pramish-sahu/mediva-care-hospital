@@ -74,3 +74,32 @@ Validated on June 28, 2026.
 - Toast, newsletter, and pagination feedback use live regions.
 - Dismiss buttons include explicit accessible labels.
 - Reduced-motion preferences remove nonessential component animation.
+
+
+# Prompt 8 Animation Validation
+
+Validated on June 28, 2026.
+
+## Coverage
+
+- 21 HTML documents parse successfully.
+- 12 stylesheets pass delimiter-balance validation.
+- 9 JavaScript controllers pass `node --check`.
+- The AOS stylesheet, AOS controller, and shared motion controller load on every HTML page.
+- The visual motion reference demonstrates reveals, counters, hover states, parallax, sticky panels, loading feedback, and accessibility fallbacks.
+
+## Integrity
+
+- All local HTML, CSS, JavaScript, image, logo, favicon, and documentation references resolve.
+- No duplicate IDs were found.
+- Every image contains an `alt` attribute.
+- No inline CSS, inline JavaScript, or inline event handlers were added.
+- Global counter and ripple behavior is centralized to avoid duplicate listeners.
+
+## Performance and accessibility
+
+- Parallax work is batched with `requestAnimationFrame`, clamped, and skipped off screen.
+- Counters and native reveals initialize through `IntersectionObserver`.
+- Tilt and magnetic interactions run only on fine pointers with hover support.
+- The branded page loader runs once per browser session and can be replayed from the reference page.
+- `prefers-reduced-motion` disables loaders, parallax, tilt, magnetic movement, continuous motion, and smooth scrolling while leaving all content visible.

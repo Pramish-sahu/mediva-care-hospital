@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -11,7 +12,7 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
 <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" referrerpolicy="no-referrer" rel="stylesheet"/>
-<link href="../assets/css/base.css" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/><link href="../assets/css/base.css" rel="stylesheet"/>
 <link href="../assets/css/layout.css" rel="stylesheet"/>
 <link href="../assets/css/navigation.css" rel="stylesheet"/>
 <link href="../assets/css/components.css" rel="stylesheet"/>
@@ -233,7 +234,7 @@
         patient portals, clinical service pages, and future Mediva experiences.
       </p>
 <div class="button-group component-hero__actions">
-<a class="button button--accent button--lg" href="#cards">Explore components</a>
+<a class="button button--accent button--lg" data-magnetic="0.10" href="#cards">Explore components</a>
 <a class="button button--outline-light button--lg" href="../docs/components.md">Read documentation</a>
 </div>
 </div>
@@ -275,7 +276,7 @@
 <div class="button-group">
 <button class="button button--primary button--sm" type="button">Small</button>
 <button class="button button--primary" type="button">Default</button>
-<button class="button button--primary button--lg" type="button">Large</button>
+<button class="button button--primary button--lg" data-magnetic="0.10" type="button">Large</button>
 <button aria-label="Save doctor" class="button button--secondary button--square" type="button"><i aria-hidden="true" class="fa-regular fa-bookmark"></i></button>
 <button class="button button--primary" data-loading-demo="" type="button">
 <span aria-hidden="true" class="button__spinner"></span>
@@ -308,7 +309,7 @@
 <div class="component-demo">
 <h3 class="component-demo__title">Doctor cards</h3>
 <div class="component-demo__grid">
-<article class="doctor-card">
+<article class="doctor-card" data-hover="lift">
 <div class="doctor-card__media">
 <img alt="Dr. Aarav Mehta" height="460" loading="lazy" src="../assets/images/doctors/dr-aarav-mehta.svg" width="520"/>
 <span class="badge badge--success doctor-card__availability"><span class="badge__dot"></span>Available today</span>
@@ -327,7 +328,7 @@
 </div>
 </div>
 </article>
-<article class="doctor-card">
+<article class="doctor-card" data-hover="lift">
 <div class="doctor-card__media">
 <img alt="Dr. Naina Verma" height="460" loading="lazy" src="../assets/images/doctors/dr-naina-verma.svg" width="520"/>
 <span class="badge badge--warning doctor-card__availability">Next slot tomorrow</span>
@@ -351,7 +352,7 @@
 <div class="component-demo">
 <h3 class="component-demo__title">Pricing cards</h3>
 <div class="component-demo__grid">
-<article class="pricing-card">
+<article class="pricing-card" data-hover="lift">
 <span class="icon-box pricing-card__icon"><i aria-hidden="true" class="fa-solid fa-heart-pulse"></i></span>
 <h3 class="pricing-card__name">Essential Check</h3>
 <p class="pricing-card__description">A focused annual screening for adults under 40.</p>
@@ -363,7 +364,7 @@
 </ul>
 <a class="button button--secondary button--block pricing-card__action" href="packages.html">View package</a>
 </article>
-<article class="pricing-card pricing-card--featured">
+<article class="pricing-card pricing-card--featured" data-hover="lift">
 <span class="badge badge--solid-primary pricing-card__ribbon">Most popular</span>
 <span class="icon-box icon-box--accent pricing-card__icon"><i aria-hidden="true" class="fa-solid fa-shield-heart"></i></span>
 <h3 class="pricing-card__name">Complete Wellness</h3>
@@ -376,7 +377,7 @@
 </ul>
 <a class="button button--primary button--block pricing-card__action" href="contact.html">Book package</a>
 </article>
-<article class="pricing-card">
+<article class="pricing-card" data-hover="lift">
 <span class="icon-box icon-box--danger pricing-card__icon"><i aria-hidden="true" class="fa-solid fa-people-roof"></i></span>
 <h3 class="pricing-card__name">Family Preventive</h3>
 <p class="pricing-card__description">Coordinated screenings for two adults and one child.</p>
@@ -393,7 +394,7 @@
 <div class="component-demo">
 <h3 class="component-demo__title">Testimonial cards</h3>
 <div class="component-demo__grid">
-<article class="testimonial-card">
+<article class="testimonial-card" data-hover="lift">
 <i aria-hidden="true" class="fa-solid fa-quote-right testimonial-card__quote-icon"></i>
 <div aria-label="5 out of 5 stars" class="testimonial-card__rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
 <blockquote>“The cardiology team explained every step clearly. I felt reassured, respected, and supported throughout my stay.”</blockquote>
@@ -402,7 +403,7 @@
 <div><strong>Vikram S.</strong><span>Cardiology patient</span></div>
 </div>
 </article>
-<article class="testimonial-card">
+<article class="testimonial-card" data-hover="lift">
 <i aria-hidden="true" class="fa-solid fa-quote-right testimonial-card__quote-icon"></i>
 <div aria-label="5 out of 5 stars" class="testimonial-card__rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
 <blockquote>“From admission to follow-up, the staff communicated warmly and made our child feel safe rather than frightened.”</blockquote>
@@ -578,7 +579,7 @@
 </header>
 <article class="newsletter-card">
 <div class="newsletter-card__content"><span class="badge badge--accent u-mb-4">Patient education</span><h3>Practical health guidance, delivered thoughtfully.</h3><p>Receive clinician-reviewed wellness tips, preventive care reminders, and hospital updates. No spam.</p></div>
-<form class="newsletter-card__form" data-newsletter-demo="" novalidate=""><label class="visually-hidden" for="component-newsletter-email">Email address</label><input autocomplete="email" class="newsletter-card__control" id="component-newsletter-email" name="email" placeholder="Your email address" required="" type="email"/><button class="button button--accent button--lg" type="submit">Subscribe</button><p aria-live="polite" class="newsletter-card__status" data-newsletter-status="">By subscribing, you agree to receive educational email updates.</p></form>
+<form class="newsletter-card__form" data-newsletter-demo="" novalidate=""><label class="visually-hidden" for="component-newsletter-email">Email address</label><input autocomplete="email" class="newsletter-card__control" id="component-newsletter-email" name="email" placeholder="Your email address" required="" type="email"/><button class="button button--accent button--lg" data-magnetic="0.10" type="submit">Subscribe</button><p aria-live="polite" class="newsletter-card__status" data-newsletter-status="">By subscribing, you agree to receive educational email updates.</p></form>
 </article>
 </section>
 <section aria-labelledby="loading-title" class="component-section">
@@ -625,8 +626,8 @@
 </div>
 <div class="site-footer__bottom"><div class="container"><p>© <span data-current-year=""></span> Mediva Care Hospital. All rights reserved.</p><div><a href="../pages/privacy-policy.html">Privacy Policy</a><a href="../pages/terms.html">Terms of Use</a><a href="../pages/contact.html">Accessibility</a></div></div></div>
 </footer>
-<script defer="" src="../assets/js/config.js"></script>
-<script defer="" src="../assets/js/navigation.js"></script>
+<script defer="" src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script><script defer="" src="../assets/js/config.js"></script>
+<script defer="" src="../assets/js/navigation.js"></script><script defer="" src="../assets/js/animations.js"></script>
 <script defer="" src="../assets/js/forms.js"></script><script defer="" src="../assets/js/internal-pages.js"></script><script defer="" src="../assets/js/components.js"></script><script defer="" src="../assets/js/main.js"></script>
 </body>
 </html>

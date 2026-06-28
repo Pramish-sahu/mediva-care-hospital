@@ -1,7 +1,7 @@
 /**
  * Mediva Care Hospital — Homepage Controller
- * Initializes sliders, animated counters, FAQ behavior, ripple feedback,
- * appointment date constraints, and the newsletter mail fallback.
+ * Initializes homepage sliders, FAQ behavior, appointment date constraints,
+ * and the newsletter mail fallback. Shared motion is handled by animations.js.
  */
 (() => {
   'use strict';
@@ -63,50 +63,6 @@
     }
   };
 
-  const animateCounter = (element) => {
-    const target = Number.parseInt(element.dataset.counter || '0', 10);
-    if (!Number.isFinite(target)) return;
-
-    if (prefersReducedMotion) {
-      element.textContent = String(target);
-      return;
-    }
-
-    const duration = 1500;
-    const startedAt = performance.now();
-
-    const update = (timestamp) => {
-      const progress = Math.min((timestamp - startedAt) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      element.textContent = Math.round(target * eased).toLocaleString('en-IN');
-      if (progress < 1) window.requestAnimationFrame(update);
-    };
-
-    window.requestAnimationFrame(update);
-  };
-
-  const initCounters = () => {
-    const counters = [...document.querySelectorAll('[data-counter]')];
-    if (!counters.length) return;
-
-    if (!('IntersectionObserver' in window)) {
-      counters.forEach(animateCounter);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          animateCounter(entry.target);
-          observer.unobserve(entry.target);
-        });
-      },
-      { threshold: 0.45 }
-    );
-
-    counters.forEach((counter) => observer.observe(counter));
-  };
 
   const initAccordion = () => {
     document.querySelectorAll('[data-accordion]').forEach((accordion) => {
@@ -133,20 +89,6 @@
     });
   };
 
-  const initRipple = () => {
-    document.addEventListener('pointerdown', (event) => {
-      const button = event.target.closest('.button--ripple');
-      if (!button || prefersReducedMotion) return;
-
-      const rect = button.getBoundingClientRect();
-      const ripple = document.createElement('span');
-      ripple.className = 'button__ripple';
-      ripple.style.left = `${event.clientX - rect.left}px`;
-      ripple.style.top = `${event.clientY - rect.top}px`;
-      button.append(ripple);
-      ripple.addEventListener('animationend', () => ripple.remove(), { once: true });
-    });
-  };
 
   const initDateInputs = () => {
     const today = new Date();
@@ -180,9 +122,7 @@
 
   const initialize = () => {
     initSwipers();
-    initCounters();
     initAccordion();
-    initRipple();
     initDateInputs();
     initNewsletter();
   };
